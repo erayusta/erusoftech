@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n/config';
+import { CursorTrail } from '@/components/ui/CursorTrail';
 import '@/styles/globals.css';
 
 export function generateStaticParams() {
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
     <html lang={locale} className="dark">
       <body className="min-h-screen bg-ink-950 text-white antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
+          <CursorTrail />
           {children}
         </NextIntlClientProvider>
       </body>
