@@ -1,21 +1,36 @@
-// Landing page composition — sections are mounted here in reading order.
-// Each section is a self-contained component that pulls its own copy from next-intl.
-// Placeholder during scaffolding; sections are wired in subsequent feature branches.
+import { setRequestLocale } from 'next-intl/server';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { PartnersBanner } from '@/components/sections/PartnersBanner';
+import { Services } from '@/components/sections/Services';
+import { TechStack } from '@/components/sections/TechStack';
+import { Process } from '@/components/sections/Process';
+import { CaseStudies } from '@/components/sections/CaseStudies';
+import { Trust } from '@/components/sections/Trust';
+import { CTA } from '@/components/sections/CTA';
 
-export default function HomePage() {
+export default function HomePage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  setRequestLocale(locale);
+
   return (
-    <main className="relative">
-      <div className="flex min-h-screen items-center justify-center p-8">
-        <div className="max-w-xl space-y-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-brand-300">erusoftech</p>
-          <h1 className="text-display-2 font-semibold text-balance">
-            <span className="gradient-text">Scaffold ready.</span>
-          </h1>
-          <p className="text-white/60">
-            Sections wire up in subsequent feature branches.
-          </p>
-        </div>
-      </div>
-    </main>
+    <>
+      <Navbar />
+      <main className="relative overflow-hidden">
+        <Hero />
+        <PartnersBanner />
+        <Services />
+        <TechStack />
+        <Process />
+        <CaseStudies />
+        <Trust />
+        <CTA />
+      </main>
+      <Footer />
+    </>
   );
 }
