@@ -7,6 +7,7 @@ import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { BackgroundFX } from '@/components/ui/BackgroundFX';
+import { HeroVideoBackground } from './HeroVideoBackground';
 import { fadeUp, staggerContainer } from '@/lib/motion';
 
 export function Hero() {
@@ -16,22 +17,11 @@ export function Hero() {
     <section className="relative isolate flex min-h-[92vh] items-center overflow-hidden pt-32">
       {/* Video background (placeholder poster / muted loop) */}
       {/*
-        Hero background video. Muted + autoplay + playsInline is required
-        for mobile browsers to allow programmatic playback. The poster
-        is an SVG gradient fallback used before the video buffers and for
-        reduced-motion users.
+        Hero background — YouTube-backed. Swappable: if you later want to
+        self-host, replace <HeroVideoBackground /> with a <video> element
+        pointing at /placeholders/hero-bg.mp4 (built by scripts/build-hero-bg.sh).
       */}
-      <video
-        className="absolute inset-0 -z-20 h-full w-full object-cover opacity-[0.55]"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        poster="/placeholders/hero-poster.svg"
-      >
-        <source src="/placeholders/hero-bg.mp4" type="video/mp4" />
-      </video>
+      <HeroVideoBackground />
 
       {/* Gradient overlays & atmosphere */}
       <BackgroundFX variant="hero" />
