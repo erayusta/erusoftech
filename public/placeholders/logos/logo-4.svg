@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect x="4" y="12" width="16" height="16" rx="8" fill="currentColor"/>
+  <rect x="14" y="12" width="16" height="16" rx="8" fill="currentColor" fill-opacity="0.6"/>
+  <text x="38" y="27" font-family="system-ui,Inter,Arial" font-size="16" font-weight="700" fill="currentColor">Lumen</text>
+</svg>
