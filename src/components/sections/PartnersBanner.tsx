@@ -240,13 +240,18 @@ export function PartnersBanner() {
           ))}
         </div>
 
-        {/* Cobalt shine sweep that drifts across the banner periodically */}
+        {/*
+          Intense shine sweep — brand-gradient band drifting across the
+          banner every ~3.8s. Screen blend mode so it reads as added light
+          on top of logos, not paint over them.
+        */}
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 animate-shine-sweep"
+          className="pointer-events-none absolute inset-y-0 -left-1/3 w-[30%] animate-shine-sweep"
           style={{
             background:
-              'linear-gradient(110deg, transparent 30%, rgba(46,107,255,0.18) 50%, transparent 70%)',
+              'linear-gradient(110deg, transparent 20%, rgba(46,107,255,0.42) 40%, rgba(139,92,246,0.36) 55%, rgba(34,211,238,0.32) 70%, transparent 80%)',
+            filter: 'blur(8px)',
             mixBlendMode: 'screen',
           }}
         />
