@@ -19,10 +19,25 @@ export async function generateMetadata({
     title: t('title'),
     description: t('description'),
     metadataBase: new URL('https://erusoftech.com'),
+    icons: {
+      icon: [
+        { url: '/brand/favicon-32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/brand/logo-mark.webp', sizes: 'any', type: 'image/webp' },
+      ],
+      apple: [{ url: '/brand/logo-mark@2x.webp', sizes: '144x144' }],
+    },
     openGraph: {
       title: t('title'),
       description: t('description'),
       type: 'website',
+      siteName: 'Erusoft',
+      images: [
+        {
+          url: '/brand/logo-full@2x.webp',
+          width: 960,
+          alt: 'Erusoft',
+        },
+      ],
     },
   };
 }

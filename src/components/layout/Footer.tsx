@@ -103,7 +103,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 md:flex-row md:items-center">
           <p className="text-xs text-white/45">
-            © {year} Erusoftech. {t('rights')}
+            © {year} Erusoft. {t('rights')}
           </p>
           <p className="text-xs text-white/40">
             Made with precision. Istanbul · Berlin · Remote.
