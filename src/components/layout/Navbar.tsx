@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
+import { LanguageSwitcher } from './LanguageSwitcher';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/cn';
 
@@ -59,7 +60,8 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden items-center gap-2 md:flex">
+            <LanguageSwitcher variant="desktop" />
             <Button href="#contact" size="md" icon>
               {t('cta')}
             </Button>
@@ -95,6 +97,9 @@ export function Navbar() {
                   </a>
                 </li>
               ))}
+              <li className="my-2 border-t border-white/5 pt-2">
+                <LanguageSwitcher variant="mobile" />
+              </li>
               <li className="mt-2">
                 <Button href="#contact" size="md" icon className="w-full">
                   {t('cta')}
