@@ -62,6 +62,7 @@ const config: Config = {
         'float': 'float 6s ease-in-out infinite',
         'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
         'shine': 'shine 3s linear infinite',
+        'shine-sweep': 'shine-sweep 7s ease-in-out infinite',
       },
       keyframes: {
         'scroll-x': {
@@ -79,6 +80,10 @@ const config: Config = {
         shine: {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
+        },
+        'shine-sweep': {
+          '0%': { transform: 'translateX(0)' },
+          '60%, 100%': { transform: 'translateX(400%)' },
         },
       },
     },
