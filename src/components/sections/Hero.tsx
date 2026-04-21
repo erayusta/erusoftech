@@ -15,13 +15,19 @@ export function Hero() {
   return (
     <section className="relative isolate flex min-h-[92vh] items-center overflow-hidden pt-32">
       {/* Video background (placeholder poster / muted loop) */}
+      {/*
+        Hero background video. Muted + autoplay + playsInline is required
+        for mobile browsers to allow programmatic playback. The poster
+        is an SVG gradient fallback used before the video buffers and for
+        reduced-motion users.
+      */}
       <video
-        className="absolute inset-0 -z-20 h-full w-full object-cover opacity-[0.35]"
+        className="absolute inset-0 -z-20 h-full w-full object-cover opacity-[0.55]"
         autoPlay
         muted
         loop
         playsInline
-        // Placeholder: replace with a real AI/data dashboards video in public/placeholders/hero-bg.mp4
+        preload="auto"
         poster="/placeholders/hero-poster.svg"
       >
         <source src="/placeholders/hero-bg.mp4" type="video/mp4" />
