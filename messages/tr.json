@@ -13,7 +13,7 @@
   },
   "hero": {
     "eyebrow": "AI-driven engineering studio",
-    "title": "Modern işletmeleri güçlendiren akıllı sistemler inşa ediyoruz",
+    "title": "Modern işletmeleri güçlendiren <span>akıllı sistemler</span> inşa ediyoruz",
     "subtitle": "Yapay zekâ destekli CRM, CMS, SaaS platformları ve ölçeklenebilir altyapı çözümleri.",
     "primaryCta": "Projeye başla",
     "secondaryCta": "Çözümleri keşfet",

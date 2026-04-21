@@ -13,7 +13,7 @@
   },
   "hero": {
     "eyebrow": "AI-driven engineering studio",
-    "title": "We build intelligent systems that power modern businesses",
+    "title": "We build <span>intelligent systems</span> that power modern businesses",
     "subtitle": "AI-powered CRM, CMS, SaaS platforms and scalable infrastructure solutions.",
     "primaryCta": "Start a project",
     "secondaryCta": "Explore solutions",
