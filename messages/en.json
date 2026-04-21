@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Erusoftech — Intelligent systems that power modern businesses",
+    "description": "We design and build AI-powered CRM, CMS, SaaS platforms and scalable DevOps infrastructure."
+  },
+  "nav": {
+    "services": "Solutions",
+    "technology": "Technology",
+    "process": "Process",
+    "work": "Work",
+    "contact": "Contact",
+    "cta": "Start a project"
+  },
+  "hero": {
+    "eyebrow": "AI-driven engineering studio",
+    "title": "We build intelligent systems that power modern businesses",
+    "subtitle": "AI-powered CRM, CMS, SaaS platforms and scalable infrastructure solutions.",
+    "primaryCta": "Start a project",
+    "secondaryCta": "Explore solutions",
+    "stats": {
+      "uptime": "Average uptime across production systems",
+      "deployments": "Successful production deployments",
+      "team": "Senior engineers and architects"
+    }
+  },
+  "partners": {
+    "title": "Trusted by teams and products we've built"
+  },
+  "services": {
+    "eyebrow": "Solutions",
+    "title": "Production-ready, scalable software systems",
+    "subtitle": "From AI operations to core infrastructure — we design end-to-end systems tailored to your business.",
+    "items": {
+      "ai": {
+        "title": "AI Solutions",
+        "description": "We embed machine-learning models into your workflows, turning manual work into intelligent automation.",
+        "bullets": [
+          "Machine-learning integration (OpenAI, Anthropic, self-hosted)",
+          "Predictive analytics and decision engines",
+          "Workflow automation and RAG pipelines"
+        ]
+      },
+      "crm": {
+        "title": "CRM Development",
+        "description": "Fully custom customer relationship systems built around how your sales, support and ops teams actually work.",
+        "bullets": [
+          "Custom CRM architecture and data modeling",
+          "Workflow automation and role-based permissions",
+          "Third-party API integrations (Slack, Meta, HubSpot)"
+        ]
+      },
+      "cms": {
+        "title": "CMS Platforms",
+        "description": "Headless architectures that deliver content to every channel, with fast and safe editor experiences.",
+        "bullets": [
+          "Headless CMS (Strapi, Payload, Sanity)",
+          "Flexible content modeling and schema governance",
+          "Multi-channel and multi-locale publishing"
+        ]
+      },
+      "saas": {
+        "title": "SaaS Development",
+        "description": "Multi-tenant SaaS products built to scale from your first customer to your millionth.",
+        "bullets": [
+          "Multi-tenant architecture with row-level security",
+          "Subscription & billing (Stripe, Paddle)",
+          "Scalable backends, job queues, event-driven systems"
+        ]
+      },
+      "devops": {
+        "title": "DevOps & CI/CD",
+        "description": "Modern DevOps practices and cloud infrastructure that make deploys safe, fast and repeatable.",
+        "bullets": [
+          "CI/CD pipelines (GitHub Actions, GitLab CI)",
+          "Containerization with Docker & Kubernetes",
+          "Cloud architecture on AWS / GCP",
+          "Observability: logs, metrics, traces (Grafana, Datadog)"
+        ]
+      }
+    }
+  },
+  "tech": {
+    "eyebrow": "Tech stack",
+    "title": "Built on modern, battle-tested tools",
+    "subtitle": "We pick the right tool for the job — always grounded in reliable, open-source, enterprise-grade technologies."
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "A disciplined engineering process, from discovery to production",
+    "subtitle": "Every stage is driven by technical documentation, code review and measurable outcomes.",
+    "steps": {
+      "discovery": {
+        "title": "Discovery & Planning",
+        "description": "We translate business goals into technical requirements. Scope, risks and technology choices are clearly documented."
+      },
+      "architecture": {
+        "title": "System Architecture Design",
+        "description": "We design a scalable, secure, and maintainable architecture — data model, service boundaries and integrations."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Trunk-based flow in short iterations. Code review, type safety and static analysis are the defaults."
+      },
+      "testing": {
+        "title": "Testing & QA",
+        "description": "Unit, integration and end-to-end tests, plus performance and security checks that run automatically before every deploy."
+      },
+      "deployment": {
+        "title": "Deployment (CI/CD)",
+        "description": "GitHub Actions + Docker + Kubernetes pipelines with zero-downtime and rollback support."
+      },
+      "monitoring": {
+        "title": "Monitoring & Scaling",
+        "description": "Post-launch SLO tracking, alerting, logs/metrics/traces and capacity planning."
+      }
+    }
+  },
+  "cases": {
+    "eyebrow": "Case studies",
+    "title": "Measurable outcomes for our clients",
+    "subtitle": "We approach every project like a product — from initial goals to production metrics.",
+    "items": {
+      "case1": {
+        "tag": "SaaS • B2B",
+        "title": "AI-powered CRM for a sales team",
+        "problem": "Manual lead-scoring slowed the team down and opportunities slipped through.",
+        "solution": "Custom CRM with a RAG-based AI layer — automated scoring and next-best-action suggestions.",
+        "result": "38% increase in lead conversion, 62% reduction in first-response time."
+      },
+      "case2": {
+        "tag": "CMS • Media",
+        "title": "Multi-brand headless CMS platform",
+        "problem": "5 separate brands on 5 separate WordPress installs; publishing workflows were painfully slow.",
+        "solution": "Single headless CMS + locale/brand schema + multi-channel distribution API.",
+        "result": "70% faster publishing, 45% lower infrastructure cost."
+      },
+      "case3": {
+        "tag": "DevOps • Finance",
+        "title": "Zero-downtime deployment & observability",
+        "problem": "Monolithic services, weekly maintenance windows and limited visibility.",
+        "solution": "Microservice decomposition, blue/green deployments on K8s, OpenTelemetry for end-to-end tracing.",
+        "result": "Deployments went from 1/week to 12/day, MTTR from 4h to 9min."
+      }
+    }
+  },
+  "trust": {
+    "eyebrow": "Trust",
+    "title": "Our work in numbers",
+    "subtitle": "Enterprise-grade software engineering at an international standard.",
+    "metrics": {
+      "projects": { "value": "120+", "label": "Projects delivered" },
+      "production": { "value": "40+", "label": "Systems in production" },
+      "uptime": { "value": "99.98%", "label": "Average uptime" },
+      "performance": { "value": "3.2x", "label": "Average performance gain" }
+    },
+    "body": "We take end-to-end ownership — from idea to production — for enterprise teams, startup founders and fast-growing digital products."
+  },
+  "cta": {
+    "eyebrow": "Let's build",
+    "title": "Let's build your next scalable system",
+    "body": "One discovery call to clarify architecture, technology choices and timeline. You'll receive a detailed proposal within a few business days.",
+    "button": "Book a discovery call"
+  },
+  "footer": {
+    "tagline": "Enterprise software engineering and AI-powered system design.",
+    "rights": "All rights reserved.",
+    "nav": {
+      "company": "Company",
+      "solutions": "Solutions",
+      "resources": "Resources",
+      "contact": "Contact"
+    },
+    "links": {
+      "about": "About",
+      "careers": "Careers",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "blog": "Blog",
+      "caseStudies": "Case studies",
+      "docs": "Documentation"
+    }
+  }
+}

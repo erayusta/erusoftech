@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Erusoftech — Modern işletmeleri güçlendiren akıllı sistemler",
+    "description": "Yapay zekâ destekli CRM, CMS, SaaS platformları ve ölçeklenebilir DevOps çözümleri tasarlar ve geliştiririz."
+  },
+  "nav": {
+    "services": "Çözümler",
+    "technology": "Teknoloji",
+    "process": "Süreç",
+    "work": "Referanslar",
+    "contact": "İletişim",
+    "cta": "Projeye başla"
+  },
+  "hero": {
+    "eyebrow": "AI-driven engineering studio",
+    "title": "Modern işletmeleri güçlendiren akıllı sistemler inşa ediyoruz",
+    "subtitle": "Yapay zekâ destekli CRM, CMS, SaaS platformları ve ölçeklenebilir altyapı çözümleri.",
+    "primaryCta": "Projeye başla",
+    "secondaryCta": "Çözümleri keşfet",
+    "stats": {
+      "uptime": "Üretimde çalışan sistemlerde ortalama uptime",
+      "deployments": "Başarılı production deployment",
+      "team": "Kıdemli mühendis ve sistem mimarı"
+    }
+  },
+  "partners": {
+    "title": "Birlikte çalıştığımız ekipler ve inşa ettiğimiz ürünler"
+  },
+  "services": {
+    "eyebrow": "Çözümler",
+    "title": "Production'a uygun, ölçeklenebilir yazılım sistemleri",
+    "subtitle": "AI operasyonlarından temel altyapıya — şirketinizi uçtan uca dijitalleştiren özel çözümler tasarlarız.",
+    "items": {
+      "ai": {
+        "title": "AI Çözümleri",
+        "description": "Makine öğrenimi modellerini iş akışlarınıza entegre ederek manuel işleri akıllı otomasyona dönüştürürüz.",
+        "bullets": [
+          "Makine öğrenimi entegrasyonu (OpenAI, Anthropic, self-hosted)",
+          "Öngörücü analitik ve karar destek motorları",
+          "Workflow otomasyonu ve RAG pipeline'ları"
+        ]
+      },
+      "crm": {
+        "title": "CRM Geliştirme",
+        "description": "Satış, destek ve operasyon ekiplerinizin etrafında şekillenen, tamamen özelleştirilmiş müşteri ilişkileri sistemleri.",
+        "bullets": [
+          "Özel CRM mimarisi ve veri modeli tasarımı",
+          "Workflow automation ve rol bazlı yetkilendirme",
+          "Üçüncü parti API entegrasyonları (Slack, Meta, HubSpot)"
+        ]
+      },
+      "cms": {
+        "title": "CMS Platformları",
+        "description": "Headless mimariyle her kanala içerik dağıtabilen, editör ekipleri için hızlı ve güvenli yönetim panelleri.",
+        "bullets": [
+          "Headless CMS (Strapi, Payload, Sanity)",
+          "Esnek içerik modelleme ve şema yönetimi",
+          "Multi-channel ve multi-locale yayınlama"
+        ]
+      },
+      "saas": {
+        "title": "SaaS Geliştirme",
+        "description": "İlk müşterinizden milyonuncu kullanıcınıza kadar ölçeklenen, multi-tenant SaaS ürünleri.",
+        "bullets": [
+          "Multi-tenant mimari ve row-level security",
+          "Subscription & billing (Stripe, Paddle) entegrasyonu",
+          "Ölçeklenebilir backend, job queue'lar, event-driven sistemler"
+        ]
+      },
+      "devops": {
+        "title": "DevOps & CI/CD",
+        "description": "Deploy'u güvenli, hızlı ve tekrarlanabilir kılan modern DevOps pratikleri ve bulut altyapısı.",
+        "bullets": [
+          "CI/CD pipeline'ları (GitHub Actions, GitLab CI)",
+          "Docker & Kubernetes ile containerization",
+          "AWS / GCP üzerinde bulut mimarisi",
+          "Observability: log, metric, trace (Grafana, Datadog)"
+        ]
+      }
+    }
+  },
+  "tech": {
+    "eyebrow": "Teknoloji yığını",
+    "title": "Modern, kanıtlanmış araçlarla çalışıyoruz",
+    "subtitle": "Her proje için en uygun aracı seçeriz — ama temelimizde her zaman güvenilir, açık kaynak ve enterprise-grade teknolojiler vardır."
+  },
+  "process": {
+    "eyebrow": "Süreç",
+    "title": "Keşiften production'a, disiplinli bir mühendislik süreci",
+    "subtitle": "Her aşama teknik dokümantasyon, review ve ölçülebilir çıktılarla yönetilir.",
+    "steps": {
+      "discovery": {
+        "title": "Keşif & Planlama",
+        "description": "İş hedeflerinizi teknik gereksinimlere dönüştürürüz. Kapsam, risk ve teknoloji seçimleri net şekilde dokümante edilir."
+      },
+      "architecture": {
+        "title": "Sistem Mimarisi Tasarımı",
+        "description": "Ölçeklenebilir, güvenli ve sürdürülebilir bir mimari hazırlanır; veri modeli, servis sınırları ve entegrasyonlar belirlenir."
+      },
+      "development": {
+        "title": "Geliştirme",
+        "description": "Trunk-based akışla kısa iterasyonlarda geliştirme yaparız; kod review, tip güvenliği ve statik analiz varsayılandır."
+      },
+      "testing": {
+        "title": "Test & QA",
+        "description": "Unit, integration ve end-to-end testler; performans ve güvenlik testleri ile birlikte her deploy öncesi otomatik çalışır."
+      },
+      "deployment": {
+        "title": "Deployment (CI/CD)",
+        "description": "GitHub Actions + Docker + Kubernetes ile zero-downtime, rollback destekli deployment pipeline'ları."
+      },
+      "monitoring": {
+        "title": "İzleme & Ölçekleme",
+        "description": "Production sonrası SLO takibi, alerting, log/metric/trace ve kapasite planlaması devreye alınır."
+      }
+    }
+  },
+  "cases": {
+    "eyebrow": "Referans çalışmalar",
+    "title": "Müşterilerimiz için ölçülebilir sonuçlar",
+    "subtitle": "Her projeyi bir ürün gibi ele alıyoruz — başlangıç hedeflerinden üretim metriklerine kadar.",
+    "items": {
+      "case1": {
+        "tag": "SaaS • B2B",
+        "title": "Satış ekibi için AI destekli CRM",
+        "problem": "Manuel lead scoring süreçleri ekibi yavaşlatıyor, fırsatlar kaçırılıyordu.",
+        "solution": "Özel CRM üzerine RAG tabanlı bir AI katmanı ekledik; otomatik scoring ve next-best-action önerileri.",
+        "result": "Lead dönüşüm oranında %38 artış, ilk yanıt süresinde %62 düşüş."
+      },
+      "case2": {
+        "tag": "CMS • Medya",
+        "title": "Multi-brand headless CMS platformu",
+        "problem": "5 ayrı marka, ayrı ayrı WordPress kurulumları ile yönetiliyor, yayın süreçleri uzuyordu.",
+        "solution": "Tek headless CMS + locale/brand şeması + multi-channel distribution API.",
+        "result": "Yayın süresinde %70 iyileşme, altyapı maliyetinde %45 düşüş."
+      },
+      "case3": {
+        "tag": "DevOps • Finans",
+        "title": "Zero-downtime deployment & observability",
+        "problem": "Monolitik servisler, haftalık bakım pencereleri ve görünürlük eksikliği.",
+        "solution": "Mikroservis ayrıştırması, K8s üzerinde blue/green deployment, OpenTelemetry ile uçtan uca trace.",
+        "result": "Deploy frekansı haftada 1'den günde 12'ye çıktı, MTTR 4 saatten 9 dakikaya düştü."
+      }
+    }
+  },
+  "trust": {
+    "eyebrow": "Güven",
+    "title": "Sayılarla çalışmalarımız",
+    "subtitle": "Uluslararası seviyede, enterprise kalitesinde yazılım mühendisliği.",
+    "metrics": {
+      "projects": { "value": "120+", "label": "Teslim edilen proje" },
+      "production": { "value": "40+", "label": "Üretimde çalışan sistem" },
+      "uptime": { "value": "%99,98", "label": "Ortalama uptime" },
+      "performance": { "value": "%3,2x", "label": "Ortalama performans artışı" }
+    },
+    "body": "Enterprise ekipleri, startup kurucuları ve büyüyen dijital ürünler için; fikirden üretime kadar uçtan uca sorumluluk alıyoruz."
+  },
+  "cta": {
+    "eyebrow": "Başlayalım",
+    "title": "Bir sonraki ölçeklenebilir sisteminizi birlikte inşa edelim",
+    "body": "Tek bir keşif görüşmesinde sistemin mimarisini, teknoloji seçimlerini ve takvimi netleştirelim. Size birkaç iş günü içinde detaylı bir öneri ve teklif gönderelim.",
+    "button": "Keşif görüşmesi planla"
+  },
+  "footer": {
+    "tagline": "Enterprise yazılım mühendisliği ve AI-destekli sistem tasarımı.",
+    "rights": "Tüm hakları saklıdır.",
+    "nav": {
+      "company": "Şirket",
+      "solutions": "Çözümler",
+      "resources": "Kaynaklar",
+      "contact": "İletişim"
+    },
+    "links": {
+      "about": "Hakkımızda",
+      "careers": "Kariyer",
+      "privacy": "Gizlilik",
+      "terms": "Kullanım koşulları",
+      "blog": "Blog",
+      "caseStudies": "Vaka çalışmaları",
+      "docs": "Dokümantasyon"
+    }
+  }
+}
