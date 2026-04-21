@@ -49,6 +49,10 @@ erusoftech.bundle
 # raw video sources used to assemble hero-bg.mp4 (keep locally, don't track)
 herobackground*.mp4
 
+# raw brand source mockup (6.6 MB PNG); optimized WebP derivatives are the
+# ones that actually ship — regenerate with scripts/build-brand-assets.sh
+logo.png
+
 # hero-bg master is a built artifact — rebuild with scripts/build-hero-bg.sh
 # (prior commit introduced it to get the first working render; not re-tracking)
 public/placeholders/hero-bg.mp4
