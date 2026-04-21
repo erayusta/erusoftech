@@ -6,26 +6,6 @@ import { cn } from '@/lib/cn';
 type Variant = 'primary' | 'secondary' | 'ghost';
 type Size = 'md' | 'lg';
 
-type CommonProps = {
-  variant?: Variant;
-  size?: Size;
-  icon?: boolean;
-  className?: string;
-  children: React.ReactNode;
-};
-
-type ButtonProps = CommonProps &
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    href?: undefined;
-  };
-
-type LinkProps = CommonProps &
-  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, 'href'> & {
-    href: string;
-  };
-
-type Props = ButtonProps | LinkProps;
-
 const base =
   'group inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950';
 
@@ -42,8 +22,29 @@ const sizeStyles: Record<Size, string> = {
   lg: 'px-7 py-3.5 text-base',
 };
 
-export function Button(props: Props) {
-  const { variant = 'primary', size = 'md', icon, className, children, ...rest } = props;
+type BaseProps = {
+  variant?: Variant;
+  size?: Size;
+  icon?: boolean;
+  className?: string;
+  children: React.ReactNode;
+};
+
+type ButtonAsButton = BaseProps &
+  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseProps> & {
+    href?: undefined;
+  };
+
+type ButtonAsLink = BaseProps &
+  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, keyof BaseProps | 'href'> & {
+    href: string;
+  };
+
+export type ButtonProps = ButtonAsButton | ButtonAsLink;
+
+export function Button(props: ButtonProps) {
+  const { variant = 'primary', size = 'md', icon, className, children } = props;
+  const classes = cn(base, variantStyles[variant], sizeStyles[size], className);
 
   const content = (
     <>
@@ -54,19 +55,20 @@ export function Button(props: Props) {
     </>
   );
 
-  const classes = cn(base, variantStyles[variant], sizeStyles[size], className);
-
   if ('href' in props && props.href) {
-    const { href, ...anchorProps } = rest as Omit<LinkProps, keyof CommonProps>;
+    const { href, variant: _v, size: _s, icon: _i, className: _c, children: _ch, ...anchorRest } =
+      props;
     return (
-      <Link href={href} className={classes} {...anchorProps}>
+      <Link href={href} className={classes} {...anchorRest}>
         {content}
       </Link>
     );
   }
 
+  const { variant: _v, size: _s, icon: _i, className: _c, children: _ch, href: _h, ...buttonRest } =
+    props as ButtonAsButton;
   return (
-    <button className={classes} {...(rest as React.ButtonHTMLAttributes<HTMLButtonElement>)}>
+    <button className={classes} {...buttonRest}>
       {content}
     </button>
   );

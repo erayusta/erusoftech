@@ -3,43 +3,49 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Logo } from './Logo';
 
-const GROUPS = [
-  {
-    key: 'company',
-    links: [
-      { key: 'about', href: '#about' },
-      { key: 'careers', href: '#careers' },
-      { key: 'privacy', href: '#privacy' },
-      { key: 'terms', href: '#terms' },
-    ],
-  },
-  {
-    key: 'solutions',
-    links: [
-      { key: 'caseStudies', href: '#work' },
-    ],
-    // Solutions list is built from static hash links to in-page section ids
-    staticLinks: [
-      { label: 'AI Solutions', href: '#services' },
-      { label: 'CRM Development', href: '#services' },
-      { label: 'CMS Platforms', href: '#services' },
-      { label: 'SaaS Development', href: '#services' },
-      { label: 'DevOps & CI/CD', href: '#services' },
-    ],
-  },
-  {
-    key: 'resources',
-    links: [
-      { key: 'blog', href: '#blog' },
-      { key: 'docs', href: '#docs' },
-      { key: 'caseStudies', href: '#work' },
-    ],
-  },
-] as const;
+type GroupKey = 'company' | 'solutions' | 'resources';
+
+type LinkRow = { label: string; href: string };
 
 export function Footer() {
   const t = useTranslations('footer');
   const year = new Date().getFullYear();
+
+  const groups: { key: GroupKey; rows: LinkRow[] }[] = [
+    {
+      key: 'company',
+      rows: [
+        { label: t('links.about'), href: '#about' },
+        { label: t('links.careers'), href: '#careers' },
+        { label: t('links.privacy'), href: '#privacy' },
+        { label: t('links.terms'), href: '#terms' },
+      ],
+    },
+    {
+      key: 'solutions',
+      rows: [
+        { label: 'AI Solutions', href: '#services' },
+        { label: 'CRM Development', href: '#services' },
+        { label: 'CMS Platforms', href: '#services' },
+        { label: 'SaaS Development', href: '#services' },
+        { label: 'DevOps & CI/CD', href: '#services' },
+      ],
+    },
+    {
+      key: 'resources',
+      rows: [
+        { label: t('links.blog'), href: '#blog' },
+        { label: t('links.docs'), href: '#docs' },
+        { label: t('links.caseStudies'), href: '#work' },
+      ],
+    },
+  ];
+
+  const groupLabel: Record<GroupKey, string> = {
+    company: t('nav.company'),
+    solutions: t('nav.solutions'),
+    resources: t('nav.resources'),
+  };
 
   return (
     <footer className="relative mt-24 border-t border-white/5 bg-ink-950 pb-10 pt-20">
@@ -54,65 +60,41 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm text-white/55">{t('tagline')}</p>
 
             <div className="mt-6 flex items-center gap-2">
-              <a
-                href="mailto:hello@erusoftech.com"
-                aria-label="Email"
-                className="grid h-9 w-9 place-items-center rounded-lg border border-white/8 bg-white/[0.03] text-white/70 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:text-white"
-              >
-                <Mail className="h-4 w-4" />
-              </a>
-              <a
-                href="https://github.com"
-                aria-label="GitHub"
-                className="grid h-9 w-9 place-items-center rounded-lg border border-white/8 bg-white/[0.03] text-white/70 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:text-white"
-              >
-                <Github className="h-4 w-4" />
-              </a>
-              <a
-                href="https://linkedin.com"
-                aria-label="LinkedIn"
-                className="grid h-9 w-9 place-items-center rounded-lg border border-white/8 bg-white/[0.03] text-white/70 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:text-white"
-              >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a
-                href="https://x.com"
-                aria-label="X/Twitter"
-                className="grid h-9 w-9 place-items-center rounded-lg border border-white/8 bg-white/[0.03] text-white/70 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:text-white"
-              >
-                <Twitter className="h-4 w-4" />
-              </a>
+              {[
+                { href: 'mailto:hello@erusoftech.com', label: 'Email', Icon: Mail },
+                { href: 'https://github.com', label: 'GitHub', Icon: Github },
+                { href: 'https://linkedin.com', label: 'LinkedIn', Icon: Linkedin },
+                { href: 'https://x.com', label: 'X/Twitter', Icon: Twitter },
+              ].map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="grid h-9 w-9 place-items-center rounded-lg border border-white/8 bg-white/[0.03] text-white/70 transition-all hover:-translate-y-0.5 hover:border-white/20 hover:text-white"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-8 md:col-span-7 md:grid-cols-3">
-            {GROUPS.map((group) => (
+            {groups.map((group) => (
               <div key={group.key}>
                 <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-white/50">
-                  {t(`nav.${group.key}` as 'nav.company')}
+                  {groupLabel[group.key]}
                 </h4>
                 <ul className="space-y-2.5">
-                  {group.links?.map((link) => (
-                    <li key={`${group.key}-${link.key}`}>
+                  {group.rows.map((row) => (
+                    <li key={`${group.key}-${row.label}`}>
                       <a
-                        href={link.href}
+                        href={row.href}
                         className="text-sm text-white/70 transition-colors hover:text-white"
                       >
-                        {t(`links.${link.key}` as 'links.about')}
+                        {row.label}
                       </a>
                     </li>
                   ))}
-                  {'staticLinks' in group &&
-                    group.staticLinks?.map((l) => (
-                      <li key={l.label}>
-                        <a
-                          href={l.href}
-                          className="text-sm text-white/70 transition-colors hover:text-white"
-                        >
-                          {l.label}
-                        </a>
-                      </li>
-                    ))}
                 </ul>
               </div>
             ))}

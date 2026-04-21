@@ -1,5 +1,6 @@
 'use client';
 
+import * as React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { ArrowUpRight, Sparkles, LineChart, Rocket } from 'lucide-react';
@@ -207,14 +208,10 @@ function DevopsPreview() {
           ['12:07', 'deploy ✓ blue → green · 9s'],
           ['12:07', 'slo    ✓ error-budget 99.98%'],
         ].map(([time, line]) => (
-          <>
-            <div key={`t-${time}-${line}`} className="text-white/40">
-              {time}
-            </div>
-            <div key={`l-${time}-${line}`} className="truncate">
-              {line}
-            </div>
-          </>
+          <React.Fragment key={`${time}-${line}`}>
+            <div className="text-white/40">{time}</div>
+            <div className="truncate">{line}</div>
+          </React.Fragment>
         ))}
       </div>
     </div>

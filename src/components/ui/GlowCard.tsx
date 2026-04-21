@@ -4,7 +4,6 @@ import * as React from 'react';
 import { cn } from '@/lib/cn';
 
 type Props = React.HTMLAttributes<HTMLDivElement> & {
-  as?: keyof JSX.IntrinsicElements;
   interactive?: boolean;
 };
 
@@ -15,7 +14,6 @@ type Props = React.HTMLAttributes<HTMLDivElement> & {
 export function GlowCard({
   className,
   children,
-  as: Comp = 'div',
   interactive = true,
   ...rest
 }: Props) {
@@ -33,15 +31,12 @@ export function GlowCard({
     [interactive],
   );
 
-  // @ts-expect-error — intentional cast for polymorphic tag
-  const Element = Comp as React.ElementType;
-
   return (
-    <Element
-      ref={ref as React.Ref<HTMLDivElement>}
+    <div
+      ref={ref}
       onMouseMove={onMouseMove}
       className={cn(
-        'relative overflow-hidden rounded-2xl border border-white/8 bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-6 shadow-card transition-colors duration-300',
+        'group relative overflow-hidden rounded-2xl border border-white/8 bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-6 shadow-card transition-colors duration-300',
         interactive && 'hover:border-white/15',
         className,
       )}
@@ -64,6 +59,6 @@ export function GlowCard({
         />
       )}
       <div className="relative">{children}</div>
-    </Element>
+    </div>
   );
 }
