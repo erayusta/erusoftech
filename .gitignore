@@ -48,3 +48,7 @@ erusoftech.bundle
 
 # raw video sources used to assemble hero-bg.mp4 (keep locally, don't track)
 herobackground*.mp4
+
+# hero-bg master is a built artifact — rebuild with scripts/build-hero-bg.sh
+# (prior commit introduced it to get the first working render; not re-tracking)
+public/placeholders/hero-bg.mp4
