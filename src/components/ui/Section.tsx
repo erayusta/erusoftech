@@ -34,7 +34,7 @@ export function Section({
             )}
           >
             {eyebrow && (
-              <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-brand-300/90">
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-brand-300">
                 {eyebrow}
               </p>
             )}
