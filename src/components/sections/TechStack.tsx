@@ -12,7 +12,14 @@ type Tech = {
   glyph: React.ReactNode;
 };
 
+/**
+ * Ordering principle: lead with the tools clients react to first
+ * (modern JS/TS, elastic infra, serious data layer). Mid-tier holds the
+ * developer-tooling / observability belt. Classical-but-proven PHP stack
+ * closes out the grid.
+ */
 const TECHS: Tech[] = [
+  // ---- Modern JS / TS front-of-house ----
   {
     name: 'Next.js',
     description: 'React Server Components, edge rendering, image optimization — production defaults.',
@@ -20,80 +27,6 @@ const TECHS: Tech[] = [
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
         <circle cx="32" cy="32" r="28" stroke="currentColor" strokeWidth="2" />
         <path d="M24 22v20M44 20l-16 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Node.js',
-    description: 'High-throughput async backends, realtime, BFF layers and edge functions.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
-        <path
-          d="M32 6 L54 19 V45 L32 58 L10 45 V19 Z"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path d="M22 28v8c0 4 3 6 6 6s4-1 4-4V26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Docker',
-    description: 'Reproducible images, layered caching, multi-stage builds for lean containers.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
-        <rect x="10" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="18" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="26" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="18" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="26" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <rect x="34" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <path d="M6 38h44c0 8-8 14-18 14S6 48 6 38Z" stroke="currentColor" strokeWidth="2" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Kubernetes',
-    description: 'Self-healing orchestration, rolling updates, HPA + VPA for elastic workloads.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
-        <polygon points="32,6 54,18 50,44 32,58 14,44 10,18" stroke="currentColor" strokeWidth="2" fill="none" />
-        <circle cx="32" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
-        <path d="M32 20v6M32 38v6M20 32h6M38 32h6" stroke="currentColor" strokeWidth="2" />
-      </svg>
-    ),
-  },
-  {
-    name: 'AWS',
-    description: 'VPCs, ECS/EKS, RDS, Lambda, CloudFront — infrastructure-as-code with Terraform.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
-        <path
-          d="M8 26c6-4 12-4 18 0c6 4 12 4 18 0c4-2 8-2 12 0"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path d="M8 40c20 10 36 10 48 0" stroke="currentColor" strokeWidth="2" fill="none" />
-        <circle cx="20" cy="18" r="4" stroke="currentColor" strokeWidth="1.8" />
-        <circle cx="44" cy="18" r="4" stroke="currentColor" strokeWidth="1.8" />
-      </svg>
-    ),
-  },
-  {
-    name: 'PostgreSQL',
-    description: 'ACID transactions, row-level security, JSONB, logical replication at scale.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
-        <ellipse cx="32" cy="14" rx="18" ry="6" stroke="currentColor" strokeWidth="2" />
-        <path
-          d="M14 14v34c0 4 8 6 18 6s18-2 18-6V14"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
-        <path d="M14 26c6 4 22 4 36 0M14 38c6 4 22 4 36 0" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
@@ -114,18 +47,80 @@ const TECHS: Tech[] = [
     ),
   },
   {
-    name: 'GitHub Actions',
-    description: 'Matrix builds, reusable workflows, ephemeral preview environments per PR.',
+    name: 'Node.js',
+    description: 'High-throughput async backends, realtime, BFF layers and edge functions.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
-        <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
         <path
-          d="M42 22a13 13 0 1 0 4 10v-8h-8"
+          d="M32 6 L54 19 V45 L32 58 L10 45 V19 Z"
           stroke="currentColor"
           strokeWidth="2"
           fill="none"
-          strokeLinecap="round"
         />
+        <path d="M22 28v8c0 4 3 6 6 6s4-1 4-4V26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+
+  // ---- Elastic infra ----
+  {
+    name: 'Kubernetes',
+    description: 'Self-healing orchestration, rolling updates, HPA + VPA for elastic workloads.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <polygon points="32,6 54,18 50,44 32,58 14,44 10,18" stroke="currentColor" strokeWidth="2" fill="none" />
+        <circle cx="32" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
+        <path d="M32 20v6M32 38v6M20 32h6M38 32h6" stroke="currentColor" strokeWidth="2" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Docker',
+    description: 'Reproducible images, layered caching, multi-stage builds for lean containers.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <rect x="10" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="18" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="26" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="18" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="26" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
+        <rect x="34" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
+        <path d="M6 38h44c0 8-8 14-18 14S6 48 6 38Z" stroke="currentColor" strokeWidth="2" />
+      </svg>
+    ),
+  },
+  {
+    name: 'AWS',
+    description: 'VPCs, ECS/EKS, RDS, Lambda, CloudFront — infrastructure-as-code with Terraform.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <path
+          d="M8 26c6-4 12-4 18 0c6 4 12 4 18 0c4-2 8-2 12 0"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+        />
+        <path d="M8 40c20 10 36 10 48 0" stroke="currentColor" strokeWidth="2" fill="none" />
+        <circle cx="20" cy="18" r="4" stroke="currentColor" strokeWidth="1.8" />
+        <circle cx="44" cy="18" r="4" stroke="currentColor" strokeWidth="1.8" />
+      </svg>
+    ),
+  },
+
+  // ---- Serious data layer ----
+  {
+    name: 'PostgreSQL',
+    description: 'ACID transactions, row-level security, JSONB, logical replication at scale.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <ellipse cx="32" cy="14" rx="18" ry="6" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M14 14v34c0 4 8 6 18 6s18-2 18-6V14"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+        />
+        <path d="M14 26c6 4 22 4 36 0M14 38c6 4 22 4 36 0" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
@@ -144,6 +139,8 @@ const TECHS: Tech[] = [
       </svg>
     ),
   },
+
+  // ---- Dev tooling / delivery ----
   {
     name: 'Terraform',
     description: 'Declarative, version-controlled infrastructure — plan → review → apply.',
@@ -152,6 +149,22 @@ const TECHS: Tech[] = [
         <path d="M14 14l14 8v16l-14-8V14Z" stroke="currentColor" strokeWidth="2" />
         <path d="M30 24l14-8v16l-14 8V24Z" stroke="currentColor" strokeWidth="2" />
         <path d="M30 42l14-8v16l-14 8V42Z" stroke="currentColor" strokeWidth="2" />
+      </svg>
+    ),
+  },
+  {
+    name: 'GitHub Actions',
+    description: 'Matrix builds, reusable workflows, ephemeral preview environments per PR.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M42 22a13 13 0 1 0 4 10v-8h-8"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+        />
       </svg>
     ),
   },
@@ -187,6 +200,8 @@ const TECHS: Tech[] = [
       </svg>
     ),
   },
+
+  // ---- Classical-but-proven PHP stack ----
   {
     name: 'Laravel',
     description:
