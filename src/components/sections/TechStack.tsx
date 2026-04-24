@@ -187,6 +187,55 @@ const TECHS: Tech[] = [
       </svg>
     ),
   },
+  {
+    name: 'Laravel',
+    description:
+      'Elegant PHP framework — Eloquent ORM, migrations, queues, Horizon, and a DX that ships faster than most rewrites.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <path
+          d="M8 44V16l10 6v24l12 6 22-12V22l-12-6-10 6"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <path d="M30 34l10 6 10-6" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    name: 'PHP',
+    description:
+      'Battle-tested backend runtime powering a huge share of the web; PHP 8.x JIT + types make it a serious modern platform.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <ellipse cx="32" cy="32" rx="26" ry="15" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M13 26l-2 12h4l1-6h3c3 0 5-1 5-4 0-2-1-2-3-2h-8Zm4 2h2c1 0 2 0 2 1s-1 2-3 2h-2l1-3Zm10-2-2 12h4l1-4h3c3 0 5-2 5-4 0-2-1-4-3-4h-8Zm4 2h2c1 0 2 0 2 1s-1 2-2 2h-3l1-3Zm10-4-2 16h4l1-4h3c3 0 5-2 5-4 0-2-1-2-3-2h-3l1-6h-6Zm4 8h2c1 0 2 0 2 1s-1 2-3 2h-2l1-3Z"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: 'MySQL',
+    description:
+      'Veteran open-source RDBMS — easy ops, predictable performance, strong read scaling, and rock-solid replication.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-8 w-8">
+        <path
+          d="M6 40c8-18 30-22 44-14 3 2 6 5 8 9-3-1-6-1-9 0-4-5-12-9-22-8-7 1-14 4-18 10-1 2-2 3-3 3Z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <circle cx="46" cy="30" r="1.6" fill="currentColor" />
+        <path d="M36 46l6 6M44 44l8 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
 ];
 
 export function TechStack() {
