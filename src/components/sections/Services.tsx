@@ -1,6 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import * as React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import {
   Brain,
@@ -21,7 +22,8 @@ import {
 import { Section } from '@/components/ui/Section';
 import { GlowCard } from '@/components/ui/GlowCard';
 import { BackgroundFX } from '@/components/ui/BackgroundFX';
-import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion';
+import { RevealButton } from '@/components/ui/RevealButton';
+import { fadeUp, meteorDrop, staggerContainer, viewportOnce } from '@/lib/motion';
 
 type ServiceKey =
   | 'ai'
@@ -37,7 +39,14 @@ type ServiceKey =
   | 'devops'
   | 'security';
 
-const SERVICES: { key: ServiceKey; icon: LucideIcon; bulletCount: number; accent: string }[] = [
+type Service = {
+  key: ServiceKey;
+  icon: LucideIcon;
+  bulletCount: number;
+  accent: string;
+};
+
+const SERVICES: Service[] = [
   { key: 'ai', icon: Brain, bulletCount: 3, accent: 'from-brand-400/30 to-accent-violet/20' },
   { key: 'data', icon: Database, bulletCount: 3, accent: 'from-accent-cyan/30 to-accent-emerald/20' },
   { key: 'web', icon: Smartphone, bulletCount: 3, accent: 'from-accent-violet/30 to-brand-400/20' },
@@ -52,8 +61,15 @@ const SERVICES: { key: ServiceKey; icon: LucideIcon; bulletCount: number; accent
   { key: 'security', icon: ShieldCheck, bulletCount: 3, accent: 'from-accent-emerald/30 to-brand-400/20' },
 ];
 
+/** Marquee picks shown by default — broad spectrum of what we do. */
+const FEATURED_KEYS: ServiceKey[] = ['ai', 'web', 'crm', 'saas', 'devops', 'security'];
+
 export function Services() {
   const t = useTranslations('services');
+  const [expanded, setExpanded] = React.useState(false);
+
+  const featured = FEATURED_KEYS.map((k) => SERVICES.find((s) => s.key === k)!);
+  const additional = SERVICES.filter((s) => !FEATURED_KEYS.includes(s.key));
 
   return (
     <Section
@@ -72,44 +88,80 @@ export function Services() {
         viewport={viewportOnce}
         className="grid gap-5 md:grid-cols-2 lg:grid-cols-3"
       >
-        {SERVICES.map(({ key, icon: Icon, bulletCount, accent }, idx) => (
-          <motion.div key={key} variants={fadeUp}>
-            <GlowCard className="group gradient-border h-full min-h-[22rem] rounded-2xl p-7">
-              <div className="flex items-start justify-between">
-                <div
-                  className={`grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br ${accent} text-white ring-1 ring-white/10`}
-                >
-                  <Icon className="h-5 w-5" />
-                </div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-white/40">
-                  {String(idx + 1).padStart(2, '0')}
-                </div>
-              </div>
-
-              <h3 className="mt-6 text-xl font-semibold text-white">
-                {t(`items.${key}.title`)}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/60">
-                {t(`items.${key}.description`)}
-              </p>
-
-              <ul className="mt-6 space-y-2.5 border-t border-white/5 pt-5">
-                {Array.from({ length: bulletCount }).map((_, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2.5 text-sm text-white/75"
-                  >
-                    <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-brand-500/15 ring-1 ring-brand-400/40">
-                      <Check className="h-2.5 w-2.5 text-brand-300" />
-                    </span>
-                    <span>{t(`items.${key}.bullets.${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </GlowCard>
+        {featured.map((service, idx) => (
+          <motion.div key={service.key} variants={fadeUp}>
+            <ServiceCard service={service} index={idx} t={t} />
           </motion.div>
         ))}
+
+        <AnimatePresence>
+          {expanded &&
+            additional.map((service, idx) => (
+              <motion.div
+                key={service.key}
+                custom={idx}
+                variants={meteorDrop}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+              >
+                <ServiceCard service={service} index={featured.length + idx} t={t} />
+              </motion.div>
+            ))}
+        </AnimatePresence>
       </motion.div>
+
+      <div className="mt-12 flex justify-center">
+        <RevealButton
+          expanded={expanded}
+          onClick={() => setExpanded((v) => !v)}
+          labelOpen={t('viewMore')}
+          labelClose={t('viewLess')}
+        />
+      </div>
     </Section>
   );
 }
+
+function ServiceCard({
+  service,
+  index,
+  t,
+}: {
+  service: Service;
+  index: number;
+  t: ReturnType<typeof useTranslations>;
+}) {
+  const { key, icon: Icon, bulletCount, accent } = service;
+  return (
+    <GlowCard className="group gradient-border h-full min-h-[22rem] rounded-2xl p-7">
+      <div className="flex items-start justify-between">
+        <div
+          className={`grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br ${accent} text-white ring-1 ring-white/10`}
+        >
+          <Icon className="h-5 w-5" />
+        </div>
+        <div className="text-[10px] uppercase tracking-[0.2em] text-white/40">
+          {String(index + 1).padStart(2, '0')}
+        </div>
+      </div>
+
+      <h3 className="mt-6 text-xl font-semibold text-white">{t(`items.${key}.title`)}</h3>
+      <p className="mt-3 text-sm leading-relaxed text-white/60">
+        {t(`items.${key}.description`)}
+      </p>
+
+      <ul className="mt-6 space-y-2.5 border-t border-white/5 pt-5">
+        {Array.from({ length: bulletCount }).map((_, i) => (
+          <li key={i} className="flex items-start gap-2.5 text-sm text-white/75">
+            <span className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-brand-500/15 ring-1 ring-brand-400/40">
+              <Check className="h-2.5 w-2.5 text-brand-300" />
+            </span>
+            <span>{t(`items.${key}.bullets.${i}`)}</span>
+          </li>
+        ))}
+      </ul>
+    </GlowCard>
+  );
+}
+
