@@ -40,13 +40,31 @@
           "Workflow automation and RAG pipelines"
         ]
       },
-      "crm": {
-        "title": "CRM Development",
-        "description": "Fully custom customer relationship systems built around how your sales, support and ops teams actually work.",
+      "data": {
+        "title": "Data Platform & Analytics",
+        "description": "The foundation behind every AI feature: data warehouses, ETL/ELT pipelines and decision-ready BI dashboards.",
         "bullets": [
-          "Custom CRM architecture and data modeling",
-          "Workflow automation and role-based permissions",
-          "Third-party API integrations (Slack, Meta, HubSpot)"
+          "Snowflake / BigQuery / Postgres warehouse architecture",
+          "dbt + Airflow ETL/ELT pipelines",
+          "Metabase / Superset / Looker BI dashboards"
+        ]
+      },
+      "web": {
+        "title": "Web & Mobile Apps",
+        "description": "From customer portals to native mobile — modern, fast and scalable client experiences.",
+        "bullets": [
+          "High-performance Next.js & React web apps",
+          "Cross-platform mobile with React Native / Flutter",
+          "App Store & Play Store release management"
+        ]
+      },
+      "ecommerce": {
+        "title": "E-commerce & Headless Commerce",
+        "description": "High-conversion, headless commerce platforms with marketplace and payment integrations.",
+        "bullets": [
+          "Headless commerce (Medusa, Saleor, commercetools)",
+          "Stripe, Adyen and local PSP / shipping integrations",
+          "Marketplace connectors (Amazon, eBay, regional channels)"
         ]
       },
       "cms": {
@@ -58,6 +76,24 @@
           "Multi-channel and multi-locale publishing"
         ]
       },
+      "crm": {
+        "title": "CRM Development",
+        "description": "Fully custom customer relationship systems built around how your sales, support and ops teams actually work.",
+        "bullets": [
+          "Custom CRM architecture and data modeling",
+          "Workflow automation and role-based permissions",
+          "Third-party API integrations (Slack, Meta, HubSpot)"
+        ]
+      },
+      "erp": {
+        "title": "Custom ERP & Operations",
+        "description": "In-house systems tailored to your operations — manufacturing, procurement, finance and HR modules.",
+        "bullets": [
+          "Modular ERP (production, procurement, inventory, finance)",
+          "Workflow automation, approval flows and role-based access",
+          "E-invoicing, tax authority and regulatory integrations"
+        ]
+      },
       "saas": {
         "title": "SaaS Development",
         "description": "Multi-tenant SaaS products built to scale from your first customer to your millionth.",
@@ -65,6 +101,24 @@
           "Multi-tenant architecture with row-level security",
           "Subscription & billing (Stripe, Paddle)",
           "Scalable backends, job queues, event-driven systems"
+        ]
+      },
+      "integration": {
+        "title": "System Integration & API",
+        "description": "Connect your business systems (ERP, CRM, manufacturing, logistics) into a single, reliable data flow.",
+        "bullets": [
+          "REST, GraphQL and gRPC API design and gateways",
+          "Event-driven architecture (Kafka, RabbitMQ, NATS)",
+          "Enterprise system integration (SAP, Oracle, legacy)"
+        ]
+      },
+      "cloud": {
+        "title": "Cloud Migration & Modernization",
+        "description": "Move legacy apps onto AWS / GCP with modern, scalable and cost-optimized architectures.",
+        "bullets": [
+          "Lift-and-shift, replatform and refactor strategies",
+          "Monolith → microservices / serverless transformation",
+          "FinOps cost optimization and right-sizing"
         ]
       },
       "devops": {
@@ -75,6 +129,15 @@
           "Containerization with Docker & Kubernetes",
           "Cloud architecture on AWS / GCP",
           "Observability: logs, metrics, traces (Grafana, Datadog)"
+        ]
+      },
+      "security": {
+        "title": "Cybersecurity & Compliance",
+        "description": "Security testing baked into the SDLC, penetration audits and GDPR / ISO compliance support.",
+        "bullets": [
+          "SAST / DAST and penetration testing (OWASP Top 10)",
+          "Secure SDLC with code review, secrets and dependency scanning",
+          "GDPR, KVKK and ISO 27001 compliance documentation"
         ]
       }
     }
