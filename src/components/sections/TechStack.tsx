@@ -1,10 +1,12 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import * as React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/ui/Section';
 import { GlowCard } from '@/components/ui/GlowCard';
-import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion';
+import { RevealButton } from '@/components/ui/RevealButton';
+import { fadeUp, meteorDrop, staggerContainer, viewportOnce } from '@/lib/motion';
 
 type Tech = {
   name: string;
@@ -627,8 +629,28 @@ const TECHS: Tech[] = [
   },
 ];
 
+/** Marquee picks shown by default — the canonical modern web stack. */
+const FEATURED_NAMES = new Set<string>([
+  'TypeScript',
+  'Python',
+  'Node.js',
+  'Next.js',
+  'Laravel',
+  'React',
+  'PostgreSQL',
+  'Redis',
+  'AWS',
+  'Docker',
+  'Kubernetes',
+  'GitHub Actions',
+]);
+
 export function TechStack() {
   const t = useTranslations('tech');
+  const [expanded, setExpanded] = React.useState(false);
+
+  const featured = TECHS.filter((tech) => FEATURED_NAMES.has(tech.name));
+  const additional = TECHS.filter((tech) => !FEATURED_NAMES.has(tech.name));
 
   return (
     <Section
@@ -645,28 +667,59 @@ export function TechStack() {
         viewport={viewportOnce}
         className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
       >
-        {TECHS.map((tech) => (
+        {featured.map((tech) => (
           <motion.div key={tech.name} variants={fadeUp}>
-            <GlowCard className="group gradient-border flex h-full flex-col rounded-2xl p-5 transition-transform duration-300 hover:-translate-y-1">
-              <div className="flex items-start justify-between gap-3">
-                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/[0.04] text-white/65 ring-1 ring-white/10 transition-all duration-300 group-hover:bg-white/[0.08] group-hover:text-white group-hover:ring-white/20">
-                  {tech.glyph}
-                </div>
-                <span className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-white/45 ring-1 ring-white/10 transition-colors group-hover:text-white/70">
-                  {tech.category}
-                </span>
-              </div>
-
-              <div className="mt-5 flex flex-1 flex-col">
-                <div className="text-base font-semibold text-white">{tech.name}</div>
-                <p className="mt-1.5 text-xs leading-relaxed text-white/55 transition-colors duration-300 group-hover:text-white/75">
-                  {tech.description}
-                </p>
-              </div>
-            </GlowCard>
+            <TechCard tech={tech} />
           </motion.div>
         ))}
+
+        <AnimatePresence>
+          {expanded &&
+            additional.map((tech, idx) => (
+              <motion.div
+                key={tech.name}
+                custom={idx}
+                variants={meteorDrop}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+              >
+                <TechCard tech={tech} />
+              </motion.div>
+            ))}
+        </AnimatePresence>
       </motion.div>
+
+      <div className="mt-12 flex justify-center">
+        <RevealButton
+          expanded={expanded}
+          onClick={() => setExpanded((v) => !v)}
+          labelOpen={t('viewMore')}
+          labelClose={t('viewLess')}
+        />
+      </div>
     </Section>
+  );
+}
+
+function TechCard({ tech }: { tech: Tech }) {
+  return (
+    <GlowCard className="group gradient-border flex h-full flex-col rounded-2xl p-5 transition-transform duration-300 hover:-translate-y-1">
+      <div className="flex items-start justify-between gap-3">
+        <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/[0.04] text-white/65 ring-1 ring-white/10 transition-all duration-300 group-hover:bg-white/[0.08] group-hover:text-white group-hover:ring-white/20">
+          {tech.glyph}
+        </div>
+        <span className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-white/45 ring-1 ring-white/10 transition-colors group-hover:text-white/70">
+          {tech.category}
+        </span>
+      </div>
+
+      <div className="mt-5 flex flex-1 flex-col">
+        <div className="text-base font-semibold text-white">{tech.name}</div>
+        <p className="mt-1.5 text-xs leading-relaxed text-white/55 transition-colors duration-300 group-hover:text-white/75">
+          {tech.description}
+        </p>
+      </div>
+    </GlowCard>
   );
 }

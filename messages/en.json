@@ -30,6 +30,8 @@
     "eyebrow": "Solutions",
     "title": "Production-ready, scalable software systems",
     "subtitle": "From AI operations to core infrastructure — we design end-to-end systems tailored to your business.",
+    "viewMore": "View all solutions",
+    "viewLess": "Show less",
     "items": {
       "ai": {
         "title": "AI Solutions",
@@ -145,7 +147,9 @@
   "tech": {
     "eyebrow": "Tech stack",
     "title": "Built on modern, battle-tested tools",
-    "subtitle": "We pick the right tool for the job — always grounded in reliable, open-source, enterprise-grade technologies."
+    "subtitle": "We pick the right tool for the job — always grounded in reliable, open-source, enterprise-grade technologies.",
+    "viewMore": "View full stack",
+    "viewLess": "Show less"
   },
   "process": {
     "eyebrow": "Process",
