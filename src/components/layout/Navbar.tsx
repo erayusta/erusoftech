@@ -23,13 +23,16 @@ type NavItem = {
   pageLabelKey?: string;
 };
 
+// Anchor hrefs are rooted with a leading "/" so clicking them from a
+// subpage (e.g. /about, /work) routes back to the homepage and then scrolls
+// to the section, instead of just appending the hash to the current URL.
 const NAV_ITEMS: NavItem[] = [
   { key: 'about', href: '/about' },
-  { key: 'services', href: '#services' },
-  { key: 'technology', href: '#technology' },
-  { key: 'process', href: '#process' },
-  { key: 'work', href: '#work', pageHref: '/work', pageLabelKey: 'workViewAll' },
-  { key: 'contact', href: '#contact' },
+  { key: 'services', href: '/#services' },
+  { key: 'technology', href: '/#technology' },
+  { key: 'process', href: '/#process' },
+  { key: 'work', href: '/#work', pageHref: '/work', pageLabelKey: 'workViewAll' },
+  { key: 'contact', href: '/#contact' },
 ];
 
 const NAV_ITEM_CLASS =
