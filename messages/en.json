@@ -4,12 +4,14 @@
     "description": "We design and build AI-powered CRM, CMS, SaaS platforms and scalable DevOps infrastructure."
   },
   "nav": {
+    "about": "About",
     "services": "Solutions",
     "technology": "Technology",
     "process": "Process",
     "work": "Work",
     "contact": "Contact",
-    "cta": "Start a project"
+    "cta": "Start a project",
+    "workViewAll": "View all work"
   },
   "hero": {
     "eyebrow": "AI-driven engineering studio",

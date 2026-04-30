@@ -4,12 +4,14 @@
     "description": "Yapay zekâ destekli CRM, CMS, SaaS platformları ve ölçeklenebilir DevOps çözümleri tasarlar ve geliştiririz."
   },
   "nav": {
+    "about": "Hakkımızda",
     "services": "Çözümler",
     "technology": "Teknoloji",
     "process": "Süreç",
     "work": "Referanslar",
     "contact": "İletişim",
-    "cta": "Projeye başla"
+    "cta": "Projeye başla",
+    "workViewAll": "Tüm çalışmaları gör"
   },
   "hero": {
     "eyebrow": "AI-driven engineering studio",
