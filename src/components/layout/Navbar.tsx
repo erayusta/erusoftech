@@ -7,15 +7,54 @@ import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { Button } from '@/components/ui/Button';
+import { Link } from '@/i18n/navigation';
 import { cn } from '@/lib/cn';
 
-const NAV_ITEMS = [
+type NavItem = {
+  key: 'about' | 'services' | 'technology' | 'process' | 'work' | 'contact';
+  href: string;
+};
+
+const NAV_ITEMS: NavItem[] = [
+  { key: 'about', href: '/about' },
   { key: 'services', href: '#services' },
   { key: 'technology', href: '#technology' },
   { key: 'process', href: '#process' },
   { key: 'work', href: '#work' },
   { key: 'contact', href: '#contact' },
-] as const;
+];
+
+const NAV_ITEM_CLASS =
+  'rounded-full px-3 py-1.5 text-sm text-white/70 transition-colors hover:bg-white/5 hover:text-white';
+
+function isInternalRoute(href: string) {
+  return href.startsWith('/');
+}
+
+function NavLink({
+  href,
+  className = NAV_ITEM_CLASS,
+  onClick,
+  children,
+}: {
+  href: string;
+  className?: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+}) {
+  if (isInternalRoute(href)) {
+    return (
+      <Link href={href} className={className} onClick={onClick}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className={className} onClick={onClick}>
+      {children}
+    </a>
+  );
+}
 
 export function Navbar() {
   const t = useTranslations('nav');
@@ -50,13 +89,9 @@ export function Navbar() {
 
           <nav className="hidden items-center gap-1 md:flex">
             {NAV_ITEMS.map((item) => (
-              <a
-                key={item.key}
-                href={item.href}
-                className="rounded-full px-3 py-1.5 text-sm text-white/70 transition-colors hover:bg-white/5 hover:text-white"
-              >
+              <NavLink key={item.key} href={item.href}>
                 {t(item.key)}
-              </a>
+              </NavLink>
             ))}
           </nav>
 
@@ -88,13 +123,13 @@ export function Navbar() {
             <ul className="flex flex-col">
               {NAV_ITEMS.map((item) => (
                 <li key={item.key}>
-                  <a
+                  <NavLink
                     href={item.href}
                     onClick={() => setOpen(false)}
                     className="block rounded-xl px-4 py-3 text-sm text-white/80 transition-colors hover:bg-white/5 hover:text-white"
                   >
                     {t(item.key)}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
               <li className="my-2 border-t border-white/5 pt-2">

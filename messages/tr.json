@@ -4,6 +4,7 @@
     "description": "Yapay zekâ destekli CRM, CMS, SaaS platformları ve ölçeklenebilir DevOps çözümleri tasarlar ve geliştiririz."
   },
   "nav": {
+    "about": "Hakkımızda",
     "services": "Çözümler",
     "technology": "Teknoloji",
     "process": "Süreç",
