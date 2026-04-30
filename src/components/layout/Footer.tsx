@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
+import { Link } from '@/i18n/navigation';
 import { Logo } from './Logo';
 
 type GroupKey = 'company' | 'solutions' | 'resources';
@@ -15,7 +16,7 @@ export function Footer() {
     {
       key: 'company',
       rows: [
-        { label: t('links.about'), href: '#about' },
+        { label: t('links.about'), href: '/about' },
         { label: t('links.careers'), href: '#careers' },
         { label: t('links.privacy'), href: '#privacy' },
         { label: t('links.terms'), href: '#terms' },
@@ -85,16 +86,24 @@ export function Footer() {
                   {groupLabel[group.key]}
                 </h4>
                 <ul className="space-y-2.5">
-                  {group.rows.map((row) => (
-                    <li key={`${group.key}-${row.label}`}>
-                      <a
-                        href={row.href}
-                        className="text-sm text-white/70 transition-colors hover:text-white"
-                      >
-                        {row.label}
-                      </a>
-                    </li>
-                  ))}
+                  {group.rows.map((row) => {
+                    const isInternalRoute = row.href.startsWith('/');
+                    const className =
+                      'text-sm text-white/70 transition-colors hover:text-white';
+                    return (
+                      <li key={`${group.key}-${row.label}`}>
+                        {isInternalRoute ? (
+                          <Link href={row.href} className={className}>
+                            {row.label}
+                          </Link>
+                        ) : (
+                          <a href={row.href} className={className}>
+                            {row.label}
+                          </a>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             ))}
