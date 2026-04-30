@@ -61,8 +61,11 @@ const SERVICES: Service[] = [
   { key: 'security', icon: ShieldCheck, bulletCount: 3, accent: 'from-accent-emerald/30 to-brand-400/20' },
 ];
 
-/** Marquee picks shown by default — broad spectrum of what we do. */
-const FEATURED_KEYS: ServiceKey[] = ['ai', 'web', 'crm', 'saas', 'devops', 'security'];
+/**
+ * Marquee picks shown by default — leads with what we ship most:
+ * e-commerce platforms and the integrations / web stack around them.
+ */
+const FEATURED_KEYS: ServiceKey[] = ['ecommerce', 'integration', 'web', 'ai', 'saas', 'devops'];
 
 export function Services() {
   const t = useTranslations('services');
