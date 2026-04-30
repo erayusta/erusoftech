@@ -16,11 +16,132 @@ type Tech = {
 };
 
 /**
- * Ordering principle: from the most general layers (languages, runtimes)
- * down to specific tools (APIs, observability). Each row tells a coherent
- * sub-story so the grid scans like a stack diagram.
+ * Ordering principle: lead with what we ship most — WordPress and the
+ * e-commerce platforms layered on top — then the surrounding language /
+ * framework / data stack, then specific tools (cloud, devops, observability).
+ * The first twelve entries are the marquee set rendered before the reveal.
  */
 const TECHS: Tech[] = [
+  // ---- E-commerce platforms (shipped daily, lead the stack) ----
+  {
+    name: 'WordPress',
+    category: 'CMS',
+    description: 'Most-deployed CMS in the world; rich plugin and content ecosystem.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M14 22l8 22M28 22l8 22M42 22l8 22"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <path
+          d="M19 22h7M33 22h7M47 22h6"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          opacity="0.6"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: 'WooCommerce',
+    category: 'E-commerce',
+    description: 'WordPress e-commerce — flexible storefronts and custom checkout flows.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <path
+          d="M8 14h8l4 28h28l4-18H22"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <circle cx="22" cy="50" r="3" stroke="currentColor" strokeWidth="2" />
+        <circle cx="44" cy="50" r="3" stroke="currentColor" strokeWidth="2" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Shopify',
+    category: 'E-commerce',
+    description: 'Hosted commerce with Liquid theming and Functions extensions.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <path
+          d="M16 22V20a8 8 0 0 1 16 0v2M12 22h32l-2 30a3 3 0 0 1-3 3H17a3 3 0 0 1-3-3l-2-30Z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <path
+          d="M24 36c2 2 6 2 6-1s-6-2-6-5 4-3 6-1"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          fill="none"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: 'Magento',
+    category: 'E-commerce',
+    description: 'Enterprise-grade commerce — multi-store, B2B and complex catalogs.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <path
+          d="M32 6L52 18v28L32 58 12 46V18L32 6Z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M22 44V24l10 6 10-6v20"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <path d="M28 44V32M36 44V32" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    name: 'İkas',
+    category: 'E-commerce',
+    description: 'Turkish-native commerce platform with strong local payments and shipping.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <circle cx="20" cy="20" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="44" cy="20" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="20" cy="44" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="44" cy="44" r="6" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    name: 'T-Soft',
+    category: 'E-commerce',
+    description: 'Turkish enterprise commerce stack with deep ERP and marketplace integrations.',
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <path
+          d="M8 14h36l12 12-22 22a4 4 0 0 1-6 0L8 36V14Z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <circle cx="22" cy="28" r="4" stroke="currentColor" strokeWidth="2" />
+        <path d="M30 30l14 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+
   // ---- Languages ----
   {
     name: 'TypeScript',
@@ -629,20 +750,23 @@ const TECHS: Tech[] = [
   },
 ];
 
-/** Marquee picks shown by default — the canonical modern web stack. */
+/**
+ * Marquee picks shown by default — leads with the e-commerce platforms we
+ * ship daily, then the surrounding PHP/Laravel and TypeScript/React belt.
+ */
 const FEATURED_NAMES = new Set<string>([
-  'TypeScript',
-  'Python',
-  'Node.js',
-  'Next.js',
+  'WordPress',
+  'WooCommerce',
+  'Shopify',
+  'Magento',
+  'İkas',
+  'T-Soft',
+  'PHP',
   'Laravel',
+  'MySQL',
+  'TypeScript',
+  'Next.js',
   'React',
-  'PostgreSQL',
-  'Redis',
-  'AWS',
-  'Docker',
-  'Kubernetes',
-  'GitHub Actions',
 ]);
 
 export function TechStack() {
