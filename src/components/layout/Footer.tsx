@@ -37,7 +37,7 @@ export function Footer() {
       rows: [
         { label: t('links.blog'), href: '#blog' },
         { label: t('links.docs'), href: '#docs' },
-        { label: t('links.caseStudies'), href: '#work' },
+        { label: t('links.caseStudies'), href: '/work' },
       ],
     },
   ];

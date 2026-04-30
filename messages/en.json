@@ -328,6 +328,83 @@
       "button": "Get in touch"
     }
   },
+  "works": {
+    "meta": {
+      "title": "Work — Erusoft",
+      "description": "Selected references from a decade of building e-commerce, custom software and fintech systems."
+    },
+    "hero": {
+      "eyebrow": "Work",
+      "title": "A decade of <span>production-grade</span> systems we've shipped",
+      "subtitle": "From Türkiye's established brands to scaling fintechs, education platforms to logistics infrastructure — a snapshot of the brands we've built alongside."
+    },
+    "stats": {
+      "items": {
+        "experience": { "value": "10+ yrs", "label": "Engineering practice" },
+        "projects": { "value": "100+", "label": "Projects shipped" },
+        "active": { "value": "30+", "label": "Active under maintenance" },
+        "categories": { "value": "8 verticals", "label": "Industries served" }
+      }
+    },
+    "filter": {
+      "title": "Industry",
+      "all": "All",
+      "ecommerce": "E-commerce",
+      "custom": "Custom Software",
+      "corporate": "Corporate",
+      "mobile": "Mobile",
+      "education": "Education",
+      "services": "Services"
+    },
+    "featured": {
+      "eyebrow": "Active portfolio",
+      "title": "Brands we work with today",
+      "subtitle": "Each card represents a system we architected, built, or continue to maintain."
+    },
+    "compact": {
+      "eyebrow": "More references",
+      "title": "Other brands we've worked alongside"
+    },
+    "legacy": {
+      "eyebrow": "Past portfolio",
+      "title": "Systems we built between 2015 and 2018",
+      "subtitle": "Some are still live, some have shut down — but each one shaped the engineering DNA of Erusoft.",
+      "note": "This list is not exhaustive — our internal archive holds 80+ project records."
+    },
+    "references": {
+      "pt": { "description": "Apple Premium Education Partner platform — student campaigns, product catalog and authorized service flows on a WooCommerce + custom stack." },
+      "markettengelse": { "description": "Online grocery ordering platform — TROY payment rails, virtual POS and custom order flows layered on WooCommerce." },
+      "muyubi": { "description": "High-traffic computer & technology e-commerce on WooCommerce, with XML, payment and shipping integrations." },
+      "e-cnt": { "description": "Multi-collection e-commerce backbone for CNT lingerie — custom checkout experience and operational integrations." },
+      "lesfleurs": { "description": "Same-day-delivery luxury florist storefront, extended with custom order management and gift-note flows." },
+      "petask": { "description": "Pet products e-commerce — loyalty flows, marketplace connectors and subscription rails." },
+      "bernarpet": { "description": "Custom software backbone for the Bernarpet brand — the digital skeleton of an entire pet products family." },
+      "raks": { "description": "RAKS heating & cooling brand on İkas — post-sales and service flows on top of the storefront." },
+      "mygumus": { "description": "Silver jewellery e-commerce on Magento; maintenance and development still inside Erusoft today." },
+      "bimotif": { "description": "Bimotif party-supplies storefront — T-Soft integration, operational flows and custom modules." },
+      "teknorot": { "description": "Auto-parts e-commerce on WooCommerce — built end-to-end inside Erusoft." },
+      "etnicfoodsturkey": { "description": "B2B catalog and delivery tracking interface for Etnic Foods Turkey." },
+      "emind": { "description": "eMind Technology's operational CRM and digital marketing backbone — custom-built business process software." },
+      "kampanyaradar": { "description": "A custom platform aggregating Türkiye-wide promotions and credit offers — data ingestion and ranking engine." },
+      "idfleks": { "description": "Fully custom software for idfleks — sector-specific business process modules and operational interfaces." },
+      "hobim": { "description": "Corporate management system built end-to-end for Hobim Archive & Print Services." },
+      "kocakgoldbasaksehir": { "description": "Mobile app and corporate site for Koçak Gold Başakşehir — jeweller operations on the go." },
+      "pirim": { "description": "Corporate site rebuild for Pirim Foods Inc. — content architecture and performance optimization." },
+      "net-muhendislik": { "description": "Corporate site for the firm advising on forest permits and EIA processes for wind energy projects." },
+      "empatist": { "description": "Clinical management and appointment infrastructure for the Empatist Nişantaşı psychiatry & psychotherapy center." },
+      "oznurcaglayan": { "description": "Corporate portfolio site for the Öznur Çağlayan design studio." },
+      "topstudy": { "description": "Language-courses-abroad booking and school-comparison platform — multi-locale flow." },
+      "linguland": { "description": "European-market language education platform — multi-locale UI and payment integrations." },
+      "academiaunited": { "description": "Education partners' overseas program management platform." },
+      "kaplaninternational": { "description": "Technical support and custom module development for the Kaplan International language schools product ecosystem." }
+    },
+    "cta": {
+      "eyebrow": "New project",
+      "title": "Let your project be the next reference",
+      "subtitle": "On a single discovery call, we'll align on the technical scope, technology choices and timeline for your industry.",
+      "button": "Get in touch"
+    }
+  },
   "footer": {
     "tagline": "Enterprise software engineering and AI-powered system design.",
     "rights": "All rights reserved.",
