@@ -56,3 +56,11 @@ logo.png
 # hero-bg master is a built artifact — rebuild with scripts/build-hero-bg.sh
 # (prior commit introduced it to get the first working render; not re-tracking)
 public/placeholders/hero-bg.mp4
+
+# internal content-authoring source (reference lists, partner notes) —
+# kept locally, never tracked
+*.xlsx
+*.xls
+*.csv
+notes/
+*.notes.md
