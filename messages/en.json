@@ -10,7 +10,8 @@
     "process": "Process",
     "work": "Work",
     "contact": "Contact",
-    "cta": "Start a project"
+    "cta": "Start a project",
+    "workViewAll": "View all work"
   },
   "hero": {
     "eyebrow": "AI-driven engineering studio",
