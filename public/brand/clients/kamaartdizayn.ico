@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="33T7jlMn7cJ5qGt1UdmpUaiTSrQjqncSWBKBd7HMhX8" />
+
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" media="all" href="/core/assets/vendor/normalize-css/normalizec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/misc/normalize-fixesc9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/clearfix.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/details.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/hidden.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/item-list.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/js.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/nowrap.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/position-container.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/progress.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/reset-appearance.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/resize.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/sticky-header.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-counterc9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-countersc9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-general-infoc9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tabledrag.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tablesort.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tree-child.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/stable/css/views/views.modulec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/css/all.css" />
+    <link rel="stylesheet" media="all" href="/core/themes/classy/css/components/messagesc9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/core/themes/classy/css/components/nodec9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/themes/custom/mamc/dist/appc9b6.css?rjlb7l" />
+    <link rel="stylesheet" media="all" href="/themes/custom/mamc/assets/tarteaucitron/css/tarteaucitronc9b6.css?rjlb7l" />
+
+    <style>
+        .Menu .Menu-main .submenu a{
+            padding:8px 0;
+        }
+    </style>
+
+    <title>Kamaart Dizayn - Sanat Eseri As&#x131;m&#x131;, Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;, Sanat Eseri Paketleme, Sergi Kurulumu ve Toplamas&#x131;, Sergileme Stand&#x131;, Kaide, Kasnak, Pleksi, &#xC7;er&#xE7;eve</title>
+    <meta name="description" content="Kamaart Dizayn, Sanat Eseri Asımı, Sanat Eseri Taşımacılığı, Sanat Eseri Paketleme, Sergi Kurulumu ve Toplaması, Sergileme Standı, Kaide, Kasnak, Pleksi, Çerçeve" />
+    <link rel="canonical" href="http://www.kamaartdizayn.com">
+    <meta name="owner" content="Kamaart Dizayn" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 days" />
+    <meta name="abstract" content="Kamaart Dizayn, Sanat Eseri Asımı, Sanat Eseri Taşımacılığı, Sanat Eseri Paketleme, Sergi Kurulumu ve Toplaması, Sergileme Standı, Kaide, Kasnak, Pleksi, Çerçeve" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="Global" />
+    <meta name="audience" content="All" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMWL8JDXSM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZMWL8JDXSM');
+    </script>
+
+</head>
+<body class="path-frontpage page-node-type-accueil">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+        Skip to main content
+    </a>
+
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+        <h1 style="position:absolute;opacity:0">Kama Art Design</h1>
+        
+<header class="SiteHeader" role="banner">
+
+    <a href="/favicon.ico" class="main-logo" title="Kamaart Dizayn">
+        <img src="/images/logo.png" />
+    </a>
+    <nav class="Menu" id="menu_first">
+        <ul class="Menu-main Menu--home">
+            <li class="menu-item">
+                <a href="/favicon.ico">ANASAYFA</a>
+            </li>
+            <li class="menu-item menu-item--expanded">
+                <a href="#" aria-expanded="false" aria-haspopup="true">B&#x130;Z</a>
+                <ul class="submenu">
+                            <li class="menu-item">
+                                <a href="/tr/hakkimizda/1/hikayemiz">
+                                    Hikayemiz
+                                </a>
+                            </li>
+                </ul>
+            </li>
+                    <li class="menu-item menu-item--expanded">
+                        <a href="#" aria-expanded="false" aria-haspopup="true">H&#x130;ZMETLER</a>
+                            <ul class="submenu">
+                                    <li class="menu-item">
+                                        <a href="/tr/hizmetler/15/sanat-eseri-asimi">
+                                            Sanat Eseri As&#x131;m&#x131;
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/hizmetler/16/sanat-eseri-tasimaciligi">
+                                            Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/hizmetler/17/sanat-eseri-paketleme">
+                                            Sanat Eseri Paketleme
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/hizmetler/19/sergi-kurulumu">
+                                            Sergi Kurulumu
+                                        </a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="menu-item menu-item--expanded">
+                        <a href="#" aria-expanded="false" aria-haspopup="true">&#xDC;RET&#x130;M ve K&#x130;RALAMA</a>
+                            <ul class="submenu">
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/6/sergileme-standi-panel">
+                                            Sergileme Stand&#x131; (Panel) 
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/7/kaide">
+                                            Kaide
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/8/kasnak-sase">
+                                            Kasnak (Sa&#x15F;e) 
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/9/pleksi">
+                                            Pleksi
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/11/cerceve">
+                                            &#xC7;er&#xE7;eve
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/12/sergileme-duvarlari">
+                                            Sergileme Duvarlar&#x131;
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/14/sergilema-vitrini">
+                                            Sergilema Vitrini
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/5/eser-tasima-sandigi">
+                                            Eser Ta&#x15F;&#x131;ma Sand&#x131;&#x11F;&#x131;
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="/tr/uretim-ve-kiralama/13/ozel-uretimler">
+                                            &#xD6;zel &#xDC;retimler
+                                        </a>
+                                    </li>
+                            </ul>
+                    </li>
+            <li class="menu-item">
+                <a href="/tr/iletisim">
+                    &#x130;LET&#x130;S&#x130;M
+                </a>
+            </li>
+        </ul>
+        <ul class="Menu-secondary">
+            <li class="Menu-item">
+                <div class="language-switcher-language-url block block-language block-language-blocklanguage-interface" id="block-selecteurdelangue" role="navigation">
+                    
+
+<form id="language" method="post" action="/tr/Culture/CultureManagement?returnUrl=~%2Ffavicon.ico">
+    <ul class="links" id="culture">
+                <li hreflang="tr" class="tr is-active">
+                    <a hreflang="tr" class="language-link is-active" href="#">
+                        tr
+                    </a>
+                </li>
+                <li class="en">
+                    <a hreflang="en" class="language-link is-active" href="#" onclick="setLanguage('en')">
+                        en
+                    </a>
+                </li>
+    </ul>
+    <input id="Culture" name="Culture" type="hidden" value="" />
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8M3qlaVNgjhNrHY5Yd2jAQglMNqaKt84Qj1AkgOUpPcZ0A2_8zRL3xo5GgtsSQzoZiTit9bl62K2iEY80PEYWx6HtmRpj-2BqmzdJflVzInEqRNHTTMRaqrhbxfoaP7owKDsk9NpJ4tWBmOExcIFqI0" /></form>
+
+
+                </div>
+
+            </li>
+        </ul>
+    </nav>
+    <button class="button-reset button-menu js-btnMenu" role="button" aria-expanded="false" aria-controls="SideMenu">
+        <span class="button-menu-text">menu</span>
+        <span class="button-menu-inner">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </span>
+    </button>
+</header>
+
+        
+<div class="SideMenu" id="SideMenu">
+    <div id="menu-second" tabindex="-1"></div>
+    <div class="SideMenu-top">
+        <p class="s-labeur3 cGrey d-none d-sm-block">Navigation</p>
+        <nav class="SideMenu-nav" role="navigation">
+            <ul>
+                <li>
+                    <a href="/favicon.ico">
+                        ANASAYFA
+                    </a>
+                </li>
+                <li class="menu-item--expanded">
+                    <a href="#" class="has-submenu icon-chevron-down-after" aria-expanded="false" aria-haspopup="true">
+                        B&#x130;Z
+                    </a>
+                    <div class="submenu">
+                        <p class="submenu-title">
+                            B&#x130;Z
+                        </p>
+                        <ul>
+                                    <li>
+                                        <a href="/tr/hakkimizda/1/hikayemiz">
+                                            Hikayemiz
+                                        </a>
+                                    </li>
+                        </ul>
+                        <a href="#" class="s-labeur3 icon-arrow-left submenu-back" aria-hidden="true"><i></i>Back</a>
+                    </div>
+                    <div class="submenu-overlay"></div>
+                </li>
+                        <li class="menu-item--expanded">
+                            <a href="#" class="has-submenu icon-chevron-down-after" aria-expanded="false" aria-haspopup="true">H&#x130;ZMETLER</a>
+                            <div class="submenu">
+                                <p class="submenu-title">H&#x130;ZMETLER</p>
+                                <ul>
+                                        <li>
+                                            <a href="/tr/hizmetler/15/sanat-eseri-asimi">
+                                                Sanat Eseri As&#x131;m&#x131;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/hizmetler/16/sanat-eseri-tasimaciligi">
+                                                Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/hizmetler/17/sanat-eseri-paketleme">
+                                                Sanat Eseri Paketleme
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/hizmetler/19/sergi-kurulumu">
+                                                Sergi Kurulumu
+                                            </a>
+                                        </li>
+                                </ul>
+                                <a href="#" class="s-labeur3 icon-arrow-left submenu-back" aria-hidden="true"><i></i>Back</a>
+                            </div>
+                            <div class="submenu-overlay"></div>
+                        </li>
+                        <li class="menu-item--expanded">
+                            <a href="#" class="has-submenu icon-chevron-down-after" aria-expanded="false" aria-haspopup="true">&#xDC;RET&#x130;M ve K&#x130;RALAMA</a>
+                            <div class="submenu">
+                                <p class="submenu-title">&#xDC;RET&#x130;M ve K&#x130;RALAMA</p>
+                                <ul>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/6/sergileme-standi-panel">
+                                                Sergileme Stand&#x131; (Panel) 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/7/kaide">
+                                                Kaide
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/8/kasnak-sase">
+                                                Kasnak (Sa&#x15F;e) 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/9/pleksi">
+                                                Pleksi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/11/cerceve">
+                                                &#xC7;er&#xE7;eve
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/12/sergileme-duvarlari">
+                                                Sergileme Duvarlar&#x131;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/14/sergilema-vitrini">
+                                                Sergilema Vitrini
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/5/eser-tasima-sandigi">
+                                                Eser Ta&#x15F;&#x131;ma Sand&#x131;&#x11F;&#x131;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/tr/uretim-ve-kiralama/13/ozel-uretimler">
+                                                &#xD6;zel &#xDC;retimler
+                                            </a>
+                                        </li>
+                                </ul>
+                                <a href="#" class="s-labeur3 icon-arrow-left submenu-back" aria-hidden="true"><i></i>Back</a>
+                            </div>
+                            <div class="submenu-overlay"></div>
+                        </li>
+                <li>
+                    <a href="/favicon.ico/Blog">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="/tr/iletisim">
+                        &#x130;LET&#x130;S&#x130;M
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="SideMenu-bottom">
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.instagram.com/kamaartdizayn" target="_blank" rel="noopener" title="Instagram New window"><i class="icon-instagram"></i><span class="sr-only">Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener" title="Facebook New window"><i class="icon-facebook"></i><span class="sr-only">Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter New window"><i class="icon-twitter"></i><span class="sr-only">Twitter</span></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" title="Youtube New window"><i class="icon-youtube"></i><span class="sr-only">Youtube</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="SideMenu-overlay"></div>
+
+        <style>
+    .s-title5 {
+        font-family: inherit;
+        text-transform: none;
+    }
+
+
+    .Expo-item .loop-item-cat {
+        text-align: justify;
+        padding-right: 0px;
+        flex: 0 0 100%;
+        line-height: 1.5;
+    }
+
+    .Slice-title {
+        font-size: 20px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .loop-item-cat {
+        color: #525252;
+    }
+</style>
+
+
+<div class="layout-diaporama">
+    <div class="region region-diaporama">
+
+        <div class="Cover slider slider--accueil slider-active">
+            <ul class="slider-images">
+                    <li>
+                        <a href="#" class="imageFit">
+                            <img src="/images/sergi-kurulumu.jpg?h=94aa90dd&amp;itok=2RrOOMSH" width="1680" height="855" alt=" Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z" title=" Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z" typeof="foaf:Image" class="image-style-diaporama-1680-855" />
+
+
+                            <span class="sr-only"> Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="imageFit">
+                            <img src="/images/sanat-eseri-asimi.jpg?h=94aa90dd&amp;itok=2RrOOMSH" width="1680" height="855" alt=" Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z" title=" Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z" typeof="foaf:Image" class="image-style-diaporama-1680-855" />
+
+
+                            <span class="sr-only"> Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z</span>
+                        </a>
+                    </li>
+            </ul>
+            <div class="slider-bottom d-sm-flex" style="opacity:0">
+                <div class="slider-nav" aria-hidden="true">
+                    <button tabindex="-1" class="slider-nav-prev icon-arrow-left button" title="Previous image">
+                        <span class="sr-only">Previous image</span>
+                    </button>
+                    <button tabindex="-1" class="slider-nav-next icon-arrow-right button" title="Next image">
+                        <span class="sr-only">Next image</span>
+                    </button>
+                </div>
+                <div class="slider-pagination" aria-hidden="true">
+                    <span class="first">1</span>
+                    <span class="sep">/</span>
+                    <span class="last">2</span>
+                </div>
+                <div class="slider-textes" aria-hidden="true">
+                        <div class="slider-textes-item d-sm-flex align-items-sm-center">
+                            <div class="d-sm-flex align-items-center align-items-lg-baseline">
+                                <p class="s-title3 slider-item-title"> Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z</p>
+                            </div>
+                        </div>
+                        <div class="slider-textes-item d-sm-flex align-items-sm-center">
+                            <div class="d-sm-flex align-items-center align-items-lg-baseline">
+                                <p class="s-title3 slider-item-title"> Kaliteli g&#xFC;venilir hizmet ile &#xE7;&#xF6;z&#xFC;m orta&#x131;&#x11F;&#x131;n&#x131;z olarak yan&#x131;n&#x131;zday&#x131;z</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media (min-width: 768px) .Cover .slider-item-title, .MediaViewer .slider-item-title {
+        max-width: 100%;
+    }
+
+    
+    .page-node-type-accueil .Cover .slider-item-title, .page-node-type-accueil .MediaViewer .slider-item-title{
+        text-transform:none;
+        max-width:100%;
+    }
+</style>
+
+<main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="layout-content col-sm-12">
+                <div class="region region-content">
+                    <div id="block-mamc-content" class="block block-system block-system-main-block">
+                        <div class="views-element-container">
+                            <div class="view view-expositions view-id-expositions view-display-id-page_1 js-view-dom-id-7877c6962a18af1b31da08629e6af6dd5ff1bf0b9431bd00bf422bd1b00bc524">
+                                <div class="view-header layout-content-top Single-header" style="padding-bottom:10px;">
+                                    <p class="s-title2 Slice-title">
+                                        H&#x130;ZMETLER&#x130;M&#x130;Z
+                                    </p>
+                                </div>
+                                <div class="view-content row" style="padding-top:5px;">
+                                        <article class="col-12 col-sm-6 col-md-6 loop-item Expo-item">
+                                            <a href="/tr/hizmetler/15/sanat-eseri-asimi">
+                                                <div class="loop-item-content">
+                                                    <h3 class="s-title5 loop-item-title">
+                                                        <span class="field field--name-title field--type-string field--label-hidden">Sanat Eseri As&#x131;m&#x131;</span>
+                                                    </h3>
+                                                    <div class="d-sm-flex align-items-end loop-item-infos">
+                                                        <p class="loop-item-cat">
+                                                            Sanat eserinin asımının yapılacağı mekan, uzman ekiplerimiz tarafından keşif yapılarak profesyonel ekipmanlarla  yerin ölçüsü belirlendikten sonra lazer ile özenle eser asımı ve yer değişimi yapılır.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="loop-item-img">
+                                                    <picture class="imageFit">
+                                                        <img src="/images/sanat-eseri-asimi/sanat-eseri-asimi-5.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sanat Eseri As&#x131;m&#x131;" title="Sanat Eseri As&#x131;m&#x131;" typeof="foaf:Image" class="image-style-_70-240" />
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article class="col-12 col-sm-6 col-md-6 loop-item Expo-item">
+                                            <a href="/tr/hizmetler/16/sanat-eseri-tasimaciligi">
+                                                <div class="loop-item-content">
+                                                    <h3 class="s-title5 loop-item-title">
+                                                        <span class="field field--name-title field--type-string field--label-hidden">Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;</span>
+                                                    </h3>
+                                                    <div class="d-sm-flex align-items-end loop-item-infos">
+                                                        <p class="loop-item-cat">
+                                                            Kama Art Dizayn, sanat eseri taşımacılığında sanat eserini uzman ekibimiz ile eserin güvenliğini sağalayan özel donanımlı araçlar ile şehir içi ve şehir dışı eser taşımacığı yapılır. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="loop-item-img">
+                                                    <picture class="imageFit">
+                                                        <img src="/images/sanat-eseri-tasima/sanat-eseri-tasima-4.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;" title="Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;" typeof="foaf:Image" class="image-style-_70-240" />
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article class="col-12 col-sm-6 col-md-6 loop-item Expo-item">
+                                            <a href="/tr/hizmetler/17/sanat-eseri-paketleme">
+                                                <div class="loop-item-content">
+                                                    <h3 class="s-title5 loop-item-title">
+                                                        <span class="field field--name-title field--type-string field--label-hidden">Sanat Eseri Paketleme</span>
+                                                    </h3>
+                                                    <div class="d-sm-flex align-items-end loop-item-infos">
+                                                        <p class="loop-item-cat">
+                                                            Sanat eserinin paketlenmesi, eserin yapısına ve özelliğine uygun olacak şekilde eser koruma altına alınarak güvenli bir şekilde paketleme yapılır. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="loop-item-img">
+                                                    <picture class="imageFit">
+                                                        <img src="/images/sanat-eseri-paketleme/sanat-eseri-paketleme-3.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sanat Eseri Paketleme" title="Sanat Eseri Paketleme" typeof="foaf:Image" class="image-style-_70-240" />
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article class="col-12 col-sm-6 col-md-6 loop-item Expo-item">
+                                            <a href="/tr/hizmetler/19/sergi-kurulumu">
+                                                <div class="loop-item-content">
+                                                    <h3 class="s-title5 loop-item-title">
+                                                        <span class="field field--name-title field--type-string field--label-hidden">Sergi Kurulumu</span>
+                                                    </h3>
+                                                    <div class="d-sm-flex align-items-end loop-item-infos">
+                                                        <p class="loop-item-cat">
+                                                            Sergi mekanın ihtiyaçlarına bağlı olarak; sergi üniteleri, duvar üretimi, aydınlatma ekipmanları ile profesyonel ekipler tarafından eserlerin özenle asımı ve yerleşimi yapılarak sergi mekanı ziyaretçilerini kabul etmeye hazır hale getirilir. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="loop-item-img">
+                                                    <picture class="imageFit">
+                                                        <img src="/images/sergi-kurulum/sergi-kurulumu-9.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sergi Kurulumu" title="Sergi Kurulumu" typeof="foaf:Image" class="image-style-_70-240" />
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </article>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+<div class="bgBlack TrancheCollection">
+    <a id="collection" tabindex="-1"></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="region region-medias">
+
+                    <section class="Slice Slice-collection">
+                        <header class="Slice-header d-sm-flex align-items-sm-end">
+                            <h2 class="s-title2 Slice-title">
+                                GALER&#x130;
+                            </h2>
+                        </header>
+                        <div class="row grid-masonry">
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-1.png?itok=MvOX9LxL" alt="Extrait de l&#039;action &quot;Je&quot;" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-2.png?itok=72Isv_X-" alt="Sans titre" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-3.png?itok=TmSRBnXj" alt="Cape II" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-4.png?itok=YR1UU2YG" alt="New York" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-5.png?itok=jjyffut0" alt="Images du monde" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-6.png?itok=3sLih3Ns" alt="The Hero" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+
+                            <article class="col-6 col-sm-4 col-md-3 grid-item loop-item Collection-item">
+                                <div class="loop-item-img" tabindex="0" role="button" data-media-id="kamaart-1.png" data-media-group="tranche_collection">
+                                    <img src="/images/kamaart-7.png?itok=ezj2EmOO" alt="Games" typeof="foaf:Image" class="image-style-_70-490" />
+
+
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="allez-plus-loin Slice bgGrey">
+    <div class="container-fluid">
+        <div class="row region region-allez-plus-loin">
+            <div class="layout-content col-sm-12">
+                <div class="region region-content">
+                    <div id="block-mamc-content" class="block block-system block-system-main-block">
+                        <div class="views-element-container">
+                            <div class="view-header layout-content-top Single-header" style="padding-bottom:10px;">
+                                <p class="s-title2 Slice-title">
+                                    &#xDC;RET&#x130;M
+                                </p>
+                            </div>
+                            <div class="view-content row" style="padding-top:5px;">
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/6/sergileme-standi-panel">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Sergileme Stand&#x131; (Panel) </span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Sergi ve fuar mekanlarında eserlerinizi sergileyebileceğiniz aydınlatmalı sergi standlarının üretim, kiralama, nakliye ve yerinde montajı hizmeti sunmaktayız.   
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/20210927-HOMEPAGE-montage-en-cours_21337.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sergileme Stand&#x131; (Panel) " title="Sergileme Stand&#x131; (Panel) " typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/7/kaide">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Kaide</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Heykel, vazo, sütün vb. sanat eserlerinin üstüne konulduğu üç boyutlu form anlayışı ile tasarlanmış kaidelerimizin üretimini atölyemizde profesyonel ekibimiz ile üretimini ve nakliyesini yapmaktayız. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Kaide" title="Kaide" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/8/kasnak-sase">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Kasnak (Sa&#x15F;e) </span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Atölyemizde el işçiliği ile üretimi yapılmaktadır. Kaliteli kasnaklarımız esneme, kırılma, çatlama ve yamulma yapmaz niteliklere sahiptir. İstenilen ölçülerde ve modellerde üretimi ve nakliyesini yapmaktayız.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Kasnak (Sa&#x15F;e) " title="Kasnak (Sa&#x15F;e) " typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/9/pleksi">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Pleksi</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Pleksi üretimimiz ile Eserlerinizi koruma altına alıyoruz. 
+Her türlü pleksi üretmimiz mevcuttur. 
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Pleksi" title="Pleksi" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/11/cerceve">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">&#xC7;er&#xE7;eve</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Atölyemizde istemiş olduğunuz ölçü ve renkte el işçiliği ile özel çerçeve üretimi yapmaktayız.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="&#xC7;er&#xE7;eve" title="&#xC7;er&#xE7;eve" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/12/sergileme-duvarlari">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Sergileme Duvarlar&#x131;</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Sergi mekanlarında duvarlara müdahale edilmesine izin verilmediği durumlarda 
+geçici mdf veya sunta malzemeden duvar yapımı ile sergi kurulumu yapılmaktadır.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sergileme Duvarlar&#x131;" title="Sergileme Duvarlar&#x131;" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/14/sergilema-vitrini">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Sergilema Vitrini</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        Tasarımını yapmış olduğunuz vitrinlerin atölyemizde üretimi yapılmaktadır. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Sergilema Vitrini" title="Sergilema Vitrini" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/5/eser-tasima-sandigi">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">Eser Ta&#x15F;&#x131;ma Sand&#x131;&#x11F;&#x131;</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/DIAPO-03-DoubleJe-salle-artpreco-03-AMole-L30000a86.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="Eser Ta&#x15F;&#x131;ma Sand&#x131;&#x11F;&#x131;" title="Eser Ta&#x15F;&#x131;ma Sand&#x131;&#x11F;&#x131;" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-12 col-sm-6 col-md-4 loop-item Expo-item">
+                                        <a href="/tr/uretim-ve-kiralama/13/ozel-uretimler">
+                                            <div class="loop-item-content">
+                                                <h3 class="s-title5 loop-item-title">
+                                                    <span class="field field--name-title field--type-string field--label-hidden">&#xD6;zel &#xDC;retimler</span>
+                                                </h3>
+                                                <div class="d-sm-flex align-items-end loop-item-infos">
+                                                    <p class="loop-item-cat">
+                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="loop-item-img">
+                                                <picture class="imageFit">
+                                                    <img src="/images/default-image.jpg?h=55be468c&amp;itok=r5FpdXEQ" width="370" height="240" alt="&#xD6;zel &#xDC;retimler" title="&#xD6;zel &#xDC;retimler" typeof="foaf:Image" class="image-style-_70-240" />
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </article>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="allez-plus-loin Slice bgGrey">
+    <div class="container-fluid">
+        <header class="Slice-header d-flex align-items-end">
+            <h2 class="s-title2 Slice-title">BLOG</h2>
+        </header>
+        <div class="row region region-allez-plus-loin">
+            <article class="col-12 loop-item big-left">
+                <a href="/tr/blog/detay/4/sahne-arkasini-kesfedelim">
+                    <div class="loop-item-content">
+                        <div class="d-flex flex-column-reverse">
+                            <h3 class="s-title3 loop-item-title" style="text-transform:none;">Sahne arkas&#x131;n&#x131; ke&#x15F;fedelim</h3>
+                        </div>
+                        <p class="loop-item-resume">
+                            &quot; Sanat &#x130;&#xE7;in &quot; birlikte sahne arkas&#x131;n&#x131; ke&#x15F;fedelim 
+                        </p>
+                    </div>
+                    <div class="loop-item-img">
+                        <picture class="imageFit">
+                            <img src="/images/sahne-arkasi.jpg?h=cf36419f&amp;itok=JM0OyVcY" width="870" height="535" alt="" typeof="foaf:Image" class="image-style-thumbnail2" />
+                        </picture>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid region region-a-votre-disposition">
+    <div class="field__items Slice">
+        <header class="Slice-header d-flex align-items-end">
+            <h3 class="s-title2 Slice-title">
+                Referanslar
+            </h3>
+        </header>
+        <div class="row">
+            <h3>Referanslarımız güncelleniyor</h3>
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+        
+
+
+<footer class="SiteFooter bgBlack" role="contentinfo">
+    <div class="container-fluid">
+        <div class="SiteFooter-middle">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="SiteFooter-nav contact">
+                        <ul>
+                            <li class="menu-item  SiteFooter-nav-title"><span>&#x130;LET&#x130;S&#x130;M</span></li>
+                            <li class="menu-item adresse">
+                                <p>Hamidiye Mah. Günal Sok.</p>
+                                <p>No:3/B İç Kapı No:1 </p>
+                                <p>Kağıthane / İstanbul</p>
+                                <a class="bold" href="#" target="_blank">Telefon : +90 541 124 29 26</a><br>
+                                <a class="bold" href="mailto:info@kamaartdizayn.com" target="_blank">info@kamaartdizayn.com</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <nav class="SiteFooter-nav" aria-label="">
+                                <ul>
+                                    <li class="menu-item  SiteFooter-nav-title">
+                                        <span>H&#x130;ZMETLER</span>
+                                    </li>
+
+                                            <li class="menu-item">
+                                                <a href="/tr/hizmetler/15/sanat-eseri-asimi">
+                                                    Sanat Eseri As&#x131;m&#x131;
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/hizmetler/16/sanat-eseri-tasimaciligi">
+                                                    Sanat Eseri Ta&#x15F;&#x131;mac&#x131;l&#x131;&#x11F;&#x131;
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/hizmetler/17/sanat-eseri-paketleme">
+                                                    Sanat Eseri Paketleme
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/hizmetler/19/sergi-kurulumu">
+                                                    Sergi Kurulumu
+                                                </a>
+                                            </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <nav class="SiteFooter-nav" aria-label="">
+                                <ul>
+                                    <li class="menu-item  SiteFooter-nav-title">
+                                        <span>&#xDC;RET&#x130;M ve K&#x130;RALAMA</span>
+                                    </li>
+
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/6/sergileme-standi-panel">
+                                                    Sergileme Stand&#x131; (Panel) 
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/7/kaide">
+                                                    Kaide
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/8/kasnak-sase">
+                                                    Kasnak (Sa&#x15F;e) 
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/9/pleksi">
+                                                    Pleksi
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/11/cerceve">
+                                                    &#xC7;er&#xE7;eve
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/12/sergileme-duvarlari">
+                                                    Sergileme Duvarlar&#x131;
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/14/sergilema-vitrini">
+                                                    Sergilema Vitrini
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/5/eser-tasima-sandigi">
+                                                    Eser Ta&#x15F;&#x131;ma Sand&#x131;&#x11F;&#x131;
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="/tr/uretim-ve-kiralama/13/ozel-uretimler">
+                                                    &#xD6;zel &#xDC;retimler
+                                                </a>
+                                            </li>
+                                </ul>
+                            </nav>
+                        </div>
+                <div class="col-12 col-sm-6 col-md-3">
+
+
+                    <div class="SiteFooter-nav contact">
+
+                        <ul style="margin-top:5px;">
+                            <li class="menu-item  SiteFooter-nav-title">
+                                <span>
+                                    SOSYAL MEDYA
+                                </span>
+                            </li>
+                            <li><a href="https://www.instagram.com/kamaartdizayn" target="_blank" rel="noopener" class="icon-instagram">Instagram<span class="sr-only">New window</span></a></li>
+                            <li><a href="https://www.facebook.com" target="_blank" rel="noopener" class="icon-facebook">Facebook<span class="sr-only">New window</span></a></li>
+                            <li><a href="https://twitter.com/" target="_blank" rel="noopener" class="icon-twitter">Twitter<span class="sr-only">New window</span></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" class="icon-youtube">Youtube<span class="sr-only">New window</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="SiteFooter-logos">
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/4","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"statistics":{"data":{"nid":"4"},"url":"\/core\/modules\/statistics\/statistics.php"},"user":{"uid":0,"permissionsHash":"2621352527052d6740704761f6de9bba35e91ce6fafe938c6351d31a0abce550"}}</script>
+    <script src="/core/assets/vendor/jquery/jquery.minc011.js?v=3.5.1"></script>
+    <script src="/core/assets/vendor/underscore/underscore-minec34.js?v=1.13.1"></script>
+    <script src="/core/assets/vendor/jquery-once/jquery.once.min62cf.js?v=2.2.3"></script>
+    <script src="/core/assets/vendor/backbone/backbone-min44ca.js?v=1.4.0"></script>
+    <script src="/core/misc/drupal8fd4.js?v=8.9.20"></script>
+    <script src="/core/misc/drupal.init8fd4.js?v=8.9.20"></script>
+    <script src="/themes/custom/mamc/dist/app.bundlea0fc.js?v=1.x"></script>
+    <script src="/themes/custom/mamc/assets/tarteaucitron/tarteaucitrona0fc.js?v=1.x"></script>
+    <script src="/core/modules/statistics/statistics8fd4.js"></script>
+    <script>
+        function setLanguage(language) {
+            $("#Culture").val(language);
+            $("form").submit();
+        }
+    </script>
+
+</body>
+
+</html>

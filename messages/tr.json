@@ -328,6 +328,83 @@
       "button": "İletişime geç"
     }
   },
+  "works": {
+    "meta": {
+      "title": "Referanslar — Erusoft",
+      "description": "10+ yıldır inşa ettiğimiz e-ticaret, custom yazılım ve fintech sistemlerinden seçilmiş referanslar."
+    },
+    "hero": {
+      "eyebrow": "Referanslar",
+      "title": "10 yıldır <span>üretim hattı kalitesinde</span> teslim ettiğimiz projeler",
+      "subtitle": "Türkiye'nin yerleşik markalarından ölçeklenen fintech'lere, eğitim platformlarından lojistik altyapılarına — birlikte çalıştığımız markaların bir özeti."
+    },
+    "stats": {
+      "items": {
+        "experience": { "value": "10+ yıl", "label": "Mühendislik deneyimi" },
+        "projects": { "value": "100+", "label": "Teslim edilen proje" },
+        "active": { "value": "30+", "label": "Bakımda aktif marka" },
+        "categories": { "value": "8 sektör", "label": "Çalıştığımız dikey" }
+      }
+    },
+    "filter": {
+      "title": "Sektör",
+      "all": "Tümü",
+      "ecommerce": "E-Ticaret",
+      "custom": "Custom Yazılım",
+      "corporate": "Kurumsal",
+      "mobile": "Mobil",
+      "education": "Eğitim",
+      "services": "Hizmet"
+    },
+    "featured": {
+      "eyebrow": "Aktif portföy",
+      "title": "Bugün üzerinde çalıştığımız markalar",
+      "subtitle": "Her bir kart, mimariyi kurduğumuz, geliştirdiğimiz veya bugün de bakımını sürdürdüğümüz bir sistemi temsil eder."
+    },
+    "compact": {
+      "eyebrow": "Daha fazla referans",
+      "title": "Birlikte çalıştığımız diğer markalar"
+    },
+    "legacy": {
+      "eyebrow": "Geçmiş portföy",
+      "title": "2015-2018 döneminde inşa ettiğimiz sistemler",
+      "subtitle": "Bazıları hâlâ aktif, bazıları kapanmış olsa da; her biri Erusoft'un mühendislik DNA'sını şekillendirdi.",
+      "note": "Liste tamamlanmış değil — Excel arşivimizde 80'i aşkın proje kaydı bulunmaktadır."
+    },
+    "references": {
+      "pt": { "description": "Apple Premium Education Partner ağı için öğrenci kampanyaları, ürün kataloğu ve yetkili servis süreçlerini yöneten WooCommerce + custom altyapı." },
+      "markettengelse": { "description": "Online market siparişi platformu — TROY ödeme altyapısı, sanal POS ve özel sipariş akışlarıyla genişletilmiş WooCommerce kurulumu." },
+      "muyubi": { "description": "Bilgisayar ve teknoloji ürünleri için yüksek-trafik WooCommerce mağazası; XML, ödeme ve kargo entegrasyonları." },
+      "e-cnt": { "description": "CNT iç giyim için çok-koleksiyon e-ticaret altyapısı; özel checkout deneyimi ve operasyonel entegrasyonlar." },
+      "lesfleurs": { "description": "Aynı gün teslimat odaklı lüks çiçekçi mağazası; özel sipariş yönetimi ve kart-not akışıyla zenginleştirildi." },
+      "petask": { "description": "Pet ürünleri e-ticaret altyapısı; sadakat akışları, marketplace konektörleri ve abonelik altyapısı." },
+      "bernarpet": { "description": "Bernarpet markasının özel yazılım altyapısı; pet ürün ailesinin uçtan uca dijital iskeleti." },
+      "raks": { "description": "RAKS soğutma & ısıtma markasının İkas tabanlı e-ticaret operasyonu; satış sonrası ve servis akışları." },
+      "mygumus": { "description": "Gümüş takı segmentinde Magento tabanlı e-ticaret operasyonu; bakım ve geliştirme bugün de Erusoft içerisinde." },
+      "bimotif": { "description": "Bimotif eğlence atölyesi e-ticareti — T-Soft entegrasyonu, operasyonel akış ve özel modül geliştirmeleri." },
+      "teknorot": { "description": "Teknorot otomotiv yedek parça için WooCommerce kurulumu; tamamı Erusoft içerisinde geliştirildi." },
+      "etnicfoodsturkey": { "description": "Etnic Foods Turkey için B2B katalog ve teslimat takip arayüzü." },
+      "emind": { "description": "eMind Teknoloji'nin operasyonel CRM ve dijital pazarlama altyapısı — özel olarak geliştirilmiş iş süreçleri yazılımları." },
+      "kampanyaradar": { "description": "Türkiye'nin tüm indirimleri ve kredi fırsatlarını agrega eden custom platform — veri toplama ve sıralama motoru." },
+      "idfleks": { "description": "idfleks için tamamen özel yazılım — sektörel iş süreçlerini kapsayan modüller ve operasyonel arayüzler." },
+      "hobim": { "description": "Hobim Arşivleme & Basım Hizmetleri için tamamı tarafımızdan yapılan kurumsal yönetim sistemi." },
+      "kocakgoldbasaksehir": { "description": "Koçak Gold Başakşehir için mobil uygulama ve kurumsal site; kuyumculuk operasyon takibi." },
+      "pirim": { "description": "Pirim Gıda A.Ş. için kurumsal site yenileme projesi; içerik mimarisi ve performans optimizasyonu." },
+      "net-muhendislik": { "description": "RES projeleri için orman izinleri ve ÇED süreci danışmanlığı sunan firmanın kurumsal sitesi." },
+      "empatist": { "description": "Empatist Nişantaşı psikiyatri ve psikoterapi merkezi için klinik yönetim ve randevu altyapısı." },
+      "oznurcaglayan": { "description": "Öznur Çağlayan tasarım stüdyosu için kurumsal portfolyo sitesi." },
+      "topstudy": { "description": "Yurtdışı dil eğitimi rezervasyon ve okul karşılaştırma platformu — çok-dilli akış." },
+      "linguland": { "description": "Avrupa pazarına yönelik yurtdışı dil eğitimi platformu; çok-dilli arayüz ve ödeme entegrasyonları." },
+      "academiaunited": { "description": "Eğitim ortaklarının yurtdışı program yönetimi platformu." },
+      "kaplaninternational": { "description": "Kaplan International dil okulları ürün ekosistemine teknik destek ve özel modül geliştirme." }
+    },
+    "cta": {
+      "eyebrow": "Yeni proje",
+      "title": "Bir sonraki referans sizin projeniz olsun",
+      "subtitle": "Sektörünüze özel bir keşif görüşmesinde teknik kapsamı, teknoloji seçimini ve takvimi netleştirelim.",
+      "button": "İletişime geç"
+    }
+  },
   "footer": {
     "tagline": "Enterprise yazılım mühendisliği ve AI-destekli sistem tasarımı.",
     "rights": "Tüm hakları saklıdır.",
