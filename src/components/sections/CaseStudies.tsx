@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { ArrowUpRight, Sparkles, LineChart, Rocket } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { GlowCard } from '@/components/ui/GlowCard';
+import { Link } from '@/i18n/navigation';
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion';
 
 type CaseKey = 'case1' | 'case2' | 'case3';
@@ -80,6 +81,22 @@ export function CaseStudies() {
             </GlowCard>
           </motion.article>
         ))}
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={viewportOnce}
+        transition={{ duration: 0.5, delay: 0.15 }}
+        className="mt-12 flex justify-center"
+      >
+        <Link
+          href="/work"
+          className="group glass-strong inline-flex items-center gap-2.5 rounded-full border border-brand-400/30 bg-brand-500/10 px-7 py-3.5 text-base font-medium text-white shadow-glow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-500/20 hover:shadow-glow"
+        >
+          <span>{t('viewAll')}</span>
+          <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+        </Link>
       </motion.div>
     </Section>
   );
