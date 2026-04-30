@@ -228,6 +228,106 @@
     "body": "One discovery call to clarify architecture, technology choices and timeline. You'll receive a detailed proposal within a few business days.",
     "button": "Book a discovery call"
   },
+  "about": {
+    "meta": {
+      "title": "About — Erusoft",
+      "description": "Since 2015 — production-grade engineering across e-commerce platforms, custom software and fintech integrations."
+    },
+    "hero": {
+      "eyebrow": "About",
+      "title": "Since 2015, building the <span>technical backbone</span> of growing businesses",
+      "subtitle": "Erusoft is an engineering studio that designs and maintains the digital layer of your company — from e-commerce platforms to custom software, fintech integrations to cloud architecture."
+    },
+    "story": {
+      "eyebrow": "Story",
+      "title": "From an independent engineer to a disciplined team",
+      "paragraphs": [
+        "Erusoft was founded in 2015 by Eray Usta as a focused independent engineering practice. The early years — building e-commerce systems on Magento, WooCommerce and Shopify, developing custom modules and integration pipelines — shaped the company's mindset: whatever stack we choose, the system has to keep breathing alongside the product.",
+        "Over time the teams grew, the projects layered, and the client portfolio expanded — from established Turkish enterprises to fast-scaling fintechs and unicorn-stage technology companies. Today Erusoft is an engineering company built on a disciplined team of senior software engineers, system architects and DevOps specialists, shipping software at production-line quality.",
+        "At the core of our work is a single principle: the system we build must still be readable, extensible and scalable five years from now. That principle shapes everything from code quality and technology selection to the long-term partnerships we maintain with our clients."
+      ],
+      "milestones": {
+        "founded": { "year": "2015", "label": "Founded" },
+        "team": { "year": "2017", "label": "Team formation" },
+        "scale": { "year": "2020+", "label": "Enterprise & fintech scale" },
+        "today": { "year": "Today", "label": "10+ years, 100+ shipped" }
+      }
+    },
+    "expertise": {
+      "eyebrow": "Expertise",
+      "title": "Three pillars — disciplines that complement each other",
+      "subtitle": "We started with e-commerce on day one; today, custom software and fintech integrations sit alongside it under a single, disciplined engineering flow.",
+      "groups": {
+        "ecommerce": {
+          "title": "E-Commerce Platforms",
+          "description": "Custom experiences, partner programs and long-term infrastructure support built on top of modern e-commerce backbones.",
+          "items": [
+            "WooCommerce, Shopify, Magento and OpenCart development & support",
+            "İkas, İdeasoft, T-Soft, Ticimax consultancy and official partnerships",
+            "Custom plugins, themes and high-conversion checkout experiences",
+            "Inventory and order synchronization, marketplace connectors"
+          ]
+        },
+        "custom": {
+          "title": "Custom Software Development",
+          "description": "Software systems and products tailored to your operations — beyond the limits of any single platform.",
+          "items": [
+            "Single-purpose SaaS products, enterprise portals and internal tools",
+            "AI- and data-pipeline-augmented workflow automation",
+            "Web and mobile applications — native and cross-platform",
+            "Production-grade DevOps, CI/CD and observability"
+          ]
+        },
+        "integrations": {
+          "title": "Integration & Fintech",
+          "description": "Integration platforms and payment / logistics bridges that unify your business systems into a single, reliable data flow.",
+          "items": [
+            "Accounting integrations (Paraşüt, Logo, Mikro) for Turkish and global stacks",
+            "Marketplace connectors (Trendyol, Hepsiburada, N11, Amazon TR)",
+            "Cargo & logistics integrations (Aras, Yurtiçi, DHL, Hepsijet)",
+            "Virtual POS, payment intermediation and automated bank-transfer rails"
+          ]
+        }
+      }
+    },
+    "values": {
+      "eyebrow": "Approach",
+      "title": "How we work",
+      "subtitle": "A project's success goes beyond the code — process, communication and technology selection are managed with the same discipline.",
+      "items": {
+        "production": {
+          "title": "Production-grade delivery",
+          "description": "Every system ships with scalable architecture, observability and security standards baked in from day one."
+        },
+        "partnership": {
+          "title": "Long-term partnership",
+          "description": "We build 5+ year relationships with the companies we work with — we stay alongside you long after the system goes live."
+        },
+        "transparency": {
+          "title": "Transparent process",
+          "description": "Architectural decisions, risk analyses, progress metrics and technology choices are documented in writing."
+        },
+        "rightTool": {
+          "title": "The right tool for the job",
+          "description": "We follow problem-fit, not trends. Sometimes a modern AI stack is the answer; sometimes a mature Laravel monolith is."
+        },
+        "team": {
+          "title": "Cross-disciplinary team",
+          "description": "Backend, frontend, DevOps, mobile and data teams operate as a single flow — delivery without hand-off friction."
+        },
+        "compliance": {
+          "title": "Local & international compliance",
+          "description": "Fluent in Turkish regulations (KVKK, e-invoicing, Logo) with parallel experience in EU and US operations."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Next step",
+      "title": "Let's talk system architecture",
+      "subtitle": "In a single discovery call, we can clarify your project's technical scope, technology choices and timeline.",
+      "button": "Get in touch"
+    }
+  },
   "footer": {
     "tagline": "Enterprise software engineering and AI-powered system design.",
     "rights": "All rights reserved.",

@@ -228,6 +228,106 @@
     "body": "Tek bir keşif görüşmesinde sistemin mimarisini, teknoloji seçimlerini ve takvimi netleştirelim. Size birkaç iş günü içinde detaylı bir öneri ve teklif gönderelim.",
     "button": "Keşif görüşmesi planla"
   },
+  "about": {
+    "meta": {
+      "title": "Hakkımızda — Erusoft",
+      "description": "2015'ten bu yana e-ticaret altyapıları, custom yazılım ve fintech entegrasyonlarında üretim hattı kalitesinde mühendislik."
+    },
+    "hero": {
+      "eyebrow": "Hakkımızda",
+      "title": "2015'ten bu yana, ölçeklenen işletmelerin <span>teknik omurgasını</span> inşa ediyoruz",
+      "subtitle": "Erusoft; e-ticaret altyapılarından custom yazılıma, fintech entegrasyonlarından bulut mimarisine kadar — şirketinizin dijital katmanını uçtan uca tasarlayan ve sürdüren bir mühendislik atölyesidir."
+    },
+    "story": {
+      "eyebrow": "Hikâye",
+      "title": "Bağımsız bir mühendislikten disiplinli bir ekibe",
+      "paragraphs": [
+        "Erusoft, 2015 yılında Eray Usta tarafından — sıkı bir bağımsız mühendis çalışmasıyla — kuruldu. Erken günlerinde Magento, WooCommerce ve Shopify altyapıları üzerine inşa edilen e-ticaret sistemleri, özel modül geliştirmeleri ve entegrasyon projeleri, şirketin zihinsel temelini oluşturdu: hangi teknoloji seçilirse seçilsin, sistemin ürünle birlikte nefes alabilir kalması.",
+        "Zamanla ekipler büyüdü, projeler katmanlandı ve müşteri portföyü Türkiye'nin yerleşik kurumsal markalarından hızlı ölçeklenen fintech'lere, unicorn statüsüne ulaşan teknoloji şirketlerine kadar genişledi. Bugün Erusoft; kıdemli yazılım mühendisleri, sistem mimarları ve DevOps uzmanlarından oluşan disiplinli bir ekibin üzerinde duran, üretim hattı kalitesinde yazılım üreten bir mühendislik şirketidir.",
+        "İşimizin özünde tek bir prensip var: kurduğumuz sistem beş yıl sonra hâlâ konuşulabilir, geliştirilebilir, ölçeklenebilir olmalı. Bu prensip; kod kalitesinden seçtiğimiz teknolojiye, müşterilerimizle kurduğumuz uzun soluklu çalışma ilişkilerine kadar her detayı şekillendirir."
+      ],
+      "milestones": {
+        "founded": { "year": "2015", "label": "Kuruluş" },
+        "team": { "year": "2017", "label": "Ekipleşme" },
+        "scale": { "year": "2020+", "label": "Enterprise & fintech ölçeği" },
+        "today": { "year": "Bugün", "label": "10+ yıl, 100+ teslim" }
+      }
+    },
+    "expertise": {
+      "eyebrow": "Uzmanlık",
+      "title": "Üç ana sütun — birbirini tamamlayan disiplinler",
+      "subtitle": "İlk gün e-ticaret altyapısıyla başladık; bugün custom yazılımdan fintech entegrasyonuna kadar tek bir disiplinli mühendislik akışı altında çalışıyoruz.",
+      "groups": {
+        "ecommerce": {
+          "title": "E-Ticaret Platformları",
+          "description": "Modern e-ticaret omurgalarının üzerine inşa edilen özel deneyimler, partner ortaklıkları ve uzun soluklu altyapı desteği.",
+          "items": [
+            "WooCommerce, Shopify, Magento ve OpenCart altyapı geliştirme & destek",
+            "İkas, İdeasoft, T-Soft, Ticimax danışmanlığı ve resmi partner ortaklıkları",
+            "Özel eklenti, tema ve yüksek-dönüşüm checkout deneyimi geliştirme",
+            "Stok ve sipariş senkronizasyonu, pazaryeri konektörleri"
+          ]
+        },
+        "custom": {
+          "title": "Custom Yazılım Geliştirme",
+          "description": "Tek bir platformla sınırlı kalmayan, iş süreçlerinize özel yazılım sistemleri ve ürünleri.",
+          "items": [
+            "Tek-amaçlı SaaS ürünleri, kurumsal portallar ve dahili operasyon araçları",
+            "AI ve veri pipeline'larıyla zenginleştirilmiş iş akışı otomasyonları",
+            "Web ve mobil uygulamalar — native ve cross-platform",
+            "Production-grade DevOps, CI/CD ve observability"
+          ]
+        },
+        "integrations": {
+          "title": "Entegrasyon & Fintech",
+          "description": "Mevcut iş sistemlerinizi tek bir veri akışında birleştiren entegrasyon altyapıları, ödeme ve lojistik bağlantıları.",
+          "items": [
+            "Paraşüt, Logo, Mikro gibi muhasebe yazılımı entegrasyonları",
+            "Trendyol, Hepsiburada, N11 ve Amazon TR pazaryeri konektörleri",
+            "Aras, Yurtiçi, DHL, Hepsijet kargo & lojistik bağlantıları",
+            "Sanal POS, ödeme aracılığı ve otomatik banka havale altyapıları"
+          ]
+        }
+      }
+    },
+    "values": {
+      "eyebrow": "Yaklaşım",
+      "title": "Çalışma prensibimiz",
+      "subtitle": "Bir projenin başarısı kodun ötesinde — süreç, iletişim ve teknoloji seçimi de aynı disiplinle yönetilir.",
+      "items": {
+        "production": {
+          "title": "Production-grade teslim",
+          "description": "Her sistem; ilk günden itibaren ölçeklenebilir mimari, izlenebilirlik ve güvenlik standartlarıyla teslim edilir."
+        },
+        "partnership": {
+          "title": "Uzun soluklu ortaklık",
+          "description": "Çalıştığımız şirketlerle 5+ yıla uzanan ilişkiler kuruyoruz; sistem teslim edildikten sonra da yanınızdayız."
+        },
+        "transparency": {
+          "title": "Şeffaf süreç",
+          "description": "Mimari kararlar, risk analizleri, ilerleme metrikleri ve teknoloji seçimleri yazılı olarak dokümante edilir."
+        },
+        "rightTool": {
+          "title": "Doğru aracın seçimi",
+          "description": "Trende değil, problem-uygunluğuna bakıyoruz. Bazen modern bir AI yığını, bazen olgun bir Laravel monoliti çözüm olur."
+        },
+        "team": {
+          "title": "Cross-disciplinary ekip",
+          "description": "Backend, frontend, DevOps, mobil ve veri ekiplerinin tek bir akışta çalışması — handoff sürtünmesi olmadan teslim."
+        },
+        "compliance": {
+          "title": "Yerel & uluslararası uyum",
+          "description": "Türkiye'deki düzenlemelere (KVKK, e-fatura, Logo) hâkim; Avrupa & ABD operasyonlarına paralel deneyim."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Bir sonraki adım",
+      "title": "Sistem mimarisi konuşalım",
+      "subtitle": "Tek bir keşif görüşmesinde projenizin teknik kapsamını, teknoloji seçimini ve takvimini netleştirelim.",
+      "button": "İletişime geç"
+    }
+  },
   "footer": {
     "tagline": "Enterprise yazılım mühendisliği ve AI-destekli sistem tasarımı.",
     "rights": "Tüm hakları saklıdır.",
