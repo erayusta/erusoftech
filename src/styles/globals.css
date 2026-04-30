@@ -19,6 +19,10 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset for the fixed Navbar so anchor scrolls land just below it
+     instead of sliding the section title under the header. ~80px nav
+     height + 16px breathing room. */
+  scroll-padding-top: 6rem;
 }
 
 html,
