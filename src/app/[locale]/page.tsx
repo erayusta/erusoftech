@@ -1,7 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { SpaceBackground } from '@/components/fx/SpaceBackground';
 import { Hero } from '@/components/sections/Hero';
 import { PartnersBanner } from '@/components/sections/PartnersBanner';
 import { Services } from '@/components/sections/Services';
@@ -21,7 +20,6 @@ export default function HomePage({
   return (
     <>
       <Navbar />
-      <SpaceBackground />
       <main className="relative overflow-hidden">
         <Hero />
         <PartnersBanner />
