@@ -177,6 +177,15 @@ export const FEATURED_REFERENCES: WorkReference[] = [
 
   // ---- Custom software ----
   {
+    slug: 'entegre-erusoft',
+    name: 'Erusoft Entegre',
+    url: 'https://entegre.erusoft.com',
+    category: 'custom',
+    logo: '/brand/clients/entegre-erusoft.svg',
+    tech: 'Dopigo + İdeasoft',
+    featured: true,
+  },
+  {
     slug: 'emind',
     name: 'eMind Teknoloji',
     url: 'https://emind.com.tr',
