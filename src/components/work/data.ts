@@ -270,15 +270,26 @@ export const COMPACT_REFERENCES: WorkReference[] = [
 ];
 
 /**
- * Legacy portfolio (2015–2019) — text-only roll-up for archive scale.
- * Most are no longer maintained by us; included as historical proof of
- * volume across e-commerce, content and custom builds.
+ * Legacy portfolio — full archive roll-up grouped by era. Era strings
+ * are language-neutral except for "Pre-2015", which gets translated
+ * to "2015 öncesi" for TR viewers in WorksSections.
  */
 export const LEGACY_REFERENCES: { name: string; tech: string; era: string }[] = [
+  // 2019 era
+  { name: 'hobimdigital.com', tech: 'Custom Software', era: '2019' },
+  { name: 'markadya.com', tech: 'Magento 2', era: '2019' },
+  { name: 'ybkitap.com', tech: 'Magento', era: '2019' },
+  { name: 'cosmoleylek.com', tech: 'Magento 2', era: '2019' },
+  { name: 'lukapetmarket.com', tech: 'Magento', era: '2019' },
+  { name: 'kurtki7km.com', tech: '—', era: '2019' },
+  { name: 'erdoganlarbisiklet.com', tech: 'Magento 2', era: '2019' },
+
   // 2017–2018 era
   { name: 'cazador.com.tr', tech: 'Magento', era: '2017–2018' },
   { name: 'cabaretcineflowers.com', tech: 'WooCommerce', era: '2017–2018' },
   { name: 'parmori.com', tech: 'Magento', era: '2017–2018' },
+  { name: 'emproyal.com.tr', tech: '—', era: '2017–2018' },
+  { name: 'kayzerinternet.com', tech: '—', era: '2017–2018' },
   { name: 'sentezfilo.com.tr', tech: 'Custom Software', era: '2017–2018' },
   { name: 'vesyum.com', tech: 'Magento', era: '2017–2018' },
   { name: 'aniqnaturals.com', tech: 'Magento', era: '2017–2018' },
@@ -286,21 +297,70 @@ export const LEGACY_REFERENCES: { name: string; tech: string; era: string }[] = 
   { name: 'blog.rosense.com', tech: 'WordPress', era: '2017–2018' },
   { name: 'bitkishop.com', tech: 'Magento', era: '2017–2018' },
   { name: 'botanikstore.com', tech: 'Magento', era: '2017–2018' },
+  { name: 'botanikshop.com', tech: 'Magento', era: '2017–2018' },
   { name: 'denimsquared.com', tech: 'Magento', era: '2017–2018' },
   { name: 'tk-motors.com', tech: 'WordPress + Custom', era: '2017–2018' },
   { name: 'aramakas.com', tech: 'Laravel + Custom', era: '2017–2018' },
   { name: 'dogaacademy.com', tech: 'Laravel + Custom', era: '2017–2018' },
+  { name: 'ajansgokce.com', tech: 'Custom Software', era: '2017–2018' },
+  { name: 'evdekedivar.com', tech: 'Magento', era: '2017–2018' },
+  { name: 'kbud2017.org', tech: 'WordPress', era: '2017–2018' },
   { name: 'sevil.com.tr', tech: 'Magento', era: '2017–2018' },
+  { name: 'bgstoreonline.com', tech: 'Magento', era: '2017–2018' },
+  { name: 'diyetixyen.com', tech: 'WordPress', era: '2017–2018' },
+  { name: 'gizligizli.com', tech: 'Custom Software', era: '2017–2018' },
+  { name: 'kuvarslojistik.net', tech: 'WordPress', era: '2017–2018' },
+  { name: 'donerplus.com.tr', tech: 'WordPress', era: '2017–2018' },
+  { name: 'isimizisg.com', tech: 'WordPress', era: '2017–2018' },
+  { name: 'akrahavuz.com', tech: 'WordPress', era: '2017–2018' },
+  { name: 'mtdesignstudio.com', tech: 'WordPress + Custom', era: '2017–2018' },
   { name: 'metrics34.co.uk', tech: 'Custom Single-Page', era: '2017–2018' },
+
   // 2015–2016 era
   { name: 'jjkids.com.tr', tech: 'WooCommerce', era: '2015–2016' },
+  { name: 'nuev.com', tech: 'Magento', era: '2015–2016' },
   { name: 'unibaby.com.tr', tech: 'WordPress', era: '2015–2016' },
   { name: 'markadugun.com', tech: 'Custom Software', era: '2015–2016' },
+  { name: 'yeniabonelik.com', tech: 'Custom Software', era: '2015–2016' },
+  { name: 'metrics34.com', tech: 'Custom Software', era: '2015–2016' },
   { name: 'lifeplus.com.tr', tech: 'WordPress', era: '2015–2016' },
   { name: 'memlekettengelsin.com', tech: 'Magento', era: '2015–2016' },
+  { name: 'beppe.pizza', tech: 'Custom Software', era: '2015–2016' },
   { name: 'yapiwebtv.com', tech: 'Custom Software', era: '2015–2016' },
+  { name: 'esen11izmir.com', tech: 'Custom Software', era: '2015–2016' },
   { name: 'modasahne.com', tech: 'WordPress', era: '2015–2016' },
   { name: 'decorazyon.com', tech: 'WordPress', era: '2015–2016' },
   { name: 'annemekani.com', tech: 'WordPress', era: '2015–2016' },
   { name: 'empera.com.tr', tech: 'WordPress', era: '2015–2016' },
+
+  // Pre-2015 (independent / individual portfolio)
+  { name: 'annelutfen.com', tech: 'Magento', era: 'Pre-2015' },
+  { name: 'nt.com.tr', tech: 'Magento', era: 'Pre-2015' },
+  { name: 'annehamile.com', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'canlitv.net', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'altinfiyatlari.net', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'ikikisilikoyunlar.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'danielemarinelli.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'emlakkulisi.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'tebernurkirecci.com.tr', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'havadanemlakvideo.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'emlakkulisi.tv', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'konutfirsatlari.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'doktorkulisi.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'e2yemek.com', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'e2snetwork.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'emlakhaberi.net', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'haberustasi.com', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'e2saglik.com', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'gulteks.net', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'savasoyunlari.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'oyunindir.net', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: '3dfriv.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'ekolkilif.com', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'kirazkadin.com', tech: 'WordPress', era: 'Pre-2015' },
+  { name: 'dortlerdemir.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'ekolkitapkirtasiye.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'mugladans.com', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: 'gazeteoku.org', tech: 'Custom Software', era: 'Pre-2015' },
+  { name: '3doyunlar.com', tech: 'Custom Software', era: 'Pre-2015' },
 ];

@@ -370,9 +370,7 @@
     },
     "legacy": {
       "eyebrow": "Geçmiş portföy",
-      "title": "2015-2018 döneminde inşa ettiğimiz sistemler",
-      "subtitle": "Bazıları hâlâ aktif, bazıları kapanmış olsa da; her biri Erusoft'un mühendislik DNA'sını şekillendirdi.",
-      "note": "Liste tamamlanmış değil — Excel arşivimizde 80'i aşkın proje kaydı bulunmaktadır.",
+      "title": "2015 öncesinden bugüne inşa ettiğimiz sistemler",
       "count": "{count} proje"
     },
     "openInNewTab": "yeni sekmede açılır",
