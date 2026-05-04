@@ -131,7 +131,7 @@ function LogoTile({ name, src, url, tone }: Logo) {
         'group/tile relative flex h-16 w-52 shrink-0 items-center justify-center rounded-2xl',
         'border px-4 transition-all duration-500 ease-out',
         isLight
-          ? 'border-white/15 bg-ink-900/80 backdrop-blur-sm hover:border-white/30'
+          ? 'border-white/20 bg-ink-700 hover:border-white/40'
           : 'border-white/10 bg-white hover:border-white/30',
         'hover:-translate-y-0.5 hover:scale-[1.04]',
         'hover:[filter:drop-shadow(0_0_28px_rgba(46,107,255,0.35))]',

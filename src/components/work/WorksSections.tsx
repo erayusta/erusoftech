@@ -220,7 +220,7 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
           <div
             className={`flex h-14 items-center justify-center rounded-lg px-3 ring-1 ${
               reference.lightLogo
-                ? 'bg-ink-900/80 ring-white/15 backdrop-blur-sm'
+                ? 'bg-ink-700 ring-white/20'
                 : 'bg-white ring-white/10'
             }`}
           >
@@ -326,7 +326,7 @@ function CompactCard({
         <div
           className={`flex h-16 items-center justify-center rounded-lg px-3 ring-1 ${
             reference.lightLogo
-              ? 'bg-ink-900/80 ring-white/15 backdrop-blur-sm'
+              ? 'bg-ink-700 ring-white/20'
               : 'bg-white ring-white/10'
           }`}
         >
