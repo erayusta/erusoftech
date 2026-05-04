@@ -52,7 +52,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     name: 'Linguland',
     url: 'https://linguland.com',
     category: 'education',
-    logo: '/brand/clients/linguland.ico',
+    logo: '/brand/clients/linguland.webp',
     tech: 'Custom Platform',
   },
   {
@@ -68,7 +68,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     name: 'Kaplan International',
     url: 'https://www.kaplaninternational.com',
     category: 'education',
-    logo: '/brand/clients/kaplaninternational.png',
+    logo: '/brand/clients/kaplaninternational.svg',
     tech: 'Custom Support',
   },
 
@@ -154,7 +154,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     name: 'Bimotif',
     url: 'https://www.bimotif.com',
     category: 'ecommerce',
-    logo: '/brand/clients/bimotif.png',
+    logo: '/brand/clients/bimotif.svg',
     tech: 'T-Soft + Custom',
     featured: true,
   },
