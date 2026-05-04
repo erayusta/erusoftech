@@ -24,12 +24,16 @@ const LOGOS: Logo[] = [
   { name: 'Petaşk', src: '/brand/clients/petask.png' },
   { name: 'Bernarpet', src: '/brand/clients/bernarpet.png' },
   { name: 'RAKS', src: '/brand/clients/raks.webp' },
+  { name: 'DIDOS', src: '/brand/clients/didosofficial.webp' },
   { name: 'eMind Teknoloji', src: '/brand/clients/emind.png' },
   { name: 'Bimotif', src: '/brand/clients/bimotif.png' },
   { name: 'Teknorot', src: '/brand/clients/teknorot.png' },
   { name: 'Hobim', src: '/brand/clients/hobim.png' },
   { name: 'NET Mühendislik', src: '/brand/clients/net-muhendislik.png' },
+  { name: 'Vitanova', src: '/brand/clients/vitanovaevdesaglik.png' },
+  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png' },
   { name: 'Empatist', src: '/brand/clients/empatist.png' },
+  { name: 'Nihan Kaya', src: '/brand/clients/nihankaya.png' },
   { name: 'Topstudy', src: '/brand/clients/topstudy.svg' },
 ];
 

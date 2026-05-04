@@ -383,6 +383,7 @@
       "petask": { "description": "Pet ürünleri e-ticaret altyapısı; sadakat akışları, marketplace konektörleri ve abonelik altyapısı." },
       "bernarpet": { "description": "Bernarpet markasının özel yazılım altyapısı; pet ürün ailesinin uçtan uca dijital iskeleti." },
       "raks": { "description": "RAKS soğutma & ısıtma markasının İkas tabanlı e-ticaret operasyonu; satış sonrası ve servis akışları." },
+      "didosofficial": { "description": "DIDOS kadın çantası markası için İkas tabanlı yüksek-dönüşüm e-ticaret altyapısı; özel koleksiyon vitrinleri ve sipariş yönetimi." },
       "mygumus": { "description": "Gümüş takı segmentinde Magento tabanlı e-ticaret operasyonu; bakım ve geliştirme bugün de Erusoft içerisinde." },
       "bimotif": { "description": "Bimotif eğlence atölyesi e-ticareti — T-Soft entegrasyonu, operasyonel akış ve özel modül geliştirmeleri." },
       "teknorot": { "description": "Teknorot otomotiv yedek parça için WooCommerce kurulumu; tamamı Erusoft içerisinde geliştirildi." },
