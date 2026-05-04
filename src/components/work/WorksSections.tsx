@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { ArrowUpRight, ExternalLink } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
@@ -18,6 +18,24 @@ import {
   type WorkCategory,
   type WorkReference,
 } from './data';
+
+/**
+ * Translate the tech-stack tags stored in data.ts for Turkish viewers
+ * so terms like "Custom Software" don't sit untranslated next to the
+ * Turkish description text. Brand names (WordPress, Magento, T-Soft,
+ * etc.) and technical acronyms are intentionally left untouched.
+ */
+function localizeTech(tech: string | undefined, locale: string): string | undefined {
+  if (!tech || locale !== 'tr') return tech;
+  return tech
+    .replace(/Custom Software/g, 'Özel Yazılım')
+    .replace(/Custom Platform/g, 'Özel Platform')
+    .replace(/Custom Support/g, 'Özel Destek')
+    .replace(/Custom Single-Page/g, 'Özel Tek-Sayfa')
+    .replace(/\+ Custom\b/g, '+ Özel')
+    .replace(/Mobile \+ Web/g, 'Mobil + Web')
+    .replace(/^Renewal$/u, 'Yenileme');
+}
 
 // ---------- Hero ----------
 
@@ -167,7 +185,11 @@ export function WorksFeatured() {
 function ReferenceCard({ reference }: { reference: WorkReference }) {
   const t = useTranslations('works.references');
   const tFilter = useTranslations('works.filter');
+  const tWorks = useTranslations('works');
+  const locale = useLocale();
   const description = t(`${reference.slug}.description`);
+  const techLabel = localizeTech(reference.tech, locale);
+  const openInNewTabLabel = tWorks('openInNewTab');
 
   const Wrapper: React.ComponentType<React.ComponentProps<'a'>> = reference.url
     ? (props) => (
@@ -176,7 +198,7 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
           href={reference.url}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`${reference.name} — yeni sekmede açılır`}
+          aria-label={`${reference.name} — ${openInNewTabLabel}`}
         />
       )
     : (props) => <div {...(props as React.ComponentProps<'div'>)} />;
@@ -213,10 +235,10 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
 
         <p className="mt-4 flex-1 text-sm leading-relaxed text-white/65">{description}</p>
 
-        {reference.tech && (
+        {techLabel && (
           <div className="mt-5 flex items-center justify-between border-t border-white/5 pt-4">
             <span className="text-[11px] uppercase tracking-[0.14em] text-white/40">
-              {reference.tech}
+              {techLabel}
             </span>
             {reference.year && (
               <span className="text-[11px] uppercase tracking-[0.14em] text-white/40">
@@ -235,6 +257,8 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
 export function WorksCompact() {
   const t = useTranslations('works.compact');
   const tFilter = useTranslations('works.filter');
+  const tWorks = useTranslations('works');
+  const openInNewTabLabel = tWorks('openInNewTab');
 
   return (
     <Section eyebrow={t('eyebrow')} title={t('title')} size="wide">
@@ -247,7 +271,11 @@ export function WorksCompact() {
       >
         {COMPACT_REFERENCES.map((ref) => (
           <motion.div key={ref.slug} variants={fadeUp}>
-            <CompactCard reference={ref} categoryLabel={tFilter(ref.category)} />
+            <CompactCard
+              reference={ref}
+              categoryLabel={tFilter(ref.category)}
+              openInNewTabLabel={openInNewTabLabel}
+            />
           </motion.div>
         ))}
       </motion.div>
@@ -258,9 +286,11 @@ export function WorksCompact() {
 function CompactCard({
   reference,
   categoryLabel,
+  openInNewTabLabel,
 }: {
   reference: WorkReference;
   categoryLabel: string;
+  openInNewTabLabel: string;
 }) {
   const Wrapper = reference.url
     ? (props: React.ComponentProps<'a'>) => (
@@ -269,7 +299,7 @@ function CompactCard({
           href={reference.url}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`${reference.name} — yeni sekmede açılır`}
+          aria-label={`${reference.name} — ${openInNewTabLabel}`}
         />
       )
     : (props: React.ComponentProps<'div'>) => <div {...props} />;
@@ -304,6 +334,7 @@ function CompactCard({
 
 export function WorksLegacy() {
   const t = useTranslations('works.legacy');
+  const locale = useLocale();
 
   // Group by era for cleaner display
   const grouped = React.useMemo(() => {
@@ -332,7 +363,9 @@ export function WorksLegacy() {
                 {era}
               </div>
               <div className="h-px flex-1 bg-white/8" />
-              <div className="text-xs text-white/40">{items.length} proje</div>
+              <div className="text-xs text-white/40">
+                {t('count', { count: items.length })}
+              </div>
             </div>
             <ul className="grid grid-cols-1 gap-x-6 gap-y-2 md:grid-cols-2 lg:grid-cols-3">
               {items.map((item) => (
@@ -342,7 +375,7 @@ export function WorksLegacy() {
                 >
                   <span className="truncate text-white/75">{item.name}</span>
                   <span className="shrink-0 text-[10px] uppercase tracking-[0.14em] text-white/40">
-                    {item.tech}
+                    {localizeTech(item.tech, locale)}
                   </span>
                 </li>
               ))}
