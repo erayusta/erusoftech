@@ -37,6 +37,41 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     tech: 'WooCommerce + Custom',
     featured: true,
   },
+
+  // ---- Education vertical (sit just after PT in the All view) ----
+  {
+    slug: 'topstudy',
+    name: 'Topstudy',
+    url: 'https://topstudy.com',
+    category: 'education',
+    logo: '/brand/clients/topstudy.svg',
+    tech: 'Custom Platform',
+  },
+  {
+    slug: 'linguland',
+    name: 'Linguland',
+    url: 'https://linguland.com',
+    category: 'education',
+    logo: '/brand/clients/linguland.png',
+    tech: 'Custom Platform',
+  },
+  {
+    slug: 'academiaunited',
+    name: 'Academia United',
+    url: 'https://academiaunited.com',
+    category: 'education',
+    logo: '/brand/clients/academiaunited.svg',
+    tech: 'Custom Platform',
+  },
+  {
+    slug: 'kaplaninternational',
+    name: 'Kaplan International',
+    url: 'https://www.kaplaninternational.com',
+    category: 'education',
+    logo: '/brand/clients/kaplaninternational.png',
+    tech: 'Custom Support',
+  },
+
   {
     slug: 'markettengelse',
     name: 'Marketten Gelse',
@@ -209,39 +244,6 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     tech: 'WordPress',
   },
 
-  // ---- Education vertical ----
-  {
-    slug: 'topstudy',
-    name: 'Topstudy',
-    url: 'https://topstudy.com',
-    category: 'education',
-    logo: '/brand/clients/topstudy.svg',
-    tech: 'Custom Platform',
-  },
-  {
-    slug: 'linguland',
-    name: 'Linguland',
-    url: 'https://linguland.com',
-    category: 'education',
-    logo: '/brand/clients/linguland.png',
-    tech: 'Custom Platform',
-  },
-  {
-    slug: 'academiaunited',
-    name: 'Academia United',
-    url: 'https://academiaunited.com',
-    category: 'education',
-    logo: '/brand/clients/academiaunited.svg',
-    tech: 'Custom Platform',
-  },
-  {
-    slug: 'kaplaninternational',
-    name: 'Kaplan International',
-    url: 'https://www.kaplaninternational.com',
-    category: 'education',
-    logo: '/brand/clients/kaplaninternational.png',
-    tech: 'Custom Support',
-  },
 ];
 
 /**
