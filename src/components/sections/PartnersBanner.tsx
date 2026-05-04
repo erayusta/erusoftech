@@ -7,182 +7,30 @@ import { Container } from '@/components/ui/Container';
 import { fadeUp, viewportOnce } from '@/lib/motion';
 
 /**
- * Inline SVG brand marks.
- *
- * The placeholder logos used to live as standalone .svg files rendered
- * through next/image — but `currentColor` doesn't inherit across the
- * <img> boundary, so the marks rendered in their default fill (dark) and
- * disappeared into the page background. Re-authoring them as inline SVG
- * components makes `fill="currentColor"` work again; the parent tile
- * drives color, grayscale and glow with plain CSS.
+ * Logos rendered in the partners marquee. The image files live under
+ * public/brand/clients/ and were sourced from each brand's own site
+ * (see chore(brand) commit on the works-page work). Mixed file types
+ * (svg / png / jpg / webp) reflect what each brand actually serves;
+ * they're rendered through plain <img> against a small white tile so
+ * brand colors stay intact on the dark theme.
  */
-type LogoRenderer = (className: string) => React.ReactNode;
+type Logo = { name: string; src: string };
 
-const LOGOS: { name: string; render: LogoRenderer }[] = [
-  {
-    name: 'Nexora',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Nexora">
-        <rect x="4" y="12" width="24" height="24" rx="6" fill="currentColor" />
-        <path d="M11 19l10 10M21 19l-10 10" stroke="#05060A" strokeWidth="2.6" strokeLinecap="round" />
-        <text
-          x="38"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Nexora
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Orbitly',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Orbitly">
-        <circle cx="16" cy="24" r="10" stroke="currentColor" strokeWidth="2.5" />
-        <circle cx="22.5" cy="19" r="3" fill="currentColor" />
-        <path d="M6 24a10 10 0 0 0 20 0" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" opacity="0.55" />
-        <text
-          x="38"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Orbitly
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Vertex',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Vertex">
-        <path d="M4 36L16 10l12 26Z" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-        <path d="M10 36l6-13 6 13Z" fill="currentColor" />
-        <text
-          x="38"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Vertex
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Lumen',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Lumen">
-        <rect x="2" y="14" width="18" height="20" rx="10" fill="currentColor" />
-        <rect x="14" y="14" width="18" height="20" rx="10" fill="currentColor" fillOpacity="0.55" />
-        <text
-          x="42"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Lumen
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Altair',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Altair">
-        <path
-          d="M16 6l3 10 10 3-10 3-3 10-3-10-10-3 10-3z"
-          fill="currentColor"
-        />
-        <text
-          x="38"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Altair
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Kairos',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Kairos">
-        <rect x="4" y="12" width="6" height="24" rx="2" fill="currentColor" />
-        <rect x="13" y="18" width="6" height="18" rx="2" fill="currentColor" />
-        <rect x="22" y="24" width="6" height="12" rx="2" fill="currentColor" />
-        <text
-          x="36"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Kairos
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Hexon',
-    render: (c) => (
-      <svg viewBox="0 0 180 48" fill="none" className={c} aria-label="Hexon">
-        <path d="M16 6l10 6v14l-10 6-10-6V12Z" fill="currentColor" />
-        <path d="M16 14l5 3v7l-5 3-5-3v-7Z" fill="#05060A" />
-        <text
-          x="34"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Hexon
-        </text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Parallax',
-    render: (c) => (
-      <svg viewBox="0 0 200 48" fill="none" className={c} aria-label="Parallax">
-        <circle cx="12" cy="24" r="8" fill="currentColor" />
-        <circle cx="24" cy="24" r="8" fill="currentColor" fillOpacity="0.5" />
-        <text
-          x="40"
-          y="32"
-          fontFamily="'Inter', system-ui, sans-serif"
-          fontSize="20"
-          fontWeight={700}
-          letterSpacing="-0.4"
-          fill="currentColor"
-        >
-          Parallax
-        </text>
-      </svg>
-    ),
-  },
+const LOGOS: Logo[] = [
+  { name: 'Pozitif Teknoloji', src: '/brand/clients/pt.svg' },
+  { name: 'Marketten Gelse', src: '/brand/clients/markettengelse.svg' },
+  { name: 'Muyubi', src: '/brand/clients/muyubi.png' },
+  { name: 'CNT İç Giyim', src: '/brand/clients/e-cnt.jpg' },
+  { name: 'Petaşk', src: '/brand/clients/petask.png' },
+  { name: 'Bernarpet', src: '/brand/clients/bernarpet.png' },
+  { name: 'RAKS', src: '/brand/clients/raks.webp' },
+  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png' },
+  { name: 'Bimotif', src: '/brand/clients/bimotif.png' },
+  { name: 'Teknorot', src: '/brand/clients/teknorot.png' },
+  { name: 'Hobim', src: '/brand/clients/hobim.png' },
+  { name: 'NET Mühendislik', src: '/brand/clients/net-muhendislik.png' },
+  { name: 'Empatist', src: '/brand/clients/empatist.png' },
+  { name: 'Topstudy', src: '/brand/clients/topstudy.svg' },
 ];
 
 export function PartnersBanner() {
@@ -235,8 +83,8 @@ export function PartnersBanner() {
         }}
       >
         <div className="flex w-max animate-scroll-x gap-4 py-2 group-hover:[animation-play-state:paused]">
-          {loop.map(({ name, render }, i) => (
-            <LogoTile key={`${name}-${i}`} name={name} render={render} />
+          {loop.map(({ name, src }, i) => (
+            <LogoTile key={`${name}-${i}`} name={name} src={src} />
           ))}
         </div>
 
@@ -260,21 +108,26 @@ export function PartnersBanner() {
   );
 }
 
-function LogoTile({ name, render }: { name: string; render: LogoRenderer }) {
+function LogoTile({ name, src }: Logo) {
   return (
     <div
       role="img"
       aria-label={name}
       className={[
         'group/tile relative flex h-16 w-52 shrink-0 items-center justify-center rounded-2xl',
-        'border border-white/8 bg-white/[0.02] text-white/75',
+        'border border-white/10 bg-white px-4',
         'transition-all duration-500 ease-out',
-        'hover:-translate-y-0.5 hover:scale-[1.04] hover:border-white/20 hover:bg-white/[0.05] hover:text-white',
+        'hover:-translate-y-0.5 hover:scale-[1.04] hover:border-white/30',
         'hover:[filter:drop-shadow(0_0_28px_rgba(46,107,255,0.35))]',
-        'backdrop-blur-sm',
       ].join(' ')}
     >
-      {render('h-8 w-auto transition-colors duration-500')}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={`${name} logo`}
+        className="h-9 w-auto max-w-full object-contain transition-transform duration-500 group-hover/tile:scale-[1.03]"
+        loading="lazy"
+      />
 
       {/* Subtle gradient border that fades in on hover */}
       <span
