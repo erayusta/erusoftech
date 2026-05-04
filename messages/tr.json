@@ -41,7 +41,7 @@
         "bullets": [
           "Makine öğrenimi entegrasyonu (OpenAI, Anthropic, self-hosted)",
           "Öngörücü analitik ve karar destek motorları",
-          "Workflow otomasyonu ve RAG pipeline'ları"
+          "İş akışı otomasyonu ve RAG pipeline'ları"
         ]
       },
       "data": {
@@ -77,7 +77,7 @@
         "bullets": [
           "Headless CMS (Strapi, Payload, Sanity)",
           "Esnek içerik modelleme ve şema yönetimi",
-          "Multi-channel ve multi-locale yayınlama"
+          "Çok kanallı ve çok dilli yayınlama"
         ]
       },
       "crm": {
@@ -85,7 +85,7 @@
         "description": "Satış, destek ve operasyon ekiplerinizin etrafında şekillenen, tamamen özelleştirilmiş müşteri ilişkileri sistemleri.",
         "bullets": [
           "Özel CRM mimarisi ve veri modeli tasarımı",
-          "Workflow automation ve rol bazlı yetkilendirme",
+          "İş akışı otomasyonu ve rol bazlı yetkilendirme",
           "Üçüncü parti API entegrasyonları (Slack, Meta, HubSpot)"
         ]
       },
@@ -103,7 +103,7 @@
         "description": "İlk müşterinizden milyonuncu kullanıcınıza kadar ölçeklenen, multi-tenant SaaS ürünleri.",
         "bullets": [
           "Multi-tenant mimari ve row-level security",
-          "Subscription & billing (Stripe, Paddle) entegrasyonu",
+          "Abonelik & faturalandırma (Stripe, Paddle) entegrasyonu",
           "Ölçeklenebilir backend, job queue'lar, event-driven sistemler"
         ]
       },
@@ -201,7 +201,7 @@
         "tag": "CMS • Medya",
         "title": "Multi-brand headless CMS platformu",
         "problem": "5 ayrı marka, ayrı ayrı WordPress kurulumları ile yönetiliyor, yayın süreçleri uzuyordu.",
-        "solution": "Tek headless CMS + locale/brand şeması + multi-channel distribution API.",
+        "solution": "Tek headless CMS + locale/marka şeması + çok kanallı dağıtım API'si.",
         "result": "Yayın süresinde %70 iyileşme, altyapı maliyetinde %45 düşüş."
       },
       "case3": {
@@ -234,12 +234,12 @@
   "about": {
     "meta": {
       "title": "Hakkımızda — Erusoft",
-      "description": "2015'ten bu yana e-ticaret altyapıları, custom yazılım ve fintech entegrasyonlarında üretim hattı kalitesinde mühendislik."
+      "description": "2015'ten bu yana e-ticaret altyapıları, özel yazılım ve fintech entegrasyonlarında üretim hattı kalitesinde mühendislik."
     },
     "hero": {
       "eyebrow": "Hakkımızda",
       "title": "2015'ten bu yana, ölçeklenen işletmelerin <span>teknik omurgasını</span> inşa ediyoruz",
-      "subtitle": "Erusoft; e-ticaret altyapılarından custom yazılıma, fintech entegrasyonlarından bulut mimarisine kadar — şirketinizin dijital katmanını uçtan uca tasarlayan ve sürdüren bir mühendislik atölyesidir."
+      "subtitle": "Erusoft; e-ticaret altyapılarından özel yazılıma, fintech entegrasyonlarından bulut mimarisine kadar — şirketinizin dijital katmanını uçtan uca tasarlayan ve sürdüren bir mühendislik atölyesidir."
     },
     "story": {
       "eyebrow": "Hikâye",
@@ -259,7 +259,7 @@
     "expertise": {
       "eyebrow": "Uzmanlık",
       "title": "Üç ana sütun — birbirini tamamlayan disiplinler",
-      "subtitle": "İlk gün e-ticaret altyapısıyla başladık; bugün custom yazılımdan fintech entegrasyonuna kadar tek bir disiplinli mühendislik akışı altında çalışıyoruz.",
+      "subtitle": "İlk gün e-ticaret altyapısıyla başladık; bugün özel yazılımdan fintech entegrasyonuna kadar tek bir disiplinli mühendislik akışı altında çalışıyoruz.",
       "groups": {
         "ecommerce": {
           "title": "E-Ticaret Platformları",
@@ -272,7 +272,7 @@
           ]
         },
         "custom": {
-          "title": "Custom Yazılım Geliştirme",
+          "title": "Özel Yazılım Geliştirme",
           "description": "Tek bir platformla sınırlı kalmayan, iş süreçlerinize özel yazılım sistemleri ve ürünleri.",
           "items": [
             "Tek-amaçlı SaaS ürünleri, kurumsal portallar ve dahili operasyon araçları",
@@ -334,7 +334,7 @@
   "works": {
     "meta": {
       "title": "Referanslar — Erusoft",
-      "description": "10+ yıldır inşa ettiğimiz e-ticaret, custom yazılım ve fintech sistemlerinden seçilmiş referanslar."
+      "description": "10+ yıldır inşa ettiğimiz e-ticaret, özel yazılım ve fintech sistemlerinden seçilmiş referanslar."
     },
     "hero": {
       "eyebrow": "Referanslar",
@@ -353,7 +353,7 @@
       "title": "Sektör",
       "all": "Tümü",
       "ecommerce": "E-Ticaret",
-      "custom": "Custom Yazılım",
+      "custom": "Özel Yazılım",
       "corporate": "Kurumsal",
       "mobile": "Mobil",
       "education": "Eğitim",
@@ -372,10 +372,12 @@
       "eyebrow": "Geçmiş portföy",
       "title": "2015-2018 döneminde inşa ettiğimiz sistemler",
       "subtitle": "Bazıları hâlâ aktif, bazıları kapanmış olsa da; her biri Erusoft'un mühendislik DNA'sını şekillendirdi.",
-      "note": "Liste tamamlanmış değil — Excel arşivimizde 80'i aşkın proje kaydı bulunmaktadır."
+      "note": "Liste tamamlanmış değil — Excel arşivimizde 80'i aşkın proje kaydı bulunmaktadır.",
+      "count": "{count} proje"
     },
+    "openInNewTab": "yeni sekmede açılır",
     "references": {
-      "pt": { "description": "Apple Premium Education Partner ağı için öğrenci kampanyaları, ürün kataloğu ve yetkili servis süreçlerini yöneten WooCommerce + custom altyapı." },
+      "pt": { "description": "Apple Premium Education Partner ağı için öğrenci kampanyaları, ürün kataloğu ve yetkili servis süreçlerini yöneten WooCommerce + özel altyapı." },
       "markettengelse": { "description": "Online market siparişi platformu — TROY ödeme altyapısı, sanal POS ve özel sipariş akışlarıyla genişletilmiş WooCommerce kurulumu." },
       "muyubi": { "description": "Bilgisayar ve teknoloji ürünleri için yüksek-trafik WooCommerce mağazası; XML, ödeme ve kargo entegrasyonları." },
       "e-cnt": { "description": "CNT iç giyim için çok-koleksiyon e-ticaret altyapısı; özel checkout deneyimi ve operasyonel entegrasyonlar." },
@@ -388,7 +390,7 @@
       "teknorot": { "description": "Teknorot otomotiv yedek parça için WooCommerce kurulumu; tamamı Erusoft içerisinde geliştirildi." },
       "etnicfoodsturkey": { "description": "Etnic Foods Turkey için B2B katalog ve teslimat takip arayüzü." },
       "emind": { "description": "eMind Teknoloji'nin operasyonel CRM ve dijital pazarlama altyapısı — özel olarak geliştirilmiş iş süreçleri yazılımları." },
-      "kampanyaradar": { "description": "Türkiye'nin tüm indirimleri ve kredi fırsatlarını agrega eden custom platform — veri toplama ve sıralama motoru." },
+      "kampanyaradar": { "description": "Türkiye'nin tüm indirimleri ve kredi fırsatlarını agrega eden özel platform — veri toplama ve sıralama motoru." },
       "idfleks": { "description": "idfleks için tamamen özel yazılım — sektörel iş süreçlerini kapsayan modüller ve operasyonel arayüzler." },
       "hobim": { "description": "Hobim Arşivleme & Basım Hizmetleri için tamamı tarafımızdan yapılan kurumsal yönetim sistemi." },
       "kocakgoldbasaksehir": { "description": "Koçak Gold Başakşehir için mobil uygulama ve kurumsal site; kuyumculuk operasyon takibi." },

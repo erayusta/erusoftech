@@ -372,8 +372,10 @@
       "eyebrow": "Past portfolio",
       "title": "Systems we built between 2015 and 2018",
       "subtitle": "Some are still live, some have shut down — but each one shaped the engineering DNA of Erusoft.",
-      "note": "This list is not exhaustive — our internal archive holds 80+ project records."
+      "note": "This list is not exhaustive — our internal archive holds 80+ project records.",
+      "count": "{count} projects"
     },
+    "openInNewTab": "opens in new tab",
     "references": {
       "pt": { "description": "Apple Premium Education Partner platform — student campaigns, product catalog and authorized service flows on a WooCommerce + custom stack." },
       "markettengelse": { "description": "Online grocery ordering platform — TROY payment rails, virtual POS and custom order flows layered on WooCommerce." },
