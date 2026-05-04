@@ -37,6 +37,16 @@ function localizeTech(tech: string | undefined, locale: string): string | undefi
     .replace(/^Renewal$/u, 'Yenileme');
 }
 
+/**
+ * Era heading translation for the legacy roll-up. Year-range eras
+ * (`2017–2018`, `2015–2016`, `2019`) are language-neutral; only the
+ * "Pre-2015" bucket needs a Turkish form.
+ */
+function localizeEra(era: string, locale: string): string {
+  if (locale !== 'tr') return era;
+  return era === 'Pre-2015' ? '2015 öncesi' : era;
+}
+
 // ---------- Hero ----------
 
 export function WorksHero() {
@@ -348,7 +358,7 @@ export function WorksLegacy() {
   }, []);
 
   return (
-    <Section eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} size="wide">
+    <Section eyebrow={t('eyebrow')} title={t('title')} size="wide">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -360,7 +370,7 @@ export function WorksLegacy() {
           <motion.div key={era} variants={fadeUp}>
             <div className="mb-4 flex items-center gap-3">
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-300">
-                {era}
+                {localizeEra(era, locale)}
               </div>
               <div className="h-px flex-1 bg-white/8" />
               <div className="text-xs text-white/40">
@@ -383,10 +393,6 @@ export function WorksLegacy() {
           </motion.div>
         ))}
       </motion.div>
-
-      <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-white/45 text-balance">
-        {t('note')}
-      </p>
     </Section>
   );
 }

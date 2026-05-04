@@ -370,9 +370,7 @@
     },
     "legacy": {
       "eyebrow": "Past portfolio",
-      "title": "Systems we built between 2015 and 2018",
-      "subtitle": "Some are still live, some have shut down — but each one shaped the engineering DNA of Erusoft.",
-      "note": "This list is not exhaustive — our internal archive holds 80+ project records.",
+      "title": "Systems we built from before 2015 onwards",
       "count": "{count} projects"
     },
     "openInNewTab": "opens in new tab",
