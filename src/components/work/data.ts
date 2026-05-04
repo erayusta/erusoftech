@@ -52,7 +52,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     name: 'Linguland',
     url: 'https://linguland.com',
     category: 'education',
-    logo: '/brand/clients/linguland.png',
+    logo: '/brand/clients/linguland.ico',
     tech: 'Custom Platform',
   },
   {
@@ -132,6 +132,14 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     logo: '/brand/clients/raks.webp',
     tech: 'İkas',
     featured: true,
+  },
+  {
+    slug: 'didosofficial',
+    name: 'DIDOS',
+    url: 'https://didosofficial.com.tr',
+    category: 'ecommerce',
+    logo: '/brand/clients/didosofficial.webp',
+    tech: 'İkas',
   },
   {
     slug: 'mygumus',
@@ -267,6 +275,8 @@ export const COMPACT_REFERENCES: WorkReference[] = [
   { slug: 'suainsaat', name: 'SUA İnşaat', url: 'https://suainsaat.com.tr', category: 'corporate', logo: '/brand/clients/suainsaat.png' },
   { slug: 'miranlegal', name: 'Miran Legal', url: 'https://miranlegal.com.tr', category: 'services', logo: '/brand/clients/miranlegal.png' },
   { slug: 'ozlemduran', name: 'Özlem Duran', url: 'https://ozlemduran.com.tr', category: 'corporate', logo: '/brand/clients/ozlemduran.ico' },
+  { slug: 'turkuzay', name: 'Türkuzay', url: 'https://turkuzay.com.tr', category: 'corporate', logo: '/brand/clients/turkuzay.png' },
+  { slug: 'nihankaya', name: 'Nihan Kaya', url: 'https://nihankaya.com', category: 'corporate', logo: '/brand/clients/nihankaya.png' },
 ];
 
 /**
