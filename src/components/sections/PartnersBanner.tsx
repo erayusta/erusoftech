@@ -14,27 +14,27 @@ import { fadeUp, viewportOnce } from '@/lib/motion';
  * they're rendered through plain <img> against a small white tile so
  * brand colors stay intact on the dark theme.
  */
-type Logo = { name: string; src: string };
+type Logo = { name: string; src: string; url: string };
 
 const LOGOS: Logo[] = [
-  { name: 'Pozitif Teknoloji', src: '/brand/clients/pt.svg' },
-  { name: 'Marketten Gelse', src: '/brand/clients/markettengelse.svg' },
-  { name: 'Muyubi', src: '/brand/clients/muyubi.png' },
-  { name: 'CNT İç Giyim', src: '/brand/clients/e-cnt.jpg' },
-  { name: 'Petaşk', src: '/brand/clients/petask.png' },
-  { name: 'Bernarpet', src: '/brand/clients/bernarpet.png' },
-  { name: 'RAKS', src: '/brand/clients/raks.webp' },
-  { name: 'DIDOS', src: '/brand/clients/didosofficial.webp' },
-  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png' },
-  { name: 'Bimotif', src: '/brand/clients/bimotif.png' },
-  { name: 'Teknorot', src: '/brand/clients/teknorot.png' },
-  { name: 'Hobim', src: '/brand/clients/hobim.png' },
-  { name: 'NET Mühendislik', src: '/brand/clients/net-muhendislik.png' },
-  { name: 'Vitanova', src: '/brand/clients/vitanovaevdesaglik.png' },
-  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png' },
-  { name: 'Empatist', src: '/brand/clients/empatist.png' },
-  { name: 'Nihan Kaya', src: '/brand/clients/nihankaya.png' },
-  { name: 'Topstudy', src: '/brand/clients/topstudy.svg' },
+  { name: 'Pozitif Teknoloji', src: '/brand/clients/pt.svg', url: 'https://pt.com.tr' },
+  { name: 'Marketten Gelse', src: '/brand/clients/markettengelse.svg', url: 'https://markettengelse.com' },
+  { name: 'Muyubi', src: '/brand/clients/muyubi.png', url: 'https://muyubi.com' },
+  { name: 'CNT İç Giyim', src: '/brand/clients/e-cnt.jpg', url: 'https://e-cnt.com.tr' },
+  { name: 'Petaşk', src: '/brand/clients/petask.png', url: 'https://petask.com.tr' },
+  { name: 'Bernarpet', src: '/brand/clients/bernarpet.png', url: 'https://bernarpet.com' },
+  { name: 'RAKS', src: '/brand/clients/raks.webp', url: 'https://raks.com.tr' },
+  { name: 'DIDOS', src: '/brand/clients/didosofficial.webp', url: 'https://didosofficial.com.tr' },
+  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png', url: 'https://emind.com.tr' },
+  { name: 'Bimotif', src: '/brand/clients/bimotif.svg', url: 'https://www.bimotif.com' },
+  { name: 'Teknorot', src: '/brand/clients/teknorot.png', url: 'https://www.teknorot.com' },
+  { name: 'Hobim', src: '/brand/clients/hobim.png', url: 'https://hobim.com' },
+  { name: 'NET Mühendislik', src: '/brand/clients/net-muhendislik.png', url: 'https://net-muhendislik.com' },
+  { name: 'Vitanova', src: '/brand/clients/vitanovaevdesaglik.png', url: 'https://vitanovaevdesaglik.com' },
+  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png', url: 'https://turkuzay.com.tr' },
+  { name: 'Empatist', src: '/brand/clients/empatist.png', url: 'https://empatist.com' },
+  { name: 'Nihan Kaya', src: '/brand/clients/nihankaya.png', url: 'https://nihankaya.com' },
+  { name: 'Topstudy', src: '/brand/clients/topstudy.svg', url: 'https://topstudy.com' },
 ];
 
 export function PartnersBanner() {
@@ -87,8 +87,8 @@ export function PartnersBanner() {
         }}
       >
         <div className="flex w-max animate-scroll-x gap-4 py-2 group-hover:[animation-play-state:paused]">
-          {loop.map(({ name, src }, i) => (
-            <LogoTile key={`${name}-${i}`} name={name} src={src} />
+          {loop.map(({ name, src, url }, i) => (
+            <LogoTile key={`${name}-${i}`} name={name} src={src} url={url} />
           ))}
         </div>
 
@@ -112,17 +112,21 @@ export function PartnersBanner() {
   );
 }
 
-function LogoTile({ name, src }: Logo) {
+function LogoTile({ name, src, url }: Logo) {
   return (
-    <div
-      role="img"
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label={name}
+      title={name}
       className={[
         'group/tile relative flex h-16 w-52 shrink-0 items-center justify-center rounded-2xl',
         'border border-white/10 bg-white px-4',
         'transition-all duration-500 ease-out',
         'hover:-translate-y-0.5 hover:scale-[1.04] hover:border-white/30',
         'hover:[filter:drop-shadow(0_0_28px_rgba(46,107,255,0.35))]',
+        'focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950',
       ].join(' ')}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -147,6 +151,6 @@ function LogoTile({ name, src }: Logo) {
           maskComposite: 'exclude',
         }}
       />
-    </div>
+    </a>
   );
 }
