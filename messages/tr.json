@@ -408,6 +408,158 @@
       "button": "İletişime geç"
     }
   },
+  "privacy": {
+    "meta": {
+      "title": "Gizlilik & KVKK Aydınlatma Metni — Erusoft",
+      "description": "Erusoft tarafından sunulan hizmetler kapsamında işlenen kişisel verilere ilişkin KVKK aydınlatma metni."
+    },
+    "hero": {
+      "eyebrow": "Yasal",
+      "title": "Gizlilik & KVKK Aydınlatma Metni",
+      "lastUpdated": "Son güncelleme: 30 Nisan 2026"
+    },
+    "intro": "Erusoft olarak; web sitemizi ziyaret eden ve bizimle iletişime geçen kullanıcılarımızın kişisel verilerinin korunmasını önemsiyoruz. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca sizleri kişisel veri işleme süreçlerimiz hakkında bilgilendirmek amacıyla hazırlanmış bir aydınlatma metnidir.",
+    "sections": {
+      "controller": {
+        "title": "Veri Sorumlusu",
+        "body": "KVKK kapsamında veri sorumlusu sıfatıyla Erusoft (Eray Usta) hareket etmektedir. Bu aydınlatma metnindeki süreçler için iletişim noktanız: hello@erusoftech.com"
+      },
+      "data": {
+        "title": "İşlenen Kişisel Veriler",
+        "body": "Sizinle olan iletişim ve hizmet süreçlerimizde aşağıdaki kategorilerde kişisel veriler işlenmektedir:\n\n• İletişim verileri: ad, soyad, e-posta, telefon, şirket bilgisi\n• Mesleki / iş bilgileri: pozisyon, sektör, talep edilen hizmet kapsamı\n• Teknik veriler: IP adresi, tarayıcı bilgisi, sayfa görüntüleme istatistikleri (anonimleştirilmiş)\n• Form verileri: bizimle iletişime geçmek için doldurduğunuz formlar üzerinden tarafımıza ilettiğiniz tüm bilgiler"
+      },
+      "purpose": {
+        "title": "İşleme Amaçları ve Hukuki Sebepler",
+        "body": "Kişisel verileriniz; iletişim taleplerinizin yanıtlanması, sözleşmesel ilişkilerin kurulması ve yürütülmesi, hizmet kalitesinin geliştirilmesi ve yasal yükümlülüklerin yerine getirilmesi amaçlarıyla, KVKK m.5 uyarınca \"sözleşmenin kurulması ve ifası\", \"meşru menfaat\" ve gerekli durumlarda \"açık rıza\" hukuki sebeplerine dayanılarak işlenmektedir."
+      },
+      "transfer": {
+        "title": "Aktarım",
+        "body": "Kişisel verileriniz, hizmet sunumunu sağlamak amacıyla iş ortağı olduğumuz teknoloji sağlayıcılarına (örn. e-posta servisleri, bulut altyapı sağlayıcıları) aktarılabilir. Bu aktarımlar, KVKK'ya uygun şekilde gerekli teknik ve idari tedbirler alınarak yapılmaktadır. Yurt dışına veri aktarımı söz konusu olduğunda, KVKK m.9'daki şartlar gözetilmektedir."
+      },
+      "collection": {
+        "title": "Veri Toplama Yöntemi",
+        "body": "Kişisel verileriniz; web sitemiz üzerindeki formlar, e-posta yazışmaları, sözleşmesel ilişkiler ve gerekli olduğu durumlarda telefon görüşmeleri kanalıyla doğrudan sizden toplanmaktadır."
+      },
+      "rights": {
+        "title": "KVKK m.11 — Haklarınız",
+        "body": "KVKK m.11 uyarınca, kişisel verilerinizle ilgili olarak;\n\n• İşlenip işlenmediğini öğrenme,\n• İşlenmişse buna ilişkin bilgi talep etme,\n• İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,\n• Yurt içinde / yurt dışında aktarıldığı üçüncü kişileri bilme,\n• Eksik veya yanlış işlenmişse düzeltilmesini isteme,\n• KVKK ve ilgili mevzuatta öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,\n• Düzeltme, silme veya yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,\n• Otomatik sistemler vasıtasıyla analiz edilmesi sonucu aleyhinize bir sonuç doğmasına itiraz etme,\n• Kanuna aykırı işlenme nedeniyle zarara uğramışsanız zararın giderilmesini talep etme\n\nhaklarına sahipsiniz."
+      },
+      "cookies": {
+        "title": "Çerez Kullanımı",
+        "body": "Web sitemiz, kullanıcı deneyimini iyileştirmek amacıyla zorunlu ve performans çerezleri kullanabilmektedir. Tarayıcı ayarlarınızdan çerez tercihlerinizi her zaman yönetebilir, mevcut çerezleri silebilirsiniz."
+      },
+      "contact": {
+        "title": "İletişim & Başvuru",
+        "body": "Yukarıda sıralanan haklarınızı kullanmak için taleplerinizi hello@erusoftech.com adresine, kimliğinizi tespit edici belgelerle birlikte yazılı olarak iletebilirsiniz. Tarafımıza iletilen talepler, KVKK m.13 uyarınca en geç 30 gün içinde sonuçlandırılacaktır."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Kullanım Koşulları — Erusoft",
+      "description": "erusoftech.com web sitesinin kullanımına ilişkin koşullar ve şartlar."
+    },
+    "hero": {
+      "eyebrow": "Yasal",
+      "title": "Kullanım Koşulları",
+      "lastUpdated": "Son güncelleme: 30 Nisan 2026"
+    },
+    "intro": "Bu Kullanım Koşulları (\"Koşullar\"), erusoftech.com web sitesi (\"Site\") üzerinden sunulan içerik ve hizmetlerin kullanımına ilişkin şart ve koşulları düzenlemektedir. Site'yi ziyaret etmek veya kullanmak suretiyle, bu Koşulları okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan etmiş sayılırsınız.",
+    "sections": {
+      "scope": {
+        "title": "Hizmet Kapsamı",
+        "body": "Erusoft; web sitesi üzerinden sunduğu içerikler aracılığıyla yazılım geliştirme, danışmanlık ve entegrasyon hizmetlerini tanıtan bir mühendislik şirketidir. Site içeriği genel bilgilendirme amaçlı olup, aksi açıkça belirtilmedikçe sözleşmesel bir teklif niteliği taşımaz; herhangi bir hizmetin satın alınması ayrı bir sözleşme akdedilmesini gerektirir."
+      },
+      "obligations": {
+        "title": "Kullanıcı Yükümlülükleri",
+        "body": "Site'yi kullanırken yürürlükteki mevzuata, ahlaka ve Site'nin amaçlarına aykırı davranışlardan kaçınmayı kabul edersiniz. Erusoft; Site'nin güvenliğini, bütünlüğünü veya itibarını tehdit eden faaliyetlerin tespiti durumunda erişimi sınırlandırma, içeriği kaldırma veya hukuki süreç başlatma haklarını saklı tutar."
+      },
+      "intellectual": {
+        "title": "Fikri Mülkiyet",
+        "body": "Site üzerindeki tüm marka, logo, içerik, tasarım, kod ve düzen unsurları aksi belirtilmedikçe Erusoft'a ait olup, Türkiye Cumhuriyeti telif hakkı ve fikri mülkiyet mevzuatı kapsamında korunmaktadır. Yazılı izin alınmaksızın kopyalanması, çoğaltılması, türev eser oluşturulması veya yeniden yayınlanması yasaktır."
+      },
+      "liability": {
+        "title": "Sorumluluk Reddi",
+        "body": "Erusoft, Site'deki bilgilerin doğruluğu ve güncelliği için makul özeni göstermekle birlikte; içerik kullanılarak alınan kararlar veya gerçekleştirilen işlemlerden doğabilecek doğrudan veya dolaylı zararlardan sorumlu tutulamaz. Site, mevcut haliyle (\"as-is\") sunulmaktadır; kesintisiz erişilebilirliği veya hatasızlığı garanti edilmez."
+      },
+      "thirdParty": {
+        "title": "Üçüncü Taraf Bağlantıları",
+        "body": "Site, üçüncü taraf web sitelerine bağlantılar içerebilir. Bu bağlantıların erişilebilirliği, içeriği veya gizlilik uygulamaları Erusoft'un denetimi dışındadır ve sorumluluk alanına girmez. Üçüncü taraf sitelerinin kendi koşulları geçerlidir."
+      },
+      "changes": {
+        "title": "Değişiklikler",
+        "body": "Erusoft, bu Koşulları herhangi bir zamanda önceden bildirim yapmaksızın güncelleyebilir. Değişiklikler Site'de yayımlandığı tarihten itibaren geçerlilik kazanır. Site'yi kullanmaya devam etmeniz, güncel Koşulları kabul ettiğiniz anlamına gelir."
+      },
+      "law": {
+        "title": "Uygulanacak Hukuk",
+        "body": "Bu Koşullardan doğan veya bunlarla ilgili olan her türlü uyuşmazlıkta Türkiye Cumhuriyeti hukuku uygulanır ve İstanbul Mahkemeleri ile İcra Daireleri münhasıran yetkilidir."
+      }
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Kariyer — Erusoft",
+      "description": "Erusoft ekibine katılın. Aktif açık pozisyon yok ama yetenek havuzumuz her zaman açık."
+    },
+    "hero": {
+      "eyebrow": "Kariyer",
+      "title": "Aramıza katıl — <span>açık pozisyon yakında</span>",
+      "subtitle": "Kıdemli mühendisler, sistem mimarları ve DevOps uzmanlarıyla genişlemeye devam ediyoruz. Şu an aktif açık pozisyon yok, ama yetenek havuzumuz her zaman açık. CV'nizi gönderin; yeni pozisyon açıldığında ilk biz haber verelim.",
+      "cvCta": "CV gönder",
+      "aboutCta": "Hakkımızda"
+    },
+    "values": {
+      "eyebrow": "Çalışma kültürü",
+      "title": "Bizimle çalışmak nasıl?",
+      "subtitle": "Tek tip ofis günü değil; sahiplik, derinlik ve uzun soluklu üretim üzerinde duran küçük ama disiplinli bir ekip.",
+      "items": {
+        "ownership": {
+          "title": "Sahiplik kültürü",
+          "description": "Aldığınız işin başından sonuna kadar sahibisiniz — fikir, mimari, kod, deploy ve sonrasındaki bakım. Mikroyönetim yok; net hedefler ve teslim sorumluluğu var."
+        },
+        "partnership": {
+          "title": "Uzun soluklu ortaklık",
+          "description": "Müşterilerimizle 5+ yıl çalışıyoruz; ekibimizle de aynı mantık. Hızlı turnover değil, derin ekip ilişkileri ve birikmiş kurumsal hafıza önceliğimiz."
+        },
+        "team": {
+          "title": "Cross-disciplinary ekip",
+          "description": "Backend, frontend, DevOps, mobil ve veri tarafı tek bir akışta çalışıyor. Handoff sürtünmesi yerine yan yana üretim — kıdemli ekip arkadaşlarınızla aynı odada (uzaktan da olsa)."
+        }
+      }
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog — Erusoft",
+      "description": "Mühendislik ekibimizden mimari kararlar, e-ticaret ve özel yazılım deneyimleri. Yayına çok yakın."
+    },
+    "hero": {
+      "eyebrow": "Yakında",
+      "title": "Erusoft <span>Blog</span> — yayına çok yakın",
+      "subtitle": "Mühendislik ekibimizin perde arkası: gerçek projelerden öğrenilen mimari kararlar, e-ticaret platformları üzerine notlar ve Türkiye pazarına özel entegrasyon hikâyeleri. Hazırlık aşamasındayız; ilk yazılarımız çok yakında.",
+      "contactCta": "İletişime geç",
+      "workCta": "Çalışmalarımızı incele"
+    },
+    "topics": {
+      "eyebrow": "Konular",
+      "title": "Burada neler okuyacaksınız?",
+      "subtitle": "Yayın takvimimiz; mühendislik blogunu hızlı pazarlama yazılarından ayıran üç ana eksen üzerinde dönecek.",
+      "items": {
+        "architecture": {
+          "title": "Mimari kararlar",
+          "description": "Production'a giden yolda verdiğimiz teknoloji ve mimari kararların — neden, nasıl ve ne olduğunun — gerçek proje hikâyeleri."
+        },
+        "commerce": {
+          "title": "E-ticaret pratiği",
+          "description": "WooCommerce, Shopify, Magento, İkas ve T-Soft üzerinde yaşadığımız uçtan uca senaryolar; ödeme, kargo ve pazaryeri entegrasyonu pratikleri."
+        },
+        "turkey": {
+          "title": "Türkiye notları",
+          "description": "Logo, Paraşüt, e-fatura, KVKK ve yerel sanal POS entegrasyonlarında öğrendiklerimiz; uluslararası ürünleri Türkiye pazarına uyarlama deneyimleri."
+        }
+      }
+    }
+  },
   "footer": {
     "tagline": "Enterprise yazılım mühendisliği ve AI-destekli sistem tasarımı.",
     "rights": "Tüm hakları saklıdır.",
@@ -423,8 +575,7 @@
       "privacy": "Gizlilik",
       "terms": "Kullanım koşulları",
       "blog": "Blog",
-      "caseStudies": "Vaka çalışmaları",
-      "docs": "Dokümantasyon"
+      "caseStudies": "Vaka çalışmaları"
     }
   }
 }

@@ -408,6 +408,158 @@
       "button": "Get in touch"
     }
   },
+  "privacy": {
+    "meta": {
+      "title": "Privacy & KVKK Notice — Erusoft",
+      "description": "How Erusoft processes personal data — KVKK / GDPR-aligned privacy notice."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Privacy & Personal Data Notice",
+      "lastUpdated": "Last updated: 30 April 2026"
+    },
+    "intro": "We care about the protection of personal data of every visitor to erusoftech.com and every party that gets in touch with us. This document is prepared to inform you about how we process personal data, in line with Turkish Personal Data Protection Law no. 6698 (\"KVKK\") and aligned with broader GDPR principles.",
+    "sections": {
+      "controller": {
+        "title": "Data Controller",
+        "body": "Erusoft (Eray Usta) acts as the data controller within the meaning of KVKK. The contact point for any matter under this notice is hello@erusoftech.com"
+      },
+      "data": {
+        "title": "Personal Data We Process",
+        "body": "In the course of our communication and service relationships, we process personal data in the following categories:\n\n• Contact data: name, surname, e-mail, phone, company\n• Professional / business data: position, industry, scope of requested service\n• Technical data: IP address, browser information, page-view statistics (anonymized)\n• Form data: any information you submit through forms used to reach us"
+      },
+      "purpose": {
+        "title": "Purposes & Legal Basis",
+        "body": "We process your personal data to respond to your enquiries, establish and perform contractual relationships, improve service quality and meet our legal obligations. The processing relies on the legal bases of \"performance of a contract\", \"legitimate interest\" and, where required, \"explicit consent\" under KVKK Art. 5."
+      },
+      "transfer": {
+        "title": "Transfers",
+        "body": "Your personal data may be shared with the technology providers we partner with to deliver services (e.g. e-mail providers, cloud infrastructure). Such transfers happen with the technical and administrative measures required by KVKK in place. When data is transferred outside Türkiye, the conditions under KVKK Art. 9 are observed."
+      },
+      "collection": {
+        "title": "Collection Method",
+        "body": "Your personal data is collected directly from you through forms on our site, e-mail correspondence, contractual relationships and — where necessary — phone conversations."
+      },
+      "rights": {
+        "title": "Your Rights (KVKK Art. 11)",
+        "body": "Under KVKK Art. 11, you have the right to:\n\n• Know whether your personal data is being processed,\n• Request information about the processing,\n• Learn the purpose and whether the data is used in line with that purpose,\n• Know the third parties (in or outside Türkiye) the data is transferred to,\n• Request correction if the data is incomplete or inaccurate,\n• Request erasure or destruction within the conditions set by KVKK,\n• Request that any correction, erasure or destruction is communicated to third parties the data was transferred to,\n• Object to outcomes that adversely affect you arising solely from automated analysis,\n• Claim compensation if you have suffered damage due to unlawful processing."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": "Our site may use strictly necessary and performance cookies to improve user experience. You can manage your cookie preferences and clear existing cookies from your browser settings at any time."
+      },
+      "contact": {
+        "title": "Contact & Requests",
+        "body": "To exercise the rights listed above, please send your written request, accompanied by identification documents, to hello@erusoftech.com. Requests are processed within at most 30 days as required by KVKK Art. 13."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Use — Erusoft",
+      "description": "Terms and conditions governing the use of erusoftech.com."
+    },
+    "hero": {
+      "eyebrow": "Legal",
+      "title": "Terms of Use",
+      "lastUpdated": "Last updated: 30 April 2026"
+    },
+    "intro": "These Terms of Use (\"Terms\") set out the conditions on which the content and services made available through erusoftech.com (the \"Site\") are provided. By visiting or using the Site, you are deemed to have read, understood and accepted these Terms.",
+    "sections": {
+      "scope": {
+        "title": "Scope of Service",
+        "body": "Erusoft is an engineering company that promotes its software development, consultancy and integration services through this Site. Site content is provided for general information purposes and, unless explicitly stated otherwise, does not constitute a contractual offer; engaging any service requires a separate written agreement."
+      },
+      "obligations": {
+        "title": "User Obligations",
+        "body": "When using the Site, you agree to comply with applicable law and to refrain from conduct contrary to public morality or to the purpose of the Site. Erusoft reserves the right to restrict access, remove content or initiate legal proceedings if it identifies activity that threatens the security, integrity or reputation of the Site."
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "body": "All trademarks, logos, content, design, code and layout elements on the Site belong to Erusoft unless otherwise indicated and are protected under Turkish copyright and intellectual property legislation. Reproduction, distribution, derivative works and republication without prior written consent are prohibited."
+      },
+      "liability": {
+        "title": "Disclaimer",
+        "body": "While Erusoft takes reasonable care to ensure that the information on the Site is accurate and up to date, it cannot be held liable for any direct or indirect damages resulting from decisions or actions based on Site content. The Site is provided on an \"as-is\" basis; uninterrupted availability or freedom from errors is not guaranteed."
+      },
+      "thirdParty": {
+        "title": "Third-Party Links",
+        "body": "The Site may contain links to third-party websites. The accessibility, content and privacy practices of those sites are outside Erusoft's control and responsibility; the terms of those sites apply on their own pages."
+      },
+      "changes": {
+        "title": "Changes",
+        "body": "Erusoft may update these Terms at any time without prior notice. Updates take effect as of the date they are published on the Site. Continued use of the Site means you accept the current Terms."
+      },
+      "law": {
+        "title": "Governing Law",
+        "body": "These Terms and any dispute arising out of or in connection with them shall be governed by the laws of the Republic of Türkiye, with the courts and enforcement offices of Istanbul having exclusive jurisdiction."
+      }
+    }
+  },
+  "careers": {
+    "meta": {
+      "title": "Careers — Erusoft",
+      "description": "Join the Erusoft team. No active openings right now, but our talent pool is always open."
+    },
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Join us — <span>open roles coming soon</span>",
+      "subtitle": "We keep growing the team with senior engineers, system architects and DevOps specialists. There are no active openings right now, but our talent pool is always open. Send your CV — we'll reach out the moment a role opens up.",
+      "cvCta": "Send your CV",
+      "aboutCta": "About us"
+    },
+    "values": {
+      "eyebrow": "Working culture",
+      "title": "What it's like to work with us",
+      "subtitle": "Not a one-size office day — a small but disciplined team focused on ownership, depth and long-term delivery.",
+      "items": {
+        "ownership": {
+          "title": "Ownership culture",
+          "description": "You own the work end-to-end — idea, architecture, code, deploy and the maintenance afterwards. No micromanagement; clear targets and delivery accountability."
+        },
+        "partnership": {
+          "title": "Long-term partnership",
+          "description": "We work with our clients for 5+ years; the same applies to our team. Not quick turnover — deep team relationships and accumulated institutional memory are the priority."
+        },
+        "team": {
+          "title": "Cross-disciplinary team",
+          "description": "Backend, frontend, DevOps, mobile and data work in a single flow. Side-by-side delivery instead of hand-off friction — alongside senior teammates, in the same room (remote or not)."
+        }
+      }
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog — Erusoft",
+      "description": "Notes from our engineering team on architecture, e-commerce and custom software. Launching soon."
+    },
+    "hero": {
+      "eyebrow": "Coming soon",
+      "title": "Erusoft <span>Blog</span> — launching soon",
+      "subtitle": "Behind-the-scenes from our engineering team: architectural decisions taken on real projects, notes on e-commerce platforms, and integration stories specific to the Turkish market. We're putting it together — first posts are around the corner.",
+      "contactCta": "Get in touch",
+      "workCta": "Browse our work"
+    },
+    "topics": {
+      "eyebrow": "Topics",
+      "title": "What you'll find here",
+      "subtitle": "Our editorial calendar will revolve around three axes that separate an engineering blog from generic marketing copy.",
+      "items": {
+        "architecture": {
+          "title": "Architectural decisions",
+          "description": "Real-project stories of the technology and architecture decisions we take on the road to production — the why, the how and the what."
+        },
+        "commerce": {
+          "title": "E-commerce in practice",
+          "description": "End-to-end scenarios on WooCommerce, Shopify, Magento, İkas and T-Soft; payment, shipping and marketplace integration patterns."
+        },
+        "turkey": {
+          "title": "Notes from Türkiye",
+          "description": "What we've learned integrating Logo, Paraşüt, e-invoicing, KVKK and local virtual POS systems; adapting international products for the Turkish market."
+        }
+      }
+    }
+  },
   "footer": {
     "tagline": "Enterprise software engineering and AI-powered system design.",
     "rights": "All rights reserved.",
@@ -423,8 +575,7 @@
       "privacy": "Privacy",
       "terms": "Terms",
       "blog": "Blog",
-      "caseStudies": "Case studies",
-      "docs": "Documentation"
+      "caseStudies": "Case studies"
     }
   }
 }
