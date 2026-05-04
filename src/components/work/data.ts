@@ -24,6 +24,12 @@ export type WorkReference = {
   tech?: string;         // platform / stack tag
   year?: string;
   featured?: boolean;
+  /**
+   * Set to true for logos whose marks/text are white. The card swaps
+   * the default white tile for a dark glass tile so the logo doesn't
+   * disappear into the background.
+   */
+  lightLogo?: boolean;
 };
 
 export const FEATURED_REFERENCES: WorkReference[] = [
@@ -46,6 +52,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     category: 'education',
     logo: '/brand/clients/topstudy.svg',
     tech: 'Custom Platform',
+    lightLogo: true,
   },
   {
     slug: 'linguland',
@@ -193,6 +200,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     logo: '/brand/clients/emind.png',
     tech: 'Custom Software',
     featured: true,
+    lightLogo: true,
   },
   {
     slug: 'kampanyaradar',
@@ -251,6 +259,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     category: 'services',
     logo: '/brand/clients/empatist.png',
     tech: 'WordPress + Custom',
+    lightLogo: true,
   },
   {
     slug: 'oznurcaglayan',
@@ -284,7 +293,7 @@ export const COMPACT_REFERENCES: WorkReference[] = [
   { slug: 'suainsaat', name: 'SUA İnşaat', url: 'https://suainsaat.com.tr', category: 'corporate', logo: '/brand/clients/suainsaat.png' },
   { slug: 'miranlegal', name: 'Miran Legal', url: 'https://miranlegal.com.tr', category: 'services', logo: '/brand/clients/miranlegal.png' },
   { slug: 'ozlemduran', name: 'Özlem Duran', url: 'https://ozlemduran.com.tr', category: 'corporate', logo: '/brand/clients/ozlemduran.ico' },
-  { slug: 'turkuzay', name: 'Türkuzay', url: 'https://turkuzay.com.tr', category: 'corporate', logo: '/brand/clients/turkuzay.png' },
+  { slug: 'turkuzay', name: 'Türkuzay', url: 'https://turkuzay.com.tr', category: 'corporate', logo: '/brand/clients/turkuzay.png', lightLogo: true },
   { slug: 'nihankaya', name: 'Nihan Kaya', url: 'https://nihankaya.com', category: 'corporate', logo: '/brand/clients/nihankaya.png' },
 ];
 
