@@ -73,7 +73,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
   {
     slug: 'kaplaninternational',
     name: 'Kaplan International',
-    url: 'https://www.kaplaninternational.com',
+    url: 'https://www.kaplaninternational.tv',
     category: 'education',
     logo: '/brand/clients/kaplaninternational.svg',
     tech: 'Custom Support',
