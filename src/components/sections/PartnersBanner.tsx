@@ -26,6 +26,7 @@ const LOGOS: Logo[] = [
   { name: 'RAKS', src: '/brand/clients/raks.webp', url: 'https://raks.com.tr' },
   { name: 'DIDOS', src: '/brand/clients/didosofficial.webp', url: 'https://didosofficial.com.tr' },
   { name: 'eMind Teknoloji', src: '/brand/clients/emind.png', url: 'https://emind.com.tr' },
+  { name: 'Erusoft Entegre', src: '/brand/clients/entegre-erusoft.svg', url: 'https://entegre.erusoft.com' },
   { name: 'Bimotif', src: '/brand/clients/bimotif.svg', url: 'https://www.bimotif.com' },
   { name: 'Teknorot', src: '/brand/clients/teknorot.png', url: 'https://www.teknorot.com' },
   { name: 'Hobim', src: '/brand/clients/hobim.png', url: 'https://hobim.com' },
