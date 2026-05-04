@@ -217,7 +217,13 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
     <Wrapper className="block h-full">
       <GlowCard className="group gradient-border flex h-full flex-col rounded-2xl p-6">
         <div className="flex items-start justify-between gap-3">
-          <div className="flex h-14 items-center justify-center rounded-lg bg-white px-3 ring-1 ring-white/10">
+          <div
+            className={`flex h-14 items-center justify-center rounded-lg px-3 ring-1 ${
+              reference.lightLogo
+                ? 'bg-ink-900/80 ring-white/15 backdrop-blur-sm'
+                : 'bg-white ring-white/10'
+            }`}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={reference.logo}
@@ -317,7 +323,13 @@ function CompactCard({
   return (
     <Wrapper className="block h-full">
       <GlowCard className="group flex h-full flex-col rounded-2xl p-4">
-        <div className="flex h-16 items-center justify-center rounded-lg bg-white px-3 ring-1 ring-white/10">
+        <div
+          className={`flex h-16 items-center justify-center rounded-lg px-3 ring-1 ${
+            reference.lightLogo
+              ? 'bg-ink-900/80 ring-white/15 backdrop-blur-sm'
+              : 'bg-white ring-white/10'
+          }`}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={reference.logo}
