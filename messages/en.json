@@ -408,6 +408,38 @@
       "button": "Get in touch"
     }
   },
+  "blog": {
+    "meta": {
+      "title": "Blog — Erusoft",
+      "description": "Notes from our engineering team on architecture, e-commerce and custom software. Launching soon."
+    },
+    "hero": {
+      "eyebrow": "Coming soon",
+      "title": "Erusoft <span>Blog</span> — launching soon",
+      "subtitle": "Behind-the-scenes from our engineering team: architectural decisions taken on real projects, notes on e-commerce platforms, and integration stories specific to the Turkish market. We're putting it together — first posts are around the corner.",
+      "contactCta": "Get in touch",
+      "workCta": "Browse our work"
+    },
+    "topics": {
+      "eyebrow": "Topics",
+      "title": "What you'll find here",
+      "subtitle": "Our editorial calendar will revolve around three axes that separate an engineering blog from generic marketing copy.",
+      "items": {
+        "architecture": {
+          "title": "Architectural decisions",
+          "description": "Real-project stories of the technology and architecture decisions we take on the road to production — the why, the how and the what."
+        },
+        "commerce": {
+          "title": "E-commerce in practice",
+          "description": "End-to-end scenarios on WooCommerce, Shopify, Magento, İkas and T-Soft; payment, shipping and marketplace integration patterns."
+        },
+        "turkey": {
+          "title": "Notes from Türkiye",
+          "description": "What we've learned integrating Logo, Paraşüt, e-invoicing, KVKK and local virtual POS systems; adapting international products for the Turkish market."
+        }
+      }
+    }
+  },
   "footer": {
     "tagline": "Enterprise software engineering and AI-powered system design.",
     "rights": "All rights reserved.",

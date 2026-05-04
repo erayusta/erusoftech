@@ -408,6 +408,38 @@
       "button": "İletişime geç"
     }
   },
+  "blog": {
+    "meta": {
+      "title": "Blog — Erusoft",
+      "description": "Mühendislik ekibimizden mimari kararlar, e-ticaret ve özel yazılım deneyimleri. Yayına çok yakın."
+    },
+    "hero": {
+      "eyebrow": "Yakında",
+      "title": "Erusoft <span>Blog</span> — yayına çok yakın",
+      "subtitle": "Mühendislik ekibimizin perde arkası: gerçek projelerden öğrenilen mimari kararlar, e-ticaret platformları üzerine notlar ve Türkiye pazarına özel entegrasyon hikâyeleri. Hazırlık aşamasındayız; ilk yazılarımız çok yakında.",
+      "contactCta": "İletişime geç",
+      "workCta": "Çalışmalarımızı incele"
+    },
+    "topics": {
+      "eyebrow": "Konular",
+      "title": "Burada neler okuyacaksınız?",
+      "subtitle": "Yayın takvimimiz; mühendislik blogunu hızlı pazarlama yazılarından ayıran üç ana eksen üzerinde dönecek.",
+      "items": {
+        "architecture": {
+          "title": "Mimari kararlar",
+          "description": "Production'a giden yolda verdiğimiz teknoloji ve mimari kararların — neden, nasıl ve ne olduğunun — gerçek proje hikâyeleri."
+        },
+        "commerce": {
+          "title": "E-ticaret pratiği",
+          "description": "WooCommerce, Shopify, Magento, İkas ve T-Soft üzerinde yaşadığımız uçtan uca senaryolar; ödeme, kargo ve pazaryeri entegrasyonu pratikleri."
+        },
+        "turkey": {
+          "title": "Türkiye notları",
+          "description": "Logo, Paraşüt, e-fatura, KVKK ve yerel sanal POS entegrasyonlarında öğrendiklerimiz; uluslararası ürünleri Türkiye pazarına uyarlama deneyimleri."
+        }
+      }
+    }
+  },
   "footer": {
     "tagline": "Enterprise yazılım mühendisliği ve AI-destekli sistem tasarımı.",
     "rights": "Tüm hakları saklıdır.",
