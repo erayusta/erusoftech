@@ -122,9 +122,11 @@ function LogoTile({ name, src, url }: Logo) {
       aria-label={name}
       title={name}
       className={[
+        // Universal mid-tone tile: contrast for both white-mark and dark-mark
+        // logos without dropping into pure white (kills white logos) or pure
+        // dark (kills dark logos).
         'group/tile relative flex h-16 w-52 shrink-0 items-center justify-center rounded-2xl',
-        'border border-white/10 bg-white px-4',
-        'transition-all duration-500 ease-out',
+        'border border-white/15 bg-slate-500 px-4 transition-all duration-500 ease-out',
         'hover:-translate-y-0.5 hover:scale-[1.04] hover:border-white/30',
         'hover:[filter:drop-shadow(0_0_28px_rgba(46,107,255,0.35))]',
         'focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950',
