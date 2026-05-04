@@ -408,6 +408,38 @@
       "button": "İletişime geç"
     }
   },
+  "careers": {
+    "meta": {
+      "title": "Kariyer — Erusoft",
+      "description": "Erusoft ekibine katılın. Aktif açık pozisyon yok ama yetenek havuzumuz her zaman açık."
+    },
+    "hero": {
+      "eyebrow": "Kariyer",
+      "title": "Aramıza katıl — <span>açık pozisyon yakında</span>",
+      "subtitle": "Kıdemli mühendisler, sistem mimarları ve DevOps uzmanlarıyla genişlemeye devam ediyoruz. Şu an aktif açık pozisyon yok, ama yetenek havuzumuz her zaman açık. CV'nizi gönderin; yeni pozisyon açıldığında ilk biz haber verelim.",
+      "cvCta": "CV gönder",
+      "aboutCta": "Hakkımızda"
+    },
+    "values": {
+      "eyebrow": "Çalışma kültürü",
+      "title": "Bizimle çalışmak nasıl?",
+      "subtitle": "Tek tip ofis günü değil; sahiplik, derinlik ve uzun soluklu üretim üzerinde duran küçük ama disiplinli bir ekip.",
+      "items": {
+        "ownership": {
+          "title": "Sahiplik kültürü",
+          "description": "Aldığınız işin başından sonuna kadar sahibisiniz — fikir, mimari, kod, deploy ve sonrasındaki bakım. Mikroyönetim yok; net hedefler ve teslim sorumluluğu var."
+        },
+        "partnership": {
+          "title": "Uzun soluklu ortaklık",
+          "description": "Müşterilerimizle 5+ yıl çalışıyoruz; ekibimizle de aynı mantık. Hızlı turnover değil, derin ekip ilişkileri ve birikmiş kurumsal hafıza önceliğimiz."
+        },
+        "team": {
+          "title": "Cross-disciplinary ekip",
+          "description": "Backend, frontend, DevOps, mobil ve veri tarafı tek bir akışta çalışıyor. Handoff sürtünmesi yerine yan yana üretim — kıdemli ekip arkadaşlarınızla aynı odada (uzaktan da olsa)."
+        }
+      }
+    }
+  },
   "blog": {
     "meta": {
       "title": "Blog — Erusoft",

@@ -408,6 +408,38 @@
       "button": "Get in touch"
     }
   },
+  "careers": {
+    "meta": {
+      "title": "Careers — Erusoft",
+      "description": "Join the Erusoft team. No active openings right now, but our talent pool is always open."
+    },
+    "hero": {
+      "eyebrow": "Careers",
+      "title": "Join us — <span>open roles coming soon</span>",
+      "subtitle": "We keep growing the team with senior engineers, system architects and DevOps specialists. There are no active openings right now, but our talent pool is always open. Send your CV — we'll reach out the moment a role opens up.",
+      "cvCta": "Send your CV",
+      "aboutCta": "About us"
+    },
+    "values": {
+      "eyebrow": "Working culture",
+      "title": "What it's like to work with us",
+      "subtitle": "Not a one-size office day — a small but disciplined team focused on ownership, depth and long-term delivery.",
+      "items": {
+        "ownership": {
+          "title": "Ownership culture",
+          "description": "You own the work end-to-end — idea, architecture, code, deploy and the maintenance afterwards. No micromanagement; clear targets and delivery accountability."
+        },
+        "partnership": {
+          "title": "Long-term partnership",
+          "description": "We work with our clients for 5+ years; the same applies to our team. Not quick turnover — deep team relationships and accumulated institutional memory are the priority."
+        },
+        "team": {
+          "title": "Cross-disciplinary team",
+          "description": "Backend, frontend, DevOps, mobile and data work in a single flow. Side-by-side delivery instead of hand-off friction — alongside senior teammates, in the same room (remote or not)."
+        }
+      }
+    }
+  },
   "blog": {
     "meta": {
       "title": "Blog — Erusoft",
