@@ -19,6 +19,8 @@ type Logo = {
   /** Omit when the brand asset is unusable — tile falls back to a typography-only name mark. */
   src?: string;
   url: string;
+  /** `tone: 'light'` flips the tile to a dark ink background so white-text logos stay visible. */
+  tone?: 'light';
 };
 
 const LOGOS: Logo[] = [
@@ -30,17 +32,17 @@ const LOGOS: Logo[] = [
   { name: 'Bernarpet', src: '/brand/clients/bernarpet.png', url: 'https://bernarpet.com' },
   { name: 'RAKS', src: '/brand/clients/raks.webp', url: 'https://raks.com.tr' },
   { name: 'DIDOS', src: '/brand/clients/didosofficial.webp', url: 'https://didosofficial.com.tr' },
-  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png', url: 'https://emind.com.tr' },
+  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png', url: 'https://emind.com.tr', tone: 'light' },
   { name: 'Erusoft Entegre', src: '/brand/clients/entegre-erusoft.svg', url: 'https://entegre.erusoft.com' },
   { name: 'Bimotif', src: '/brand/clients/bimotif.svg', url: 'https://www.bimotif.com' },
   { name: 'Teknorot', src: '/brand/clients/teknorot.png', url: 'https://www.teknorot.com' },
   { name: 'Hobim', src: '/brand/clients/hobim.png', url: 'https://hobim.com' },
   { name: 'NET Mühendislik', src: '/brand/clients/net-muhendislik.png', url: 'https://net-muhendislik.com' },
   { name: 'Vitanova', src: '/brand/clients/vitanovaevdesaglik.png', url: 'https://vitanovaevdesaglik.com' },
-  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png', url: 'https://turkuzay.com.tr' },
-  { name: 'Empatist', src: '/brand/clients/empatist.png', url: 'https://empatist.com' },
+  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png', url: 'https://turkuzay.com.tr', tone: 'light' },
+  { name: 'Empatist', src: '/brand/clients/empatist.png', url: 'https://empatist.com', tone: 'light' },
   { name: 'Nihan Kaya', src: '/brand/clients/nihankaya.png', url: 'https://nihankaya.com' },
-  { name: 'Topstudy', src: '/brand/clients/topstudy.svg', url: 'https://topstudy.com' },
+  { name: 'Topstudy', src: '/brand/clients/topstudy.svg', url: 'https://topstudy.com', tone: 'light' },
 ];
 
 export function PartnersBanner() {
@@ -118,8 +120,9 @@ export function PartnersBanner() {
   );
 }
 
-function LogoTile({ name, src, url }: Logo) {
+function LogoTile({ name, src, url, tone }: Logo) {
   const [imgError, setImgError] = React.useState(false);
+  const isLight = tone === 'light';
   const showFallback = !src || imgError;
   return (
     <a
@@ -129,18 +132,25 @@ function LogoTile({ name, src, url }: Logo) {
       aria-label={name}
       title={name}
       className={[
-        // Universal mid-tone tile: contrast for both white-mark and dark-mark
-        // logos without dropping into pure white (kills white logos) or pure
-        // dark (kills dark logos).
-        'group/tile relative flex h-16 w-52 shrink-0 items-center justify-center rounded-2xl',
-        'border border-white/15 bg-slate-500 px-4 transition-all duration-500 ease-out',
-        'hover:-translate-y-0.5 hover:scale-[1.04] hover:border-white/30',
+        // Light slate tile for dark / colored logos; dark ink tile for
+        // white-text logos (flagged with tone: 'light'). Universal so
+        // brand colors stay intact and nothing vanishes into the bg.
+        'group/tile relative flex h-20 w-56 shrink-0 items-center justify-center rounded-2xl',
+        'border px-5 transition-all duration-500 ease-out',
+        isLight
+          ? 'border-white/20 bg-ink-700 hover:border-white/40'
+          : 'border-white/10 bg-slate-200 hover:border-white/30',
+        'hover:-translate-y-0.5 hover:scale-[1.04]',
         'hover:[filter:drop-shadow(0_0_28px_rgba(46,107,255,0.35))]',
         'focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950',
       ].join(' ')}
     >
       {showFallback ? (
-        <span className="truncate text-center text-sm font-bold tracking-tight text-ink-900">
+        <span
+          className={`truncate text-center text-base font-bold tracking-tight ${
+            isLight ? 'text-white' : 'text-ink-900'
+          }`}
+        >
           {name}
         </span>
       ) : (
@@ -148,7 +158,7 @@ function LogoTile({ name, src, url }: Logo) {
         <img
           src={src}
           alt={`${name} logo`}
-          className="h-9 w-auto max-w-full object-contain transition-transform duration-500 group-hover/tile:scale-[1.03]"
+          className="h-12 w-auto max-w-full object-contain transition-transform duration-500 group-hover/tile:scale-[1.03]"
           loading="lazy"
           onError={() => setImgError(true)}
         />

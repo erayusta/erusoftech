@@ -219,9 +219,19 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
     <Wrapper className="block h-full">
       <GlowCard className="group gradient-border flex h-full flex-col rounded-2xl p-6">
         <div className="flex items-start justify-between gap-3">
-          <div className="flex h-14 min-w-[120px] items-center justify-center rounded-lg bg-slate-500 px-3 ring-1 ring-white/15">
+          <div
+            className={`flex h-16 min-w-[140px] items-center justify-center rounded-lg px-4 ring-1 ${
+              reference.lightLogo
+                ? 'bg-ink-700 ring-white/20'
+                : 'bg-slate-200 ring-white/10'
+            }`}
+          >
             {showLogoFallback ? (
-              <span className="truncate text-center text-sm font-bold tracking-tight text-ink-900">
+              <span
+                className={`truncate text-center text-base font-bold tracking-tight ${
+                  reference.lightLogo ? 'text-white' : 'text-ink-900'
+                }`}
+              >
                 {reference.name}
               </span>
             ) : (
@@ -229,7 +239,7 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
               <img
                 src={reference.logo}
                 alt={`${reference.name} logo`}
-                className="h-8 w-auto max-w-[120px] object-contain"
+                className="h-10 w-auto max-w-[140px] object-contain"
                 loading="lazy"
                 onError={() => setImgError(true)}
               />
@@ -328,9 +338,19 @@ function CompactCard({
   return (
     <Wrapper className="block h-full">
       <GlowCard className="group flex h-full flex-col rounded-2xl p-4">
-        <div className="flex h-16 items-center justify-center rounded-lg bg-slate-500 px-3 ring-1 ring-white/15">
+        <div
+          className={`flex h-20 items-center justify-center rounded-lg px-4 ring-1 ${
+            reference.lightLogo
+              ? 'bg-ink-700 ring-white/20'
+              : 'bg-slate-200 ring-white/10'
+          }`}
+        >
           {showLogoFallback ? (
-            <span className="truncate text-center text-sm font-bold tracking-tight text-ink-900">
+            <span
+              className={`truncate text-center text-base font-bold tracking-tight ${
+                reference.lightLogo ? 'text-white' : 'text-ink-900'
+              }`}
+            >
               {reference.name}
             </span>
           ) : (
@@ -338,7 +358,7 @@ function CompactCard({
             <img
               src={reference.logo}
               alt={`${reference.name} logo`}
-              className="h-8 w-auto max-w-[110px] object-contain"
+              className="h-12 w-auto max-w-[140px] object-contain"
               loading="lazy"
               onError={() => setImgError(true)}
             />
