@@ -197,9 +197,11 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
   const tFilter = useTranslations('works.filter');
   const tWorks = useTranslations('works');
   const locale = useLocale();
+  const [imgError, setImgError] = React.useState(false);
   const description = t(`${reference.slug}.description`);
   const techLabel = localizeTech(reference.tech, locale);
   const openInNewTabLabel = tWorks('openInNewTab');
+  const showLogoFallback = !reference.logo || imgError;
 
   const Wrapper: React.ComponentType<React.ComponentProps<'a'>> = reference.url
     ? (props) => (
@@ -217,14 +219,21 @@ function ReferenceCard({ reference }: { reference: WorkReference }) {
     <Wrapper className="block h-full">
       <GlowCard className="group gradient-border flex h-full flex-col rounded-2xl p-6">
         <div className="flex items-start justify-between gap-3">
-          <div className="flex h-14 items-center justify-center rounded-lg bg-slate-500 px-3 ring-1 ring-white/15">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={reference.logo}
-              alt={`${reference.name} logo`}
-              className="h-8 w-auto max-w-[120px] object-contain"
-              loading="lazy"
-            />
+          <div className="flex h-14 min-w-[120px] items-center justify-center rounded-lg bg-slate-500 px-3 ring-1 ring-white/15">
+            {showLogoFallback ? (
+              <span className="truncate text-center text-sm font-bold tracking-tight text-ink-900">
+                {reference.name}
+              </span>
+            ) : (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={reference.logo}
+                alt={`${reference.name} logo`}
+                className="h-8 w-auto max-w-[120px] object-contain"
+                loading="lazy"
+                onError={() => setImgError(true)}
+              />
+            )}
           </div>
           <span className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-white/55 ring-1 ring-white/10">
             {tFilter(reference.category)}
@@ -302,6 +311,8 @@ function CompactCard({
   categoryLabel: string;
   openInNewTabLabel: string;
 }) {
+  const [imgError, setImgError] = React.useState(false);
+  const showLogoFallback = !reference.logo || imgError;
   const Wrapper = reference.url
     ? (props: React.ComponentProps<'a'>) => (
         <a
@@ -318,13 +329,20 @@ function CompactCard({
     <Wrapper className="block h-full">
       <GlowCard className="group flex h-full flex-col rounded-2xl p-4">
         <div className="flex h-16 items-center justify-center rounded-lg bg-slate-500 px-3 ring-1 ring-white/15">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={reference.logo}
-            alt={`${reference.name} logo`}
-            className="h-8 w-auto max-w-[110px] object-contain"
-            loading="lazy"
-          />
+          {showLogoFallback ? (
+            <span className="truncate text-center text-sm font-bold tracking-tight text-ink-900">
+              {reference.name}
+            </span>
+          ) : (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={reference.logo}
+              alt={`${reference.name} logo`}
+              className="h-8 w-auto max-w-[110px] object-contain"
+              loading="lazy"
+              onError={() => setImgError(true)}
+            />
+          )}
         </div>
         <div className="mt-3 flex items-center justify-between gap-2">
           <span className="truncate text-sm font-semibold text-white">{reference.name}</span>
