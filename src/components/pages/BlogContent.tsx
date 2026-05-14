@@ -58,7 +58,7 @@ export function BlogContent() {
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center justify-center gap-3">
-              <Button href="mailto:hello@erusoftech.com" size="lg" icon>
+              <Button href="mailto:hello@erusoft.com" size="lg" icon>
                 {t('hero.contactCta')}
               </Button>
               <Button href="/work" variant="secondary" size="lg">

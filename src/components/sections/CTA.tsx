@@ -59,7 +59,7 @@ export function CTA() {
             variants={fadeUp}
             className="relative mt-10 flex items-center justify-center"
           >
-            <Button href="mailto:hello@erusoftech.com" size="lg" icon>
+            <Button href="mailto:hello@erusoft.com" size="lg" icon>
               {t('button')}
             </Button>
           </motion.div>

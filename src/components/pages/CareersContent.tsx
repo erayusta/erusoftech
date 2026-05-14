@@ -58,7 +58,7 @@ export function CareersContent() {
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center justify-center gap-3">
-              <Button href="mailto:hello@erusoftech.com?subject=CV%20%2F%20Yetenek%20Havuzu" size="lg" icon>
+              <Button href="mailto:hello@erusoft.com?subject=CV%20%2F%20Yetenek%20Havuzu" size="lg" icon>
                 {t('hero.cvCta')}
               </Button>
               <Button href="/about" variant="secondary" size="lg">
