@@ -3,30 +3,37 @@
 import * as React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { Sparkles } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { GlowCard } from '@/components/ui/GlowCard';
 import { RevealButton } from '@/components/ui/RevealButton';
 import { fadeUp, meteorDrop, staggerContainer, viewportOnce } from '@/lib/motion';
 
 type Tech = {
+  /** translation key under `tech.items.{slug}.description` */
+  slug: string;
+  /** displayed brand / product name */
   name: string;
+  /** category badge text */
   category: string;
-  description: string;
   glyph: React.ReactNode;
+  /** when true, card renders a "Partner" pill above the category */
+  partner?: boolean;
 };
 
 /**
  * Ordering principle: lead with what we ship most — WordPress and the
- * e-commerce platforms layered on top — then the surrounding language /
+ * e-commerce platforms layered on top, including the Turkish platforms
+ * we hold partner status with — then the surrounding language /
  * framework / data stack, then specific tools (cloud, devops, observability).
  * The first twelve entries are the marquee set rendered before the reveal.
  */
 const TECHS: Tech[] = [
   // ---- E-commerce platforms (shipped daily, lead the stack) ----
   {
+    slug: 'wordpress',
     name: 'WordPress',
     category: 'CMS',
-    description: 'Most-deployed CMS in the world; rich plugin and content ecosystem.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
@@ -47,9 +54,10 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'woocommerce',
     name: 'WooCommerce',
     category: 'E-commerce',
-    description: 'WordPress e-commerce — flexible storefronts and custom checkout flows.',
+    partner: true,
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -65,9 +73,10 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'shopify',
     name: 'Shopify',
     category: 'E-commerce',
-    description: 'Hosted commerce with Liquid theming and Functions extensions.',
+    partner: true,
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -88,9 +97,97 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'ikas',
+    name: 'İkas',
+    category: 'E-commerce',
+    partner: true,
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <circle cx="20" cy="20" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="44" cy="20" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="20" cy="44" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="44" cy="44" r="6" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'tsoft',
+    name: 'T-Soft',
+    category: 'E-commerce',
+    partner: true,
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <path
+          d="M8 14h36l12 12-22 22a4 4 0 0 1-6 0L8 36V14Z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          fill="none"
+        />
+        <circle cx="22" cy="28" r="4" stroke="currentColor" strokeWidth="2" />
+        <path d="M30 30l14 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'ideasoft',
+    name: 'IdeaSoft',
+    category: 'E-commerce',
+    partner: true,
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <rect x="8" y="12" width="48" height="40" rx="8" stroke="currentColor" strokeWidth="2" />
+        <path
+          d="M22 32l8 8 14-16"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    slug: 'ticimax',
+    name: 'Ticimax',
+    category: 'E-commerce',
+    partner: true,
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <path
+          d="M32 8L52 18v18a18 18 0 0 1-20 18 18 18 0 0 1-20-18V18z"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        <path d="M22 26h20M32 26v20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    slug: 'dopigo',
+    name: 'Dopigo',
+    category: 'Integration',
+    partner: true,
+    glyph: (
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
+        <circle cx="14" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="50" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="32" cy="14" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="32" cy="50" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="32" cy="32" r="4" fill="currentColor" />
+        <path
+          d="M20 32h8M36 32h8M32 20v8M32 36v8"
+          stroke="currentColor"
+          strokeWidth="2"
+        />
+      </svg>
+    ),
+  },
+  {
+    slug: 'magento',
     name: 'Magento',
     category: 'E-commerce',
-    description: 'Enterprise-grade commerce — multi-store, B2B and complex catalogs.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -110,43 +207,12 @@ const TECHS: Tech[] = [
       </svg>
     ),
   },
-  {
-    name: 'İkas',
-    category: 'E-commerce',
-    description: 'Turkish-native commerce platform with strong local payments and shipping.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
-        <circle cx="20" cy="20" r="6" stroke="currentColor" strokeWidth="2" />
-        <circle cx="44" cy="20" r="6" stroke="currentColor" strokeWidth="2" />
-        <circle cx="20" cy="44" r="6" stroke="currentColor" strokeWidth="2" />
-        <circle cx="44" cy="44" r="6" fill="currentColor" />
-      </svg>
-    ),
-  },
-  {
-    name: 'T-Soft',
-    category: 'E-commerce',
-    description: 'Turkish enterprise commerce stack with deep ERP and marketplace integrations.',
-    glyph: (
-      <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
-        <path
-          d="M8 14h36l12 12-22 22a4 4 0 0 1-6 0L8 36V14Z"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinejoin="round"
-          fill="none"
-        />
-        <circle cx="22" cy="28" r="4" stroke="currentColor" strokeWidth="2" />
-        <path d="M30 30l14 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-  },
 
   // ---- Languages ----
   {
+    slug: 'typescript',
     name: 'TypeScript',
     category: 'Language',
-    description: 'Strict typing across DB, API and UI — zero runtime ambiguity.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <rect x="6" y="6" width="52" height="52" rx="8" stroke="currentColor" strokeWidth="2" />
@@ -161,9 +227,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'python',
     name: 'Python',
     category: 'Language',
-    description: 'AI, data pipelines and automation glue across services.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -188,9 +254,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'go',
     name: 'Go',
     category: 'Language',
-    description: 'Concurrent, statically-typed runtime for high-throughput services.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -210,9 +276,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'php',
     name: 'PHP',
     category: 'Language',
-    description: 'Modern PHP 8.x with JIT and full type system.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <ellipse cx="32" cy="32" rx="26" ry="15" stroke="currentColor" strokeWidth="2" />
@@ -226,9 +292,9 @@ const TECHS: Tech[] = [
 
   // ---- Runtime ----
   {
+    slug: 'nodejs',
     name: 'Node.js',
     category: 'Runtime',
-    description: 'Async, high-throughput services, realtime and BFF layers.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -249,9 +315,9 @@ const TECHS: Tech[] = [
 
   // ---- Frameworks ----
   {
+    slug: 'nextjs',
     name: 'Next.js',
     category: 'Framework',
-    description: 'RSC, edge rendering and image optimization out of the box.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="28" stroke="currentColor" strokeWidth="2" />
@@ -265,9 +331,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'nestjs',
     name: 'NestJS',
     category: 'Framework',
-    description: 'Modular, TypeScript-first Node.js framework for enterprise APIs.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <polygon
@@ -287,9 +353,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'laravel',
     name: 'Laravel',
     category: 'Framework',
-    description: 'Eloquent ORM, queues, Horizon — mature DX, fast delivery.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -299,19 +365,14 @@ const TECHS: Tech[] = [
           strokeLinejoin="round"
           fill="none"
         />
-        <path
-          d="M30 34l10 6 10-6"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinejoin="round"
-        />
+        <path d="M30 34l10 6 10-6" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
+    slug: 'fastapi',
     name: 'FastAPI',
     category: 'Framework',
-    description: 'Async Python framework with type-driven validation and OpenAPI.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
@@ -328,9 +389,9 @@ const TECHS: Tech[] = [
 
   // ---- UI ----
   {
+    slug: 'react',
     name: 'React',
     category: 'UI',
-    description: 'Component UI with the largest ecosystem and proven scaling.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="3.5" fill="currentColor" />
@@ -357,9 +418,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'tailwind',
     name: 'Tailwind CSS',
     category: 'Styling',
-    description: 'Utility-first CSS for fast, consistent design systems.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -381,9 +442,9 @@ const TECHS: Tech[] = [
 
   // ---- Data layer ----
   {
+    slug: 'postgresql',
     name: 'PostgreSQL',
     category: 'Database',
-    description: 'ACID, row-level security, JSONB and logical replication.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <ellipse cx="32" cy="14" rx="18" ry="6" stroke="currentColor" strokeWidth="2" />
@@ -393,18 +454,14 @@ const TECHS: Tech[] = [
           strokeWidth="2"
           fill="none"
         />
-        <path
-          d="M14 26c6 4 22 4 36 0M14 38c6 4 22 4 36 0"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
+        <path d="M14 26c6 4 22 4 36 0M14 38c6 4 22 4 36 0" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
   {
+    slug: 'mysql',
     name: 'MySQL',
     category: 'Database',
-    description: 'Easy ops, predictable performance, read-scale replication.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -415,19 +472,14 @@ const TECHS: Tech[] = [
           fill="none"
         />
         <circle cx="46" cy="30" r="1.6" fill="currentColor" />
-        <path
-          d="M36 46l6 6M44 44l8 6"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
+        <path d="M36 46l6 6M44 44l8 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
   {
+    slug: 'mongodb',
     name: 'MongoDB',
     category: 'Database',
-    description: 'Document store for flexible schemas and high write throughput.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -442,9 +494,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'prisma',
     name: 'Prisma',
     category: 'ORM',
-    description: 'Type-safe TypeScript ORM with migrations and relation queries.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -460,9 +512,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'redis',
     name: 'Redis',
     category: 'Cache',
-    description: 'Caching, pub/sub, queues — millisecond-tier data plane.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -476,32 +528,22 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'elasticsearch',
     name: 'Elasticsearch',
     category: 'Search',
-    description: 'Full-text search, faceting and log analytics at scale.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <ellipse cx="26" cy="20" rx="14" ry="6" stroke="currentColor" strokeWidth="2" />
-        <path
-          d="M12 20v14c0 3 6 6 14 6"
-          stroke="currentColor"
-          strokeWidth="2"
-          fill="none"
-        />
+        <path d="M12 20v14c0 3 6 6 14 6" stroke="currentColor" strokeWidth="2" fill="none" />
         <circle cx="42" cy="42" r="8" stroke="currentColor" strokeWidth="2" />
-        <path
-          d="M48 48l8 8"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
+        <path d="M48 48l8 8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
       </svg>
     ),
   },
   {
+    slug: 'kafka',
     name: 'Kafka',
     category: 'Streaming',
-    description: 'Distributed event streaming for decoupled microservices.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
@@ -521,9 +563,9 @@ const TECHS: Tech[] = [
 
   // ---- Cloud & edge ----
   {
+    slug: 'aws',
     name: 'AWS',
     category: 'Cloud',
-    description: 'ECS/EKS, RDS, Lambda — infrastructure-as-code with Terraform.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -539,9 +581,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'gcp',
     name: 'GCP',
     category: 'Cloud',
-    description: 'BigQuery, GKE, Vertex AI — managed AI/data workloads.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -557,9 +599,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'vercel',
     name: 'Vercel',
     category: 'Edge',
-    description: 'Edge runtime, ISR and preview deployments — Next.js native.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -573,9 +615,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'cloudflare',
     name: 'Cloudflare',
     category: 'CDN',
-    description: 'Workers, CDN, R2 and Zero Trust — programmable edge network.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -585,21 +627,16 @@ const TECHS: Tech[] = [
           strokeLinejoin="round"
           fill="none"
         />
-        <path
-          d="M22 44h26"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
+        <path d="M22 44h26" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
       </svg>
     ),
   },
 
   // ---- Container / orchestration / IaC / CI/CD ----
   {
+    slug: 'docker',
     name: 'Docker',
     category: 'Container',
-    description: 'Reproducible images and multi-stage builds for lean containers.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <rect x="10" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
@@ -608,18 +645,14 @@ const TECHS: Tech[] = [
         <rect x="18" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
         <rect x="26" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
         <rect x="34" y="20" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
-        <path
-          d="M6 38h44c0 8-8 14-18 14S6 48 6 38Z"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
+        <path d="M6 38h44c0 8-8 14-18 14S6 48 6 38Z" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
   {
+    slug: 'kubernetes',
     name: 'Kubernetes',
     category: 'Platform',
-    description: 'Self-healing orchestration with rolling updates and HPA/VPA.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <polygon
@@ -629,18 +662,14 @@ const TECHS: Tech[] = [
           fill="none"
         />
         <circle cx="32" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
-        <path
-          d="M32 20v6M32 38v6M20 32h6M38 32h6"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
+        <path d="M32 20v6M32 38v6M20 32h6M38 32h6" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
   {
+    slug: 'terraform',
     name: 'Terraform',
     category: 'IaC',
-    description: 'Declarative, version-controlled infra — plan, review, apply.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path d="M14 14l14 8v16l-14-8V14Z" stroke="currentColor" strokeWidth="2" />
@@ -650,9 +679,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'github-actions',
     name: 'GitHub Actions',
     category: 'CI/CD',
-    description: 'Matrix builds, reusable workflows and ephemeral PR previews.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="24" stroke="currentColor" strokeWidth="2" />
@@ -669,9 +698,9 @@ const TECHS: Tech[] = [
 
   // ---- Specific tools ----
   {
+    slug: 'graphql',
     name: 'GraphQL',
     category: 'API',
-    description: 'Typed schemas, federated graphs and efficient queries.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <polygon
@@ -695,9 +724,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'playwright',
     name: 'Playwright',
     category: 'Testing',
-    description: 'End-to-end browser testing across Chromium, WebKit and Firefox.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <rect x="8" y="14" width="48" height="36" rx="4" stroke="currentColor" strokeWidth="2" />
@@ -716,9 +745,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'grafana',
     name: 'Grafana',
     category: 'Monitoring',
-    description: 'Dashboards, alerting and SLO tracking on Prom/Loki/Tempo.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="22" stroke="currentColor" strokeWidth="2" />
@@ -733,9 +762,9 @@ const TECHS: Tech[] = [
     ),
   },
   {
+    slug: 'sentry',
     name: 'Sentry',
     category: 'Errors',
-    description: 'Error tracking and release health with full stack traces.',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -751,30 +780,32 @@ const TECHS: Tech[] = [
 ];
 
 /**
- * Marquee picks shown by default — leads with the e-commerce platforms we
- * ship daily, then the surrounding PHP/Laravel and TypeScript/React belt.
+ * Marquee picks shown by default — leads with the partner-status
+ * commerce platforms we ship daily, then the surrounding modern web
+ * stack. The remaining entries are revealed by the "view more" toggle.
  */
-const FEATURED_NAMES = new Set<string>([
-  'WordPress',
-  'WooCommerce',
-  'Shopify',
-  'Magento',
-  'İkas',
-  'T-Soft',
-  'PHP',
-  'Laravel',
-  'MySQL',
-  'TypeScript',
-  'Next.js',
-  'React',
+const FEATURED_SLUGS = new Set<string>([
+  'wordpress',
+  'woocommerce',
+  'shopify',
+  'ikas',
+  'tsoft',
+  'ideasoft',
+  'ticimax',
+  'dopigo',
+  'laravel',
+  'typescript',
+  'nextjs',
+  'react',
 ]);
 
 export function TechStack() {
   const t = useTranslations('tech');
   const [expanded, setExpanded] = React.useState(false);
 
-  const featured = TECHS.filter((tech) => FEATURED_NAMES.has(tech.name));
-  const additional = TECHS.filter((tech) => !FEATURED_NAMES.has(tech.name));
+  const featured = TECHS.filter((tech) => FEATURED_SLUGS.has(tech.slug));
+  const additional = TECHS.filter((tech) => !FEATURED_SLUGS.has(tech.slug));
+  const partnerLabel = t('partnerBadge');
 
   return (
     <Section
@@ -792,8 +823,8 @@ export function TechStack() {
         className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
       >
         {featured.map((tech) => (
-          <motion.div key={tech.name} variants={fadeUp}>
-            <TechCard tech={tech} />
+          <motion.div key={tech.slug} variants={fadeUp}>
+            <TechCard tech={tech} partnerLabel={partnerLabel} />
           </motion.div>
         ))}
 
@@ -801,14 +832,14 @@ export function TechStack() {
           {expanded &&
             additional.map((tech, idx) => (
               <motion.div
-                key={tech.name}
+                key={tech.slug}
                 custom={idx}
                 variants={meteorDrop}
                 initial="hidden"
                 animate="visible"
                 exit="exit"
               >
-                <TechCard tech={tech} />
+                <TechCard tech={tech} partnerLabel={partnerLabel} />
               </motion.div>
             ))}
         </AnimatePresence>
@@ -826,22 +857,31 @@ export function TechStack() {
   );
 }
 
-function TechCard({ tech }: { tech: Tech }) {
+function TechCard({ tech, partnerLabel }: { tech: Tech; partnerLabel: string }) {
+  const t = useTranslations('tech.items');
   return (
     <GlowCard className="group gradient-border flex h-full flex-col rounded-2xl p-5 transition-transform duration-300 hover:-translate-y-1">
       <div className="flex items-start justify-between gap-3">
         <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/[0.04] text-white/65 ring-1 ring-white/10 transition-all duration-300 group-hover:bg-white/[0.08] group-hover:text-white group-hover:ring-white/20">
           {tech.glyph}
         </div>
-        <span className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-white/45 ring-1 ring-white/10 transition-colors group-hover:text-white/70">
-          {tech.category}
-        </span>
+        <div className="flex flex-col items-end gap-1">
+          {tech.partner && (
+            <span className="inline-flex items-center gap-1 rounded-full border border-brand-400/40 bg-brand-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-brand-200 shadow-glow-sm">
+              <Sparkles className="h-2.5 w-2.5" />
+              {partnerLabel}
+            </span>
+          )}
+          <span className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-white/45 ring-1 ring-white/10 transition-colors group-hover:text-white/70">
+            {tech.category}
+          </span>
+        </div>
       </div>
 
       <div className="mt-5 flex flex-1 flex-col">
         <div className="text-base font-semibold text-white">{tech.name}</div>
         <p className="mt-1.5 text-xs leading-relaxed text-white/55 transition-colors duration-300 group-hover:text-white/75">
-          {tech.description}
+          {t(`${tech.slug}.description`)}
         </p>
       </div>
     </GlowCard>
