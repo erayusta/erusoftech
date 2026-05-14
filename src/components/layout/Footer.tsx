@@ -61,7 +61,7 @@ export function Footer() {
 
             <div className="mt-6 flex items-center gap-2">
               {[
-                { href: 'mailto:hello@erusoftech.com', label: 'Email', Icon: Mail },
+                { href: 'mailto:hello@erusoft.com', label: 'Email', Icon: Mail },
                 { href: 'https://github.com', label: 'GitHub', Icon: Github },
                 { href: 'https://linkedin.com', label: 'LinkedIn', Icon: Linkedin },
                 { href: 'https://x.com', label: 'X/Twitter', Icon: Twitter },

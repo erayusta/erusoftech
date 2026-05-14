@@ -461,7 +461,7 @@ export function WorksCTA() {
           </motion.p>
 
           <motion.div variants={fadeUp} className="relative mt-10 flex justify-center">
-            <Button href="mailto:hello@erusoftech.com" size="lg" icon>
+            <Button href="mailto:hello@erusoft.com" size="lg" icon>
               {t('button')}
             </Button>
           </motion.div>
