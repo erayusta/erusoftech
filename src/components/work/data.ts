@@ -20,16 +20,14 @@ export type WorkReference = {
   name: string;
   url?: string;          // omit for sites we don't want to link out to (e.g. mid-rebuild)
   category: WorkCategory;
-  logo: string;          // path under /public
+  /**
+   * Path under /public. Omit when the brand asset is unusable / unavailable —
+   * the card will fall back to a typography-only tile rendering the name.
+   */
+  logo?: string;
   tech?: string;         // platform / stack tag
   year?: string;
   featured?: boolean;
-  /**
-   * Set to true for logos whose marks/text are white. The card swaps
-   * the default white tile for a dark glass tile so the logo doesn't
-   * disappear into the background.
-   */
-  lightLogo?: boolean;
 };
 
 export const FEATURED_REFERENCES: WorkReference[] = [
@@ -52,7 +50,6 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     category: 'education',
     logo: '/brand/clients/topstudy.svg',
     tech: 'Custom Platform',
-    lightLogo: true,
   },
   {
     slug: 'linguland',
@@ -200,7 +197,6 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     logo: '/brand/clients/emind.png',
     tech: 'Custom Software',
     featured: true,
-    lightLogo: true,
   },
   {
     slug: 'kampanyaradar',
@@ -259,7 +255,6 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     category: 'services',
     logo: '/brand/clients/empatist.png',
     tech: 'WordPress + Custom',
-    lightLogo: true,
   },
   {
     slug: 'oznurcaglayan',
@@ -279,21 +274,21 @@ export const FEATURED_REFERENCES: WorkReference[] = [
 export const COMPACT_REFERENCES: WorkReference[] = [
   { slug: 'gssportif', name: 'GS Sportif', url: 'https://gssportif.com', category: 'ecommerce', logo: '/brand/clients/gssportif.png' },
   { slug: 'kismetbymilka', name: 'Kismet by Milka', url: 'https://kismetbymilka.com', category: 'ecommerce', logo: '/brand/clients/kismetbymilka.jpg' },
-  { slug: 'anvogg', name: 'Anvogg', url: 'https://anvogg.com', category: 'ecommerce', logo: '/brand/clients/anvogg.png' },
+  { slug: 'anvogg', name: 'Anvogg', url: 'https://anvogg.com', category: 'ecommerce' },
   { slug: 'deriderim', name: 'Deriderim', url: 'https://deriderim.com', category: 'ecommerce', logo: '/brand/clients/deriderim.ico' },
   { slug: 'eksenmobilya', name: 'Eksen Mobilya', url: 'https://eksenmobilya.com', category: 'ecommerce', logo: '/brand/clients/eksenmobilya.png' },
   { slug: 'vitanovaevdesaglik', name: 'Vitanova', url: 'https://vitanovaevdesaglik.com', category: 'services', logo: '/brand/clients/vitanovaevdesaglik.png' },
-  { slug: 'kuvarslojistik', name: 'Kuvars Lojistik', url: 'https://www.kuvarslojistik.com.tr', category: 'corporate', logo: '/brand/clients/kuvarslojistik.png' },
+  { slug: 'kuvarslojistik', name: 'Kuvars Lojistik', url: 'https://www.kuvarslojistik.com.tr', category: 'corporate' },
   { slug: 'kamaartdizayn', name: 'Kama Art Dizayn', url: 'http://www.kamaartdizayn.com', category: 'corporate', logo: '/brand/clients/kamaartdizayn.ico' },
   { slug: 'universalelt', name: 'Universal ELT', url: 'https://universalelt.com', category: 'education', logo: '/brand/clients/universalelt.png' },
-  { slug: 'ceotudent', name: 'CEOtudent', url: 'https://ceotudent.com', category: 'education', logo: '/brand/clients/ceotudent.png' },
-  { slug: 'societyistanbul', name: 'Society Istanbul', url: 'https://www.societyistanbul.com', category: 'corporate', logo: '/brand/clients/societyistanbul.png' },
-  { slug: 'emlakwebtv', name: 'Emlak WebTV', url: 'https://www.emlakwebtv.com', category: 'corporate', logo: '/brand/clients/emlakwebtv.png' },
-  { slug: 'kayzerhosting', name: 'Kayzer Hosting', url: 'https://www.kayzerhosting.com', category: 'corporate', logo: '/brand/clients/kayzerhosting.png' },
-  { slug: 'suainsaat', name: 'SUA İnşaat', url: 'https://suainsaat.com.tr', category: 'corporate', logo: '/brand/clients/suainsaat.png' },
+  { slug: 'ceotudent', name: 'CEOtudent', url: 'https://ceotudent.com', category: 'education' },
+  { slug: 'societyistanbul', name: 'Society Istanbul', url: 'https://www.societyistanbul.com', category: 'corporate' },
+  { slug: 'emlakwebtv', name: 'Emlak WebTV', url: 'https://www.emlakwebtv.com', category: 'corporate' },
+  { slug: 'kayzerhosting', name: 'Kayzer Hosting', url: 'https://www.kayzerhosting.com', category: 'corporate' },
+  { slug: 'suainsaat', name: 'SUA İnşaat', url: 'https://suainsaat.com.tr', category: 'corporate' },
   { slug: 'miranlegal', name: 'Miran Legal', url: 'https://miranlegal.com.tr', category: 'services', logo: '/brand/clients/miranlegal.png' },
   { slug: 'ozlemduran', name: 'Özlem Duran', url: 'https://ozlemduran.com.tr', category: 'corporate', logo: '/brand/clients/ozlemduran.ico' },
-  { slug: 'turkuzay', name: 'Türkuzay', url: 'https://turkuzay.com.tr', category: 'corporate', logo: '/brand/clients/turkuzay.png', lightLogo: true },
+  { slug: 'turkuzay', name: 'Türkuzay', url: 'https://turkuzay.com.tr', category: 'corporate', logo: '/brand/clients/turkuzay.png' },
   { slug: 'nihankaya', name: 'Nihan Kaya', url: 'https://nihankaya.com', category: 'corporate', logo: '/brand/clients/nihankaya.png' },
 ];
 

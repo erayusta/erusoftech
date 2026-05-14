@@ -14,12 +14,12 @@ import { fadeUp, viewportOnce } from '@/lib/motion';
  * they're rendered through plain <img> against a small white tile so
  * brand colors stay intact on the dark theme.
  */
-/**
- * `tone: 'light'` flips the tile to a dark glass background so logos
- * with white marks/text stay visible — the default white tile is for
- * dark/colored brand assets.
- */
-type Logo = { name: string; src: string; url: string; tone?: 'light' };
+type Logo = {
+  name: string;
+  /** Omit when the brand asset is unusable — tile falls back to a typography-only name mark. */
+  src?: string;
+  url: string;
+};
 
 const LOGOS: Logo[] = [
   { name: 'Pozitif Teknoloji', src: '/brand/clients/pt.svg', url: 'https://pt.com.tr' },
@@ -30,17 +30,17 @@ const LOGOS: Logo[] = [
   { name: 'Bernarpet', src: '/brand/clients/bernarpet.png', url: 'https://bernarpet.com' },
   { name: 'RAKS', src: '/brand/clients/raks.webp', url: 'https://raks.com.tr' },
   { name: 'DIDOS', src: '/brand/clients/didosofficial.webp', url: 'https://didosofficial.com.tr' },
-  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png', url: 'https://emind.com.tr', tone: 'light' },
+  { name: 'eMind Teknoloji', src: '/brand/clients/emind.png', url: 'https://emind.com.tr' },
   { name: 'Erusoft Entegre', src: '/brand/clients/entegre-erusoft.svg', url: 'https://entegre.erusoft.com' },
   { name: 'Bimotif', src: '/brand/clients/bimotif.svg', url: 'https://www.bimotif.com' },
   { name: 'Teknorot', src: '/brand/clients/teknorot.png', url: 'https://www.teknorot.com' },
   { name: 'Hobim', src: '/brand/clients/hobim.png', url: 'https://hobim.com' },
   { name: 'NET Mühendislik', src: '/brand/clients/net-muhendislik.png', url: 'https://net-muhendislik.com' },
   { name: 'Vitanova', src: '/brand/clients/vitanovaevdesaglik.png', url: 'https://vitanovaevdesaglik.com' },
-  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png', url: 'https://turkuzay.com.tr', tone: 'light' },
-  { name: 'Empatist', src: '/brand/clients/empatist.png', url: 'https://empatist.com', tone: 'light' },
+  { name: 'Türkuzay', src: '/brand/clients/turkuzay.png', url: 'https://turkuzay.com.tr' },
+  { name: 'Empatist', src: '/brand/clients/empatist.png', url: 'https://empatist.com' },
   { name: 'Nihan Kaya', src: '/brand/clients/nihankaya.png', url: 'https://nihankaya.com' },
-  { name: 'Topstudy', src: '/brand/clients/topstudy.svg', url: 'https://topstudy.com', tone: 'light' },
+  { name: 'Topstudy', src: '/brand/clients/topstudy.svg', url: 'https://topstudy.com' },
 ];
 
 export function PartnersBanner() {
@@ -118,8 +118,9 @@ export function PartnersBanner() {
   );
 }
 
-function LogoTile({ name, src, url, tone }: Logo) {
-  const isLight = tone === 'light';
+function LogoTile({ name, src, url }: Logo) {
+  const [imgError, setImgError] = React.useState(false);
+  const showFallback = !src || imgError;
   return (
     <a
       href={url}
@@ -138,13 +139,20 @@ function LogoTile({ name, src, url, tone }: Logo) {
         'focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950',
       ].join(' ')}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={src}
-        alt={`${name} logo`}
-        className="h-9 w-auto max-w-full object-contain transition-transform duration-500 group-hover/tile:scale-[1.03]"
-        loading="lazy"
-      />
+      {showFallback ? (
+        <span className="truncate text-center text-sm font-bold tracking-tight text-ink-900">
+          {name}
+        </span>
+      ) : (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src={src}
+          alt={`${name} logo`}
+          className="h-9 w-auto max-w-full object-contain transition-transform duration-500 group-hover/tile:scale-[1.03]"
+          loading="lazy"
+          onError={() => setImgError(true)}
+        />
+      )}
 
       {/* Subtle gradient border that fades in on hover */}
       <span
