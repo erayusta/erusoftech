@@ -9,13 +9,28 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+/**
+ * Resolve the canonical site origin for absolute URLs in metadata.
+ * Prefer the explicit NEXT_PUBLIC_SITE_URL when it's set (production
+ * domain, e.g. https://erusoft.com); otherwise fall back to Vercel's
+ * preview URL so previews still resolve correctly.
+ */
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+
 export async function generateMetadata({
   params,
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale: params.locale, namespace: 'meta' });
+  // og:image and twitter:image come from src/app/opengraph-image.tsx and
+  // src/app/twitter-image.tsx file conventions — Next.js auto-injects them
+  // into metadata as long as openGraph.images / twitter.images aren't set
+  // explicitly here.
   return {
+    metadataBase: new URL(SITE_URL),
     title: t('title'),
     description: t('description'),
     openGraph: {
@@ -23,13 +38,12 @@ export async function generateMetadata({
       description: t('description'),
       type: 'website',
       siteName: 'Erusoft',
-      images: [
-        {
-          url: '/brand/logo-full@2x.webp',
-          width: 960,
-          alt: 'Erusoft',
-        },
-      ],
+      locale: params.locale === 'tr' ? 'tr_TR' : 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
     },
   };
 }
