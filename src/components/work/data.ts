@@ -97,7 +97,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     name: 'Troy eStore',
     url: 'https://www.troyestore.com/',
     category: 'ecommerce',
-    logo: '/brand/clients/troyestore.svg',
+    logo: '/brand/clients/troyestore.png',
     tech: 'Custom Software',
     featured: true,
   },

@@ -26,7 +26,7 @@ type Logo = {
 const LOGOS: Logo[] = [
   { name: 'Pozitif Teknoloji', src: '/brand/clients/pt.svg', url: 'https://pt.com.tr' },
   { name: 'Marketten Gelse', src: '/brand/clients/markettengelse.svg', url: 'https://markettengelse.com' },
-  { name: 'Troy eStore', src: '/brand/clients/troyestore.svg', url: 'https://www.troyestore.com/' },
+  { name: 'Troy eStore', src: '/brand/clients/troyestore.png', url: 'https://www.troyestore.com/' },
   { name: 'Muyubi', src: '/brand/clients/muyubi.png', url: 'https://muyubi.com' },
   { name: 'CNT İç Giyim', src: '/brand/clients/e-cnt.jpg', url: 'https://e-cnt.com.tr' },
   { name: 'Petaşk', src: '/brand/clients/petask.png', url: 'https://petask.com.tr' },
