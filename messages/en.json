@@ -410,6 +410,18 @@
       "eyebrow": "More references",
       "title": "Other brands we've worked alongside"
     },
+    "openSource": {
+      "eyebrow": "Open source",
+      "title": "Open source projects",
+      "subtitle": "Developer tools we share across WordPress, WooCommerce, e-invoicing, marketplace data flows and this website's source code.",
+      "projects": {
+        "wp-ai-toolkit": { "description": "MCP-based AI toolkit for WordPress development and content operations; works with Claude Code, Cursor, VS Code, Gemini CLI and Codex." },
+        "efatura": { "description": "Open-source WordPress plugin supporting e-invoicing workflows for WooCommerce stores." },
+        "akakce-xml-feed": { "description": "WordPress plugin that generates Akakçe-compatible XML feeds from WooCommerce products." },
+        "trendyol-rakip-analiz": { "description": "Marketplace tool that helps analyze Trendyol competitor prices from a store URL." },
+        "erusoftech": { "description": "Next.js source code for the Erusoft website, including content, references and the multilingual structure." }
+      }
+    },
     "legacy": {
       "eyebrow": "Past portfolio",
       "title": "Systems we built from before 2015 onwards",

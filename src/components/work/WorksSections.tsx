@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
-import { ArrowUpRight, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Section } from '@/components/ui/Section';
 import { Eyebrow } from '@/components/ui/Eyebrow';
@@ -14,8 +14,10 @@ import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion';
 import {
   FEATURED_REFERENCES,
   COMPACT_REFERENCES,
+  OPEN_SOURCE_PROJECTS,
   LEGACY_REFERENCES,
   type WorkCategory,
+  type OpenSourceProject,
   type WorkReference,
 } from './data';
 
@@ -375,6 +377,81 @@ function CompactCard({
         </span>
       </GlowCard>
     </Wrapper>
+  );
+}
+
+// ---------- Open Source ----------
+
+export function WorksOpenSource() {
+  const t = useTranslations('works.openSource');
+
+  return (
+    <Section
+      eyebrow={t('eyebrow')}
+      title={t('title')}
+      subtitle={t('subtitle')}
+      size="wide"
+    >
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        className="grid gap-5 md:grid-cols-2 lg:grid-cols-3"
+      >
+        {OPEN_SOURCE_PROJECTS.map((project) => (
+          <motion.div key={project.slug} variants={fadeUp}>
+            <OpenSourceCard project={project} />
+          </motion.div>
+        ))}
+      </motion.div>
+    </Section>
+  );
+}
+
+function OpenSourceCard({ project }: { project: OpenSourceProject }) {
+  const t = useTranslations('works.openSource.projects');
+  const tWorks = useTranslations('works');
+  const openInNewTabLabel = tWorks('openInNewTab');
+
+  return (
+    <a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`${project.name} — ${openInNewTabLabel}`}
+      className="block h-full"
+    >
+      <GlowCard className="group flex h-full flex-col rounded-2xl p-6">
+        <div className="flex items-start justify-between gap-3">
+          <div className="grid h-12 w-12 place-items-center rounded-xl bg-white/[0.04] text-white ring-1 ring-white/10 transition-colors duration-300 group-hover:text-brand-300">
+            <Github className="h-5 w-5" />
+          </div>
+          <span className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-white/55 ring-1 ring-white/10">
+            Open Source
+          </span>
+        </div>
+
+        <div className="mt-5 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-white">{project.name}</h3>
+          <ArrowUpRight className="h-4 w-4 text-white/40 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand-300" />
+        </div>
+
+        <div className="mt-1 text-xs text-white/40">
+          {project.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+        </div>
+
+        <p className="mt-4 flex-1 text-sm leading-relaxed text-white/65">
+          {t(`${project.slug}.description`)}
+        </p>
+
+        <div className="mt-5 border-t border-white/5 pt-4">
+          <span className="text-[11px] uppercase tracking-[0.14em] text-white/40">
+            {project.tech}
+          </span>
+        </div>
+      </GlowCard>
+    </a>
   );
 }
 

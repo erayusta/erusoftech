@@ -6,6 +6,7 @@ import {
   WorksHero,
   WorksFeatured,
   WorksCompact,
+  WorksOpenSource,
   WorksLegacy,
   WorksCTA,
 } from '@/components/work/WorksSections';
@@ -47,6 +48,7 @@ export default function WorkPage({
         <WorksHero />
         <WorksFeatured />
         <WorksCompact />
+        <WorksOpenSource />
         <WorksLegacy />
         <WorksCTA />
       </main>

@@ -36,6 +36,13 @@ export type WorkReference = {
   lightLogo?: boolean;
 };
 
+export type OpenSourceProject = {
+  slug: string;
+  name: string;
+  url: string;
+  tech: string;
+};
+
 export const FEATURED_REFERENCES: WorkReference[] = [
   // ---- Active flagship work (e-commerce + custom heavy) ----
   {
@@ -317,6 +324,39 @@ export const COMPACT_REFERENCES: WorkReference[] = [
   { slug: 'ozlemduran', name: 'Özlem Duran', url: 'https://ozlemduran.com.tr', category: 'corporate', logo: '/brand/clients/ozlemduran.ico' },
   { slug: 'turkuzay', name: 'Türkuzay', url: 'https://turkuzay.com.tr', category: 'corporate', logo: '/brand/clients/turkuzay.png', lightLogo: true },
   { slug: 'nihankaya', name: 'Nihan Kaya', url: 'https://nihankaya.com', category: 'corporate', logo: '/brand/clients/nihankaya.png' },
+];
+
+export const OPEN_SOURCE_PROJECTS: OpenSourceProject[] = [
+  {
+    slug: 'wp-ai-toolkit',
+    name: 'wp-ai-toolkit',
+    url: 'https://github.com/erayusta/wp-ai-toolkit',
+    tech: 'TypeScript + MCP',
+  },
+  {
+    slug: 'efatura',
+    name: 'efatura',
+    url: 'https://github.com/erayusta/efatura',
+    tech: 'WooCommerce',
+  },
+  {
+    slug: 'akakce-xml-feed',
+    name: 'akakce-xml-feed',
+    url: 'https://github.com/erayusta/akakce-xml-feed',
+    tech: 'WordPress + WooCommerce',
+  },
+  {
+    slug: 'trendyol-rakip-analiz',
+    name: 'trendyol-rakip-analiz',
+    url: 'https://github.com/erayusta/trendyol-rakip-analiz',
+    tech: 'Marketplace Analytics',
+  },
+  {
+    slug: 'erusoftech',
+    name: 'erusoftech',
+    url: 'https://github.com/erayusta/erusoftech',
+    tech: 'Next.js',
+  },
 ];
 
 /**

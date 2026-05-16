@@ -410,6 +410,18 @@
       "eyebrow": "Daha fazla referans",
       "title": "Birlikte çalıştığımız diğer markalar"
     },
+    "openSource": {
+      "eyebrow": "Open source",
+      "title": "Açık kaynak projelerimiz",
+      "subtitle": "WordPress, WooCommerce, e-fatura, pazaryeri veri akışları ve bu web sitesinin kaynak kodu dahil olmak üzere paylaştığımız geliştirme araçları.",
+      "projects": {
+        "wp-ai-toolkit": { "description": "WordPress geliştirme ve içerik operasyonları için MCP tabanlı AI araç seti; Claude Code, Cursor, VS Code, Gemini CLI ve Codex ile çalışır." },
+        "efatura": { "description": "WooCommerce mağazaları için e-fatura süreçlerini destekleyen açık kaynak WordPress eklentisi." },
+        "akakce-xml-feed": { "description": "WooCommerce ürünlerinden Akakçe uyumlu XML feed üretmek için geliştirilmiş WordPress eklentisi." },
+        "trendyol-rakip-analiz": { "description": "Mağaza URL'sinden yola çıkarak Trendyol rakip fiyatlarını analiz etmeye yardımcı olan pazaryeri aracı." },
+        "erusoftech": { "description": "Erusoft web sitesinin Next.js kaynak kodu; içerik, referanslar ve çok dilli yapı dahil." }
+      }
+    },
     "legacy": {
       "eyebrow": "Geçmiş portföy",
       "title": "2015 öncesinden bugüne inşa ettiğimiz sistemler",
