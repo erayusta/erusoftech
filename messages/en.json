@@ -66,8 +66,8 @@
         "title": "E-commerce & Headless Commerce",
         "description": "Development, integration and sustainable e-commerce infrastructure services on İkas, Shopify, WooCommerce, Magento and T-Soft.",
         "bullets": [
-          "İkas, Shopify, WooCommerce, Magento and T-Soft development",
-          "Headless commerce and custom storefront / checkout architectures",
+          "İkas app, theme development and consulting services",
+          "Shopify, WooCommerce, Magento, T-Soft and headless storefront architectures",
           "Payment, shipping, marketplace integrations and infrastructure support"
         ]
       },
@@ -420,6 +420,7 @@
       "pt": { "description": "Apple Premium Education Partner platform — student campaigns, product catalog and authorized service flows on a WooCommerce + custom stack." },
       "markettengelse": { "description": "Online grocery ordering platform — virtual POS and custom order flows layered on WooCommerce." },
       "troyestore": { "description": "Custom software development for an Apple Partner." },
+      "ikas-erusoft": { "description": "İkas App Store extensions, theme development and consulting services — a conversion-focused İkas stack with EruCompare and GrowthSuite apps." },
       "muyubi": { "description": "High-traffic computer & technology e-commerce on WooCommerce, with XML, payment and shipping integrations." },
       "e-cnt": { "description": "Multi-collection e-commerce backbone for CNT lingerie — custom checkout experience and operational integrations." },
       "lesfleurs": { "description": "Same-day-delivery luxury florist storefront, extended with custom order management and gift-note flows." },

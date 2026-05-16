@@ -66,8 +66,8 @@
         "title": "E-ticaret & Headless Commerce",
         "description": "İkas, Shopify, WooCommerce, Magento ve T-Soft üzerinde geliştirme, entegrasyon ve sürdürülebilir e-ticaret altyapı hizmetleri.",
         "bullets": [
-          "İkas, Shopify, WooCommerce, Magento ve T-Soft geliştirmeleri",
-          "Headless commerce ve özel vitrin / checkout mimarileri",
+          "İkas app, tema geliştirme ve danışmanlık hizmetleri",
+          "Shopify, WooCommerce, Magento, T-Soft ve headless vitrin mimarileri",
           "Ödeme, kargo, pazaryeri entegrasyonları ve altyapı desteği"
         ]
       },
@@ -420,6 +420,7 @@
       "pt": { "description": "Apple Premium Education Partner ağı için öğrenci kampanyaları, ürün kataloğu ve yetkili servis süreçlerini yöneten WooCommerce + özel altyapı." },
       "markettengelse": { "description": "Online market siparişi platformu — sanal POS ve özel sipariş akışlarıyla genişletilmiş WooCommerce kurulumu." },
       "troyestore": { "description": "Apple Partner için özel yazılım geliştirme." },
+      "ikas-erusoft": { "description": "İkas App Store eklentileri, tema geliştirme ve danışmanlık hizmetleri — EruCompare ve GrowthSuite uygulamalarıyla dönüşüm odaklı ikas altyapısı." },
       "muyubi": { "description": "Bilgisayar ve teknoloji ürünleri için yüksek-trafik WooCommerce mağazası; XML, ödeme ve kargo entegrasyonları." },
       "e-cnt": { "description": "CNT iç giyim için çok-koleksiyon e-ticaret altyapısı; özel checkout deneyimi ve operasyonel entegrasyonlar." },
       "lesfleurs": { "description": "Aynı gün teslimat odaklı lüks çiçekçi mağazası; özel sipariş yönetimi ve kart-not akışıyla zenginleştirildi." },

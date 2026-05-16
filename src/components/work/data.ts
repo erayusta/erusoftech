@@ -102,6 +102,15 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     featured: true,
   },
   {
+    slug: 'ikas-erusoft',
+    name: 'Erusoft ikas Apps',
+    url: 'https://ikas.erusoft.com/',
+    category: 'ecommerce',
+    logo: '/brand/clients/ikas-erusoft.svg',
+    tech: 'İkas Apps + Themes',
+    featured: true,
+  },
+  {
     slug: 'muyubi',
     name: 'Muyubi',
     url: 'https://muyubi.com',
