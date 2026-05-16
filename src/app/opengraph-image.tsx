@@ -105,7 +105,7 @@ export default async function Image() {
             lineHeight: 1.3,
           }}
         >
-          Üretim hattı kalitesinde mühendislik · 2015'ten bu yana
+          Üretim hattı kalitesinde mühendislik · 2015&apos;ten bu yana
         </div>
 
         {/* Bottom URL bar */}
