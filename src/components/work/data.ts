@@ -89,7 +89,16 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     url: 'https://markettengelse.com',
     category: 'ecommerce',
     logo: '/brand/clients/markettengelse.svg',
-    tech: 'WooCommerce + TROY',
+    tech: 'WooCommerce',
+    featured: true,
+  },
+  {
+    slug: 'troyestore',
+    name: 'Troy eStore',
+    url: 'https://www.troyestore.com/',
+    category: 'ecommerce',
+    logo: '/brand/clients/troyestore.svg',
+    tech: 'Custom Software',
     featured: true,
   },
   {
@@ -246,7 +255,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     name: 'Pirim Gıda',
     category: 'corporate',
     logo: '/brand/clients/pirim.png',
-    tech: 'Renewal',
+    tech: 'WordPress',
   },
   {
     slug: 'net-muhendislik',
@@ -367,7 +376,6 @@ export const LEGACY_REFERENCES: { name: string; tech: string; era: string }[] = 
 
   // Pre-2015 (independent / individual portfolio)
   { name: 'annelutfen.com', tech: 'Magento', era: 'Pre-2015' },
-  { name: 'nt.com.tr', tech: 'Magento', era: 'Pre-2015' },
   { name: 'annehamile.com', tech: 'WordPress', era: 'Pre-2015' },
   { name: 'canlitv.net', tech: 'Custom Software', era: 'Pre-2015' },
   { name: 'altinfiyatlari.net', tech: 'Custom Software', era: 'Pre-2015' },

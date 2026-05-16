@@ -37,11 +37,11 @@
     "items": {
       "ai": {
         "title": "AI Çözümleri",
-        "description": "Makine öğrenimi modellerini iş akışlarınıza entegre ederek manuel işleri akıllı otomasyona dönüştürürüz.",
+        "description": "Chatbot, fine-tuning ve AI otomasyonlarıyla firmanızı dijitalleştirir; manuel süreçleri akıllı iş akışlarına taşırız.",
         "bullets": [
-          "Makine öğrenimi entegrasyonu (OpenAI, Anthropic, self-hosted)",
-          "Öngörücü analitik ve karar destek motorları",
-          "İş akışı otomasyonu ve RAG pipeline'ları"
+          "n8n ile AI destekli iş akışı otomasyonları",
+          "Özel LLM eğitimi, fine-tuning ve kurumsal chatbot geliştirme",
+          "Local AI servis kurulumu ve self-hosted model entegrasyonu"
         ]
       },
       "data": {
@@ -64,11 +64,11 @@
       },
       "ecommerce": {
         "title": "E-ticaret & Headless Commerce",
-        "description": "Yüksek dönüşümlü, headless mimaride çalışan ve marketplace entegrasyonlu özel e-ticaret platformları.",
+        "description": "İkas, Shopify, WooCommerce, Magento ve T-Soft üzerinde geliştirme, entegrasyon ve sürdürülebilir e-ticaret altyapı hizmetleri.",
         "bullets": [
-          "Headless commerce (Medusa, Saleor, commercetools)",
-          "Stripe, iyzico, PayTR ve kargo entegrasyonları",
-          "Trendyol, Hepsiburada, N11 marketplace bağlantıları"
+          "İkas, Shopify, WooCommerce, Magento ve T-Soft geliştirmeleri",
+          "Headless commerce ve özel vitrin / checkout mimarileri",
+          "Ödeme, kargo, pazaryeri entegrasyonları ve altyapı desteği"
         ]
       },
       "cms": {
@@ -100,20 +100,20 @@
       },
       "saas": {
         "title": "SaaS Geliştirme",
-        "description": "İlk müşterinizden milyonuncu kullanıcınıza kadar ölçeklenen, multi-tenant SaaS ürünleri.",
+        "description": "Finans, veri ve operasyon odaklı SaaS ürünlerinde Borsa İstanbul, Binance ve farklı servis mimarilerini tek platformda buluştururuz.",
         "bullets": [
-          "Multi-tenant mimari ve row-level security",
-          "Abonelik & faturalandırma (Stripe, Paddle) entegrasyonu",
-          "Ölçeklenebilir backend, job queue'lar, event-driven sistemler"
+          "Borsa İstanbul, Binance, Kraken, Coinbase ve benzeri piyasa veri entegrasyonları",
+          "REST, WebSocket, webhook ve batch veri akışlarını birleştiren servis mimarileri",
+          "Multi-tenant SaaS altyapısı, rol yönetimi, raporlama ve ölçeklenebilir backend"
         ]
       },
       "integration": {
         "title": "Sistem Entegrasyonu & API",
-        "description": "Mevcut iş sistemlerinizi (ERP, CRM, üretim, lojistik) tek bir veri akışında birleştiren entegrasyon platformları.",
+        "description": "Logo, Paraşüt, pazaryeri, kargo ve ödeme sistemlerinizi tek bir güvenilir veri akışında birleştiren entegrasyon platformları.",
         "bullets": [
-          "REST, GraphQL ve gRPC API tasarımı ve gateway'ler",
-          "Event-driven mimari (Kafka, RabbitMQ, NATS)",
-          "Legacy ve enterprise sistem (SAP, Oracle, Logo) entegrasyonu"
+          "Logo ve Paraşüt muhasebe / finans entegrasyonları",
+          "Trendyol, Hepsiburada ve Amazon pazaryeri bağlantıları",
+          "Kargo entegrasyonları, ödeme sistemi entegrasyonları ve özel API geliştirme"
         ]
       },
       "cloud": {
@@ -418,7 +418,8 @@
     "openInNewTab": "yeni sekmede açılır",
     "references": {
       "pt": { "description": "Apple Premium Education Partner ağı için öğrenci kampanyaları, ürün kataloğu ve yetkili servis süreçlerini yöneten WooCommerce + özel altyapı." },
-      "markettengelse": { "description": "Online market siparişi platformu — TROY ödeme altyapısı, sanal POS ve özel sipariş akışlarıyla genişletilmiş WooCommerce kurulumu." },
+      "markettengelse": { "description": "Online market siparişi platformu — sanal POS ve özel sipariş akışlarıyla genişletilmiş WooCommerce kurulumu." },
+      "troyestore": { "description": "Apple Partner için özel yazılım geliştirme." },
       "muyubi": { "description": "Bilgisayar ve teknoloji ürünleri için yüksek-trafik WooCommerce mağazası; XML, ödeme ve kargo entegrasyonları." },
       "e-cnt": { "description": "CNT iç giyim için çok-koleksiyon e-ticaret altyapısı; özel checkout deneyimi ve operasyonel entegrasyonlar." },
       "lesfleurs": { "description": "Aynı gün teslimat odaklı lüks çiçekçi mağazası; özel sipariş yönetimi ve kart-not akışıyla zenginleştirildi." },

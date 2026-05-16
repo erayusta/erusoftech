@@ -37,11 +37,11 @@
     "items": {
       "ai": {
         "title": "AI Solutions",
-        "description": "We embed machine-learning models into your workflows, turning manual work into intelligent automation.",
+        "description": "We digitize companies with chatbots, fine-tuning and AI automation, moving manual processes into intelligent workflows.",
         "bullets": [
-          "Machine-learning integration (OpenAI, Anthropic, self-hosted)",
-          "Predictive analytics and decision engines",
-          "Workflow automation and RAG pipelines"
+          "AI-powered workflow automation with n8n",
+          "Custom LLM training, fine-tuning and enterprise chatbot development",
+          "Local AI service setup and self-hosted model integration"
         ]
       },
       "data": {
@@ -64,11 +64,11 @@
       },
       "ecommerce": {
         "title": "E-commerce & Headless Commerce",
-        "description": "High-conversion, headless commerce platforms with marketplace and payment integrations.",
+        "description": "Development, integration and sustainable e-commerce infrastructure services on İkas, Shopify, WooCommerce, Magento and T-Soft.",
         "bullets": [
-          "Headless commerce (Medusa, Saleor, commercetools)",
-          "Stripe, Adyen and local PSP / shipping integrations",
-          "Marketplace connectors (Amazon, eBay, regional channels)"
+          "İkas, Shopify, WooCommerce, Magento and T-Soft development",
+          "Headless commerce and custom storefront / checkout architectures",
+          "Payment, shipping, marketplace integrations and infrastructure support"
         ]
       },
       "cms": {
@@ -100,20 +100,20 @@
       },
       "saas": {
         "title": "SaaS Development",
-        "description": "Multi-tenant SaaS products built to scale from your first customer to your millionth.",
+        "description": "For finance, data and operations-focused SaaS products, we connect Borsa Istanbul, Binance and different service architectures in one platform.",
         "bullets": [
-          "Multi-tenant architecture with row-level security",
-          "Subscription & billing (Stripe, Paddle)",
-          "Scalable backends, job queues, event-driven systems"
+          "Borsa Istanbul, Binance, Kraken, Coinbase and similar market-data integrations",
+          "Service architectures combining REST, WebSocket, webhook and batch data flows",
+          "Multi-tenant SaaS infrastructure, role management, reporting and scalable backends"
         ]
       },
       "integration": {
         "title": "System Integration & API",
-        "description": "Connect your business systems (ERP, CRM, manufacturing, logistics) into a single, reliable data flow.",
+        "description": "Integration platforms that connect Logo, Paraşüt, marketplaces, shipping and payment systems into one reliable data flow.",
         "bullets": [
-          "REST, GraphQL and gRPC API design and gateways",
-          "Event-driven architecture (Kafka, RabbitMQ, NATS)",
-          "Enterprise system integration (SAP, Oracle, legacy)"
+          "Logo and Paraşüt accounting / finance integrations",
+          "Trendyol, Hepsiburada and Amazon marketplace connectors",
+          "Shipping integrations, payment system integrations and custom API development"
         ]
       },
       "cloud": {
@@ -418,7 +418,8 @@
     "openInNewTab": "opens in new tab",
     "references": {
       "pt": { "description": "Apple Premium Education Partner platform — student campaigns, product catalog and authorized service flows on a WooCommerce + custom stack." },
-      "markettengelse": { "description": "Online grocery ordering platform — TROY payment rails, virtual POS and custom order flows layered on WooCommerce." },
+      "markettengelse": { "description": "Online grocery ordering platform — virtual POS and custom order flows layered on WooCommerce." },
+      "troyestore": { "description": "Custom software development for an Apple Partner." },
       "muyubi": { "description": "High-traffic computer & technology e-commerce on WooCommerce, with XML, payment and shipping integrations." },
       "e-cnt": { "description": "Multi-collection e-commerce backbone for CNT lingerie — custom checkout experience and operational integrations." },
       "lesfleurs": { "description": "Same-day-delivery luxury florist storefront, extended with custom order management and gift-note flows." },
