@@ -322,15 +322,15 @@ export const LEGACY_REFERENCES: { name: string; tech: string; era: string }[] = 
   { name: 'ybkitap.com', tech: 'Magento', era: '2019' },
   { name: 'cosmoleylek.com', tech: 'Magento 2', era: '2019' },
   { name: 'lukapetmarket.com', tech: 'Magento', era: '2019' },
-  { name: 'kurtki7km.com', tech: '—', era: '2019' },
+  { name: 'kurtki7km.com', tech: 'Magento', era: '2019' },
   { name: 'erdoganlarbisiklet.com', tech: 'Magento 2', era: '2019' },
 
   // 2017–2018 era
   { name: 'cazador.com.tr', tech: 'Magento', era: '2017–2018' },
   { name: 'cabaretcineflowers.com', tech: 'WooCommerce', era: '2017–2018' },
   { name: 'parmori.com', tech: 'Magento', era: '2017–2018' },
-  { name: 'emproyal.com.tr', tech: '—', era: '2017–2018' },
-  { name: 'kayzerinternet.com', tech: '—', era: '2017–2018' },
+  { name: 'emproyal.com.tr', tech: 'Laravel + Custom', era: '2017–2018' },
+  { name: 'kayzerinternet.com', tech: 'Laravel + Custom', era: '2017–2018' },
   { name: 'sentezfilo.com.tr', tech: 'Custom Software', era: '2017–2018' },
   { name: 'vesyum.com', tech: 'Magento', era: '2017–2018' },
   { name: 'aniqnaturals.com', tech: 'Magento', era: '2017–2018' },
