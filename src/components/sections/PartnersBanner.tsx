@@ -26,6 +26,7 @@ type Logo = {
 const LOGOS: Logo[] = [
   { name: 'Pozitif Teknoloji', src: '/brand/clients/pt.svg', url: 'https://pt.com.tr' },
   { name: 'Marketten Gelse', src: '/brand/clients/markettengelse.svg', url: 'https://markettengelse.com' },
+  { name: 'Troy eStore', src: '/brand/clients/troyestore.svg', url: 'https://www.troyestore.com/' },
   { name: 'Muyubi', src: '/brand/clients/muyubi.png', url: 'https://muyubi.com' },
   { name: 'CNT İç Giyim', src: '/brand/clients/e-cnt.jpg', url: 'https://e-cnt.com.tr' },
   { name: 'Petaşk', src: '/brand/clients/petask.png', url: 'https://petask.com.tr' },
@@ -41,6 +42,8 @@ const LOGOS: Logo[] = [
   { name: 'Vitanova', src: '/brand/clients/vitanovaevdesaglik.png', url: 'https://vitanovaevdesaglik.com' },
   { name: 'Türkuzay', src: '/brand/clients/turkuzay.png', url: 'https://turkuzay.com.tr', tone: 'light' },
   { name: 'Empatist', src: '/brand/clients/empatist.png', url: 'https://empatist.com', tone: 'light' },
+  { name: 'Miran Legal', src: '/brand/clients/miranlegal.png', url: 'https://miranlegal.com.tr' },
+  { name: 'Emlak WebTV', src: '/brand/clients/emlakwebtv.svg', url: 'https://www.emlakwebtv.com' },
   { name: 'Nihan Kaya', src: '/brand/clients/nihankaya.png', url: 'https://nihankaya.com' },
   { name: 'Topstudy', src: '/brand/clients/topstudy.svg', url: 'https://topstudy.com', tone: 'light' },
 ];
@@ -95,8 +98,8 @@ export function PartnersBanner() {
         }}
       >
         <div className="flex w-max animate-scroll-x gap-4 py-2 group-hover:[animation-play-state:paused]">
-          {loop.map(({ name, src, url }, i) => (
-            <LogoTile key={`${name}-${i}`} name={name} src={src} url={url} />
+          {loop.map(({ name, src, url, tone }, i) => (
+            <LogoTile key={`${name}-${i}`} name={name} src={src} url={url} tone={tone} />
           ))}
         </div>
 

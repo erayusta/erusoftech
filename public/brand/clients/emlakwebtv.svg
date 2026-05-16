@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-labelledby="title">
+  <title id="title">Emlak WebTV</title>
+  <rect width="360" height="120" fill="#fff"/>
+  <g fill="none" stroke="#1f2937" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 58 82 24l44 34"/>
+    <path d="M50 55v42h64V55"/>
+    <path d="M74 97V72h16v25"/>
+  </g>
+  <text x="148" y="55" fill="#1f2937" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="800" letter-spacing="-1">
+    emlak
+  </text>
+  <text x="148" y="88" fill="#2563eb" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="-1">
+    webtv
+  </text>
+</svg>
