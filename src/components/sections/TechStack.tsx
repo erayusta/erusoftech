@@ -167,7 +167,7 @@ const TECHS: Tech[] = [
   {
     slug: 'dopigo',
     name: 'Dopigo',
-    category: 'Integration',
+    category: 'INTEGRATION',
     partner: true,
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
@@ -294,7 +294,7 @@ const TECHS: Tech[] = [
   {
     slug: 'nodejs',
     name: 'Node.js',
-    category: 'Runtime',
+    category: 'RUNTIME',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -420,7 +420,7 @@ const TECHS: Tech[] = [
   {
     slug: 'tailwind',
     name: 'Tailwind CSS',
-    category: 'Styling',
+    category: 'STYLING',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <path
@@ -543,7 +543,7 @@ const TECHS: Tech[] = [
   {
     slug: 'kafka',
     name: 'Kafka',
-    category: 'Streaming',
+    category: 'STREAMING',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="6" stroke="currentColor" strokeWidth="2" />
@@ -636,7 +636,7 @@ const TECHS: Tech[] = [
   {
     slug: 'docker',
     name: 'Docker',
-    category: 'Container',
+    category: 'CONTAINER',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <rect x="10" y="28" width="6" height="6" stroke="currentColor" strokeWidth="1.8" />
@@ -726,7 +726,7 @@ const TECHS: Tech[] = [
   {
     slug: 'playwright',
     name: 'Playwright',
-    category: 'Testing',
+    category: 'TESTING',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <rect x="8" y="14" width="48" height="36" rx="4" stroke="currentColor" strokeWidth="2" />
@@ -747,7 +747,7 @@ const TECHS: Tech[] = [
   {
     slug: 'grafana',
     name: 'Grafana',
-    category: 'Monitoring',
+    category: 'MONITORING',
     glyph: (
       <svg viewBox="0 0 64 64" fill="none" aria-hidden className="h-7 w-7">
         <circle cx="32" cy="32" r="22" stroke="currentColor" strokeWidth="2" />

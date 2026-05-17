@@ -218,7 +218,7 @@ export const FEATURED_REFERENCES: WorkReference[] = [
     url: 'https://entegre.erusoft.com',
     category: 'custom',
     logo: '/brand/clients/entegre-erusoft.svg',
-    tech: 'Dopigo + İdeasoft',
+    tech: 'DOPIGO + İDEASOFT',
     featured: true,
   },
   {
