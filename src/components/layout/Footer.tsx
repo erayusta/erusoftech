@@ -114,7 +114,7 @@ export function Footer() {
             © {year} Erusoft. {t('rights')}
           </p>
           <p className="text-xs text-white/40">
-            Made with precision. Istanbul · Berlin · Remote.
+            Made with precision. Istanbul · Dubai · Remote.
           </p>
         </div>
       </Container>
