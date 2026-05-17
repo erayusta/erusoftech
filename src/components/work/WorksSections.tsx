@@ -478,7 +478,11 @@ export function WorksLegacy() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={viewportOnce}
+        /* `amount: 'some'` (instead of the shared viewportOnce's 0.25)
+           — this section is tall enough that 25% of it never fits in a
+           mobile viewport, which leaves the parent stuck in "hidden"
+           and the items at opacity 0 forever (section reads as blank). */
+        viewport={{ once: true, amount: 'some' }}
         className="space-y-10"
       >
         {grouped.map(([era, items]) => (
