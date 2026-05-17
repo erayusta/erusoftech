@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n/config';
 import { SpaceBackground } from '@/components/fx/SpaceBackground';
+import { HtmlLangSync } from '@/components/util/HtmlLangSync';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -69,6 +70,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <HtmlLangSync />
       <SpaceBackground />
       {children}
     </NextIntlClientProvider>
