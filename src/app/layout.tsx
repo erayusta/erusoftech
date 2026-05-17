@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
+import { getLocale } from 'next-intl/server';
 import { CursorTrail } from '@/components/ui/CursorTrail';
-import { defaultLocale } from '@/i18n/config';
 import '@/styles/globals.css';
 
 /**
@@ -27,9 +27,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  // Resolve from the next-intl middleware so <html lang> matches the URL
+  // locale — critical for CSS text-transform behavior. With the wrong lang
+  // the browser applies Turkish casing on English pages (i → İ) and the
+  // Hero eyebrow reads "AI-DRİVEN ENGİNEERİNG STUDİO" on /en.
+  const locale = await getLocale();
+
   return (
-    <html lang={defaultLocale} className="dark">
+    <html lang={locale} className="dark">
       <body className="min-h-screen bg-ink-950 text-white antialiased">
         <CursorTrail />
         {children}
