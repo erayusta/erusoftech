@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n/config';
 import { SpaceBackground } from '@/components/fx/SpaceBackground';
+import { HtmlLangSync } from '@/components/i18n/HtmlLangSync';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -24,6 +25,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
+  // Calling setRequestLocale here as well lets generateMetadata participate
+  // in static rendering — without it, next-intl falls back to the dynamic
+  // request path and the page opts out of prerendering again.
+  setRequestLocale(params.locale);
   const t = await getTranslations({ locale: params.locale, namespace: 'meta' });
   // og:image and twitter:image come from src/app/opengraph-image.tsx and
   // src/app/twitter-image.tsx file conventions — Next.js auto-injects them
@@ -51,9 +56,11 @@ export async function generateMetadata({
 /**
  * Locale layout — thin wrapper on top of the root layout.
  *
- * The root layout owns <html> and <body>; this layer just validates the
- * incoming locale and installs the NextIntlClientProvider so server-rendered
- * messages are available to client components further down the tree.
+ * The root layout owns <html> and <body> with a static `lang`. This layer
+ * validates the incoming locale, calls `setRequestLocale` so descendants
+ * can be statically prerendered, installs the NextIntlClientProvider for
+ * client components, and mounts <HtmlLangSync /> to update the document
+ * `lang` attribute to the URL locale once the client takes over.
  */
 export default async function LocaleLayout({
   children,
@@ -69,6 +76,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <HtmlLangSync />
       <SpaceBackground />
       {children}
     </NextIntlClientProvider>

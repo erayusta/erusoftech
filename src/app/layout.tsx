@@ -1,20 +1,25 @@
 import type { Metadata } from 'next';
-import { getLocale } from 'next-intl/server';
 import { CursorTrail } from '@/components/ui/CursorTrail';
+import { defaultLocale } from '@/i18n/config';
 import '@/styles/globals.css';
 
 /**
  * Root layout.
  *
- * Next.js 14 App Router requires a root layout that provides <html> and
- * <body> for EVERY route in the tree, including non-localised ones like
- * src/app/page.tsx (the `/` redirect). Localised routes still get their
- * i18n wiring from src/app/[locale]/layout.tsx, which only adds a
- * NextIntlClientProvider around children — no duplicated html/body.
+ * IMPORTANT: this layout wraps EVERY route in the app, including the
+ * non-localised `/` redirect (src/app/page.tsx) and Next.js's auto-
+ * generated `/_not-found`. Because of that we deliberately keep it free of
+ * any next-intl Server APIs — `getLocale()`, `getTranslations()`, etc. all
+ * read request headers under the hood, which marks the route as dynamic
+ * and breaks static prerendering for `/` and `/_not-found` during the
+ * production build on Vercel.
  *
- * `lang` here is the app-wide default; the locale-aware layout doesn't
- * re-render <html>, so the value stays stable across client navigations
- * (screen readers still get per-section locale via standard Next.js i18n).
+ * For the URL-locale-aware <html lang>, see `src/app/[locale]/layout.tsx`,
+ * where `<HtmlLangSync />` keeps `document.documentElement.lang` aligned
+ * with the active locale. The static `defaultLocale` here is just the
+ * initial value; it stays correct for the `/` redirect (which targets the
+ * default locale anyway) and for the 404 page (which has no real locale
+ * context).
  */
 export const metadata: Metadata = {
   metadataBase: new URL('https://erusoftech.com'),
@@ -27,15 +32,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  // Resolve from the next-intl middleware so <html lang> matches the URL
-  // locale — critical for CSS text-transform behavior. With the wrong lang
-  // the browser applies Turkish casing on English pages (i → İ) and the
-  // Hero eyebrow reads "AI-DRİVEN ENGİNEERİNG STUDİO" on /en.
-  const locale = await getLocale();
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={locale} className="dark">
+    <html lang={defaultLocale} className="dark">
       <body className="min-h-screen bg-ink-950 text-white antialiased">
         <CursorTrail />
         {children}
