@@ -635,5 +635,97 @@
       "blog": "Blog",
       "caseStudies": "Vaka çalışmaları"
     }
+  },
+  "cadraPrivacy": {
+    "meta": {
+      "title": "Cadra — Gizlilik Politikası",
+      "description": "Cadra neyi topluyor, neyi hiç toplamıyor. Fotoğrafların cihazından çıkmıyor."
+    },
+    "hero": {
+      "eyebrow": "iOS için Cadra",
+      "title": "Cadra Gizlilik Politikası",
+      "lastUpdated": "Son güncelleme: 16 Eylül 2026"
+    },
+    "intro": "Cadra, zaten çektiğin fotoğraflar için bir kadraj stüdyosu. Kamerası yok, hesabı yok, girişi yok. Bu sayfa uygulamanın dışarıya tam olarak ne gönderdiğini anlatıyor ve App Store Connect'te Cadra için doldurulan App Privacy cevaplarıyla satır satır aynı.",
+    "sections": {
+      "photos": {
+        "title": "Fotoğrafların cihazından çıkmıyor",
+        "body": "Cadra'nın fotoğrafa bakan her parçası — sahne analizi, yüz ve ufuk tespiti, kadraj çözücü, ışık ayarı — iPhone'unun içinde çalışıyor. Hiçbir fotoğraf, küçük resim, kırpma ya da türetilmiş görüntü yüklenmiyor; uygulama internet bağlantısı olmadan da çalışıyor.\n\nKaydettiğinde Cadra fotoğraf kitaplığına yeni bir dosya yazıyor. Orijinalin asla değiştirilmiyor, asla silinmiyor. Uygulamanın tüm kitaplık erişimi değil de yalnızca \"ekleme\" izni istemesinin sebebi bu."
+      },
+      "collected": {
+        "title": "Topladığımız şey",
+        "body": "Cadra, uygulamanın hangi kısımlarının gerçekten kullanıldığını görebilmek için anonim ürün etkileşim olayları gönderiyor. İki kategori; ikisi de Apple'a \"Kimliğinle İlişkilendirilmemiş\" olarak bildirildi ve yalnızca analiz için kullanılıyor:\n\n• Kullanım Verisi → Ürün Etkileşimi: hangi kompozisyon kuralının seçildiği, kaydın başarılı olup olmadığı, paywall'ın dönüşüp dönüşmediği.\n• Tanımlayıcılar → Cihaz Kimliği: uygulamanın kendisi için ürettiği, cihaz anahtar zincirinde tutulan bir kimlik.\n\nBu kimlik cihazda üretilen rastgele bir token. Reklam kimliği (IDFA) değil, Apple Hesabın değil ve bir kişiye bağlanamıyor — bizim tarafımızdan da bağlanamıyor."
+      },
+      "notCollected": {
+        "title": "Hiç toplamadığımız şeyler",
+        "body": "Cadra adını, e-posta adresini, telefon numaranı, posta adresini, rehberini, takvimini, konumunu, sağlık verilerini, finansal verilerini, gezinme geçmişini ve hiçbir fotoğrafın içeriğini toplamıyor.\n\nHesap sistemi olmadığı için silinecek bir hesap ve sunulacak bir hesap silme akışı da yok."
+      },
+      "purchases": {
+        "title": "Satın almalar",
+        "body": "Bütün satın almalar Apple üzerinden yapılıyor. Cadra ödeme bilgilerini hiç görmüyor, hiç işlemiyor.\n\nAbonelik durumu, hak yönetiminde işleyenimiz olan RevenueCat ile yürütülüyor. RevenueCat anonim bir uygulama kullanıcı kimliği ile Apple'ın verdiği işlem verisini alıyor; adını, e-postanı ya da herhangi bir fotoğrafı almıyor. Yenileme, iptal veya iade uygulamaya hızlıca yansısın diye Apple'ın App Store Sunucu Bildirimleri RevenueCat'e gidiyor."
+      },
+      "tracking": {
+        "title": "Takip yok, reklam yok",
+        "body": "Cadra seni başka şirketlerin uygulama ve sitelerinde takip etmiyor. Verin reklam ağlarıyla paylaşılmıyor, herhangi bir reklam profiliyle eşleştirilmiyor, veri simsarlarına satılmıyor.\n\nUygulamada reklam SDK'sı ve üçüncü taraf analiz SDK'sı yok. Takip olmadığı için Cadra, App Tracking Transparency penceresini de göstermiyor."
+      },
+      "children": {
+        "title": "Çocuklar",
+        "body": "Cadra çocuklara yönelik değil ve bir çocuğu tanımlayabilecek hiçbir şey toplamıyor. Uygulama genel izleyici için derecelendirildi; kullanıcı üretimi içerik, mesajlaşma ve denetimsiz içeriğe giden bağlantı barındırmıyor."
+      },
+      "retention": {
+        "title": "Saklama süresi",
+        "body": "Anonim etkileşim olayları en fazla 24 ay saklanıp siliniyor. Olaylar bir kişiye çözülebilen hiçbir kimlik taşımadığı için sana geri bağlanamıyor ve yalnızca toplu halde okunuyor."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "Bu politikayla ya da genel olarak Cadra ile ilgili sorular için hello@erusoft.com — gelen her mesajı okuyoruz.\n\nCadra, Erusoft (Eray Usta) tarafından yayımlanıyor. İstanbul, Türkiye."
+      }
+    }
+  },
+  "cadraSupport": {
+    "meta": {
+      "title": "Cadra — Destek",
+      "description": "Cadra nasıl kullanılır ve bir insana nasıl ulaşılır."
+    },
+    "hero": {
+      "eyebrow": "iOS için Cadra",
+      "title": "Cadra Destek",
+      "lastUpdated": "Son güncelleme: 16 Eylül 2026"
+    },
+    "intro": "Cadra, zaten çektiğin bir fotoğrafı daha temiz bir kadraja oturtuyor: bir fotoğraf seç, bir şekil seç, uygulama kadrajın nereye oturması gerektiğini önersin. Aşağıda en sık gelen sorular var. Seninki yoksa bize yaz — cevaplayan bir insan olacak.",
+    "sections": {
+      "start": {
+        "title": "Başlarken",
+        "body": "\"Fotoğraf seç\"e dokun ve kitaplığından herhangi bir fotoğrafı al. Dikey ya da Yatay'ı seç; Cadra kareyi analiz edip bir kadraj önersin.\n\nAltta kompozisyon kurallarından oluşan bir şerit var — üçler, altın oran, merkez, altın spiral ve diğerleri. Herhangi birine dokunarak o kuralın fotoğrafına uygulanmış halini gör. İstediğin an parmakla yakınlaştırıp sürükleyerek elle ayarla. Doğru göründüğünde Bitir'e dokun."
+      },
+      "quality": {
+        "title": "Çözünürlük uyarısı",
+        "body": "Her kadraj piksel atar. Kalan alan baskıda ve paylaşımda temiz duracağın eşiğin altına düştüğünde Cadra bunu işaretler — sarı \"sıkışmaya başlıyor\", kırmızı \"bu yumuşak görünecek\" demek.\n\nHiçbir şey engellenmiyor. Uyarı, kararın sende olsun ve sonradan tam boyutta karşına çıkan bir sürpriz olmasın diye var."
+      },
+      "saving": {
+        "title": "Kaydetme",
+        "body": "Kaydet, fotoğraf kitaplığına yeni bir dosya yazar. Orijinal fotoğrafın asla değiştirilmez ve asla silinmez; uygulamanın tüm kitaplığa erişim yerine yalnızca fotoğraf ekleme izni istemesinin sebebi de bu.\n\nKaydetme reddedilirse Ayarlar → Gizlilik ve Güvenlik → Fotoğraflar → Cadra yolundan \"Yalnızca Fotoğraf Ekle\"ye izin ver."
+      },
+      "subscription": {
+        "title": "Ücretsiz kayıt ve Cadra Pro",
+        "body": "İlk kayıt ücretsiz — hiçbir şeye para vermeden önce editörün tamamı açık.\n\nSonrasında sınırsız kayıt için Cadra Pro'ya aylık ya da yıllık abone olabilir, veya aboneliksiz, tek seferlik beş kayıtlık paketi alabilirsin. Fiyatlar ülkeye göre belirleniyor ve onaylamadan önce her zaman kendi para biriminde gösteriliyor."
+      },
+      "restore": {
+        "title": "Satın alma geri yükleme",
+        "body": "Yeni telefon mu aldın, uygulamayı yeniden mi kurdun? Paywall'ı aç ve \"Satın Almaları Geri Yükle\"ye dokun. Aboneliğin Apple Hesabına bağlı olduğu için bizim tarafımızda hiçbir giriş yapmadan geri gelir.\n\nAboneliği iptal etmek veya değiştirmek için iPhone'unda Ayarlar → adın → Abonelikler'e git. Oradan iptal etmek bir sonraki yenilemeyi durdurur, mevcut dönemi sonuna kadar açık bırakır."
+      },
+      "refund": {
+        "title": "İadeler",
+        "body": "Tüm satın almalar Apple tarafından işlendiği için iadeleri de biz değil Apple yürütüyor. Satın alırken kullandığın Apple Hesabıyla reportaproblem.apple.com üzerinden talep edebilirsin.\n\nUygulamada bir şey ters gittiyse bize de yaz — seni oraya göndermektense düzeltmeyi tercih ederiz."
+      },
+      "languages": {
+        "title": "Diller",
+        "body": "Cadra İngilizce, Türkçe, İspanyolca, Japonca ve Almanca dillerinde tamamen yerelleştirilmiş ve iPhone'unun dilini otomatik izliyor. Ayarlar → Cadra → Dil yolundan değiştirebilirsin."
+      },
+      "contact": {
+        "title": "İletişim",
+        "body": "hello@erusoft.com adresine yaz. iPhone modelini ve iOS sürümünü yazman cevabı hızlandırır, ekran görüntüsü çok daha fazla hızlandırır.\n\nCadra, Erusoft (Eray Usta) tarafından yayımlanıyor. İstanbul, Türkiye."
+      }
+    }
   }
 }

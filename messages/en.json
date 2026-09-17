@@ -635,5 +635,97 @@
       "blog": "Blog",
       "caseStudies": "Case studies"
     }
+  },
+  "cadraPrivacy": {
+    "meta": {
+      "title": "Cadra — Privacy Policy",
+      "description": "What Cadra for iOS collects and what it never collects. Your photos stay on your device."
+    },
+    "hero": {
+      "eyebrow": "Cadra for iOS",
+      "title": "Cadra Privacy Policy",
+      "lastUpdated": "Last updated: 16 September 2026"
+    },
+    "intro": "Cadra is a photo cropping studio for pictures you already took. It has no camera, no account and no sign-in. This page describes exactly what the app sends anywhere, and it is written to match the App Privacy answers filed for Cadra in App Store Connect line for line.",
+    "sections": {
+      "photos": {
+        "title": "Your photos never leave the device",
+        "body": "Every part of Cadra that looks at a picture — scene analysis, face and horizon detection, the crop solver, the light adjustment — runs on your iPhone. No photograph, thumbnail, crop or derived image is ever uploaded, and the app works with no network connection at all.\n\nWhen you save, Cadra writes a new file to your photo library. Your original is never modified and never deleted. That is why the app asks only for add-only photo access and not for full library access."
+      },
+      "collected": {
+        "title": "What we do collect",
+        "body": "Cadra sends anonymous product-interaction events so we can tell which parts of the app people actually use. Two categories, both filed with Apple as \"Not Linked to You\" and used only for Analytics:\n\n• Usage Data → Product Interaction: which composition rule was chosen, whether a save succeeded, whether the paywall converted.\n• Identifiers → Device ID: an identifier the app generates for itself, stored in the device keychain.\n\nThe identifier is a random token minted on the device. It is not the advertising identifier (IDFA), it is not your Apple Account, and it cannot be resolved to a person — not by us either."
+      },
+      "notCollected": {
+        "title": "What we never collect",
+        "body": "Cadra does not collect your name, e-mail address, phone number, postal address, contacts, calendar, location, health data, financial data, browsing history, or the content of any photograph.\n\nThere is no account system, so there is nothing to delete and no account-deletion flow to offer."
+      },
+      "purchases": {
+        "title": "Purchases",
+        "body": "All purchases go through Apple. Cadra never sees or handles your payment details.\n\nSubscription state is managed with RevenueCat, which acts as our processor for entitlements. RevenueCat receives an anonymous app user identifier and the transaction data Apple provides. It does not receive your name, your e-mail address or any photograph. Apple's App Store Server Notifications are delivered to RevenueCat so that a renewal, cancellation or refund is reflected in the app promptly."
+      },
+      "tracking": {
+        "title": "No tracking, no ads",
+        "body": "Cadra does not track you across apps or websites owned by other companies. Your data is not shared with advertising networks, not matched to any advertising profile and not sold to data brokers.\n\nThe app ships no advertising SDK and no third-party analytics SDK. Because there is no tracking, Cadra does not present the App Tracking Transparency prompt."
+      },
+      "children": {
+        "title": "Children",
+        "body": "Cadra is not directed at children and collects nothing that could identify a child. The app is rated for general audiences and contains no user-generated content, no messaging and no external links to unmoderated material."
+      },
+      "retention": {
+        "title": "Retention",
+        "body": "Anonymous interaction events are retained for up to 24 months and then deleted. Because the events carry no identifier that resolves to a person, they cannot be traced back to you, and they are only ever read in aggregate."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Questions about this policy, or about Cadra generally, go to hello@erusoft.com — we read every message.\n\nCadra is published by Erusoft (Eray Usta), Istanbul, Türkiye."
+      }
+    }
+  },
+  "cadraSupport": {
+    "meta": {
+      "title": "Cadra — Support",
+      "description": "How to use Cadra for iOS, and how to reach a human about it."
+    },
+    "hero": {
+      "eyebrow": "Cadra for iOS",
+      "title": "Cadra Support",
+      "lastUpdated": "Last updated: 16 September 2026"
+    },
+    "intro": "Cadra turns a photo you already took into a cleaner frame: pick a picture, choose a shape, and the app proposes where the crop should sit. Below are the questions that come up most often. If yours is not here, write to us — a person answers.",
+    "sections": {
+      "start": {
+        "title": "Getting started",
+        "body": "Tap \"Choose photo\" and pick any picture from your library. Choose Portrait or Landscape, and Cadra analyses the frame and suggests a crop.\n\nA strip of composition rules runs along the bottom — thirds, golden ratio, centre, the golden spiral and more. Tap any of them to see that rule applied to your picture. Pinch and drag to adjust by hand at any point. When it looks right, tap Finish."
+      },
+      "quality": {
+        "title": "The resolution warning",
+        "body": "A crop throws away pixels. When the remaining area drops below what prints and posts cleanly, Cadra marks it — amber for \"getting tight\", red for \"this will look soft\".\n\nNothing is blocked. The warning exists so the decision is yours and not a surprise you find later at full size."
+      },
+      "saving": {
+        "title": "Saving",
+        "body": "Save writes a new file to your photo library. Your original photo is never modified and never deleted, which is why the app asks only for permission to add photos rather than for access to your whole library.\n\nIf the save is refused, check Settings → Privacy & Security → Photos → Cadra and allow \"Add Photos Only\"."
+      },
+      "subscription": {
+        "title": "Free saves and Cadra Pro",
+        "body": "The first save is free — the whole editor is open before you pay for anything.\n\nAfter that you can subscribe to Cadra Pro monthly or yearly for unlimited saves, or buy a one-off pack of five saves with no subscription. Prices are set per country and are always shown in your own currency before you confirm anything."
+      },
+      "restore": {
+        "title": "Restoring a purchase",
+        "body": "New phone, or reinstalled the app? Open the paywall and tap \"Restore Purchases\". Your subscription is tied to your Apple Account, so it comes back without any sign-in on our side.\n\nTo cancel or change a subscription, go to Settings → your name → Subscriptions on your iPhone. Cancelling there stops the next renewal and leaves the current period running to its end."
+      },
+      "refund": {
+        "title": "Refunds",
+        "body": "All purchases are processed by Apple, so refunds are handled by Apple and not by us. Request one at reportaproblem.apple.com with the Apple Account you bought with.\n\nIf something in the app went wrong, tell us as well — we would rather fix it than have you go through that."
+      },
+      "languages": {
+        "title": "Languages",
+        "body": "Cadra is fully localised in English, Turkish, Spanish, Japanese and German, and follows your iPhone's language automatically. Change it under Settings → Cadra → Language."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Write to hello@erusoft.com. Telling us your iPhone model and iOS version makes the answer faster, and a screenshot makes it much faster.\n\nCadra is published by Erusoft (Eray Usta), Istanbul, Türkiye."
+      }
+    }
   }
 }
