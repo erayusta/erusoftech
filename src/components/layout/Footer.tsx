@@ -3,6 +3,7 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Link } from '@/i18n/navigation';
 import { Logo } from './Logo';
+import { WORDPRESS_CATALOGUE_URL } from '@/lib/links';
 
 type GroupKey = 'company' | 'solutions' | 'resources';
 
@@ -37,6 +38,7 @@ export function Footer() {
       rows: [
         { label: t('links.blog'), href: '/blog' },
         { label: t('links.caseStudies'), href: '/work' },
+        { label: t('links.wordpress'), href: WORDPRESS_CATALOGUE_URL },
       ],
     },
   ];

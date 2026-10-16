@@ -255,6 +255,18 @@
       }
     }
   },
+  "openSource": {
+    "eyebrow": "Open source",
+    "title": "Our WordPress and WooCommerce plugins are free and open source",
+    "body": "We publish more than 80 plugins and themes under the GPL, built for the everyday needs of stores in Türkiye: shipping, campaigns, marketplaces, payments, KVKK and İYS tools. No licence keys, ads or upgrade nags.",
+    "button": "Browse the plugin catalogue",
+    "support": "Installation and custom development support",
+    "points": {
+      "p1": "Every product has a page with installation, settings, limitations and FAQ (in Turkish).",
+      "p2": "Download the ZIP and upload it from the WordPress admin; the source code is on GitHub.",
+      "p3": "For installation, customisation or integrations, write to hello@erusoft.com."
+    }
+  },
   "trust": {
     "eyebrow": "Trust",
     "title": "Our work in numbers",
@@ -633,7 +645,8 @@
       "privacy": "Privacy",
       "terms": "Terms",
       "blog": "Blog",
-      "caseStudies": "Case studies"
+      "caseStudies": "Case studies",
+      "wordpress": "WordPress plugins"
     }
   },
   "cadraPrivacy": {

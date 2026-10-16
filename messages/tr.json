@@ -255,6 +255,18 @@
       }
     }
   },
+  "openSource": {
+    "eyebrow": "Açık kaynak",
+    "title": "WordPress ve WooCommerce eklentilerimiz ücretsiz ve açık kaynak",
+    "body": "Türkiye'deki mağazaların günlük ihtiyaçları için yazdığımız 80'den fazla eklenti ve temayı GPL lisansıyla yayımlıyoruz: kargo, kampanya, pazaryeri, ödeme, KVKK ve İYS araçları. Lisans anahtarı, reklam ya da \"pro sürüme geç\" ekranı yok.",
+    "button": "Eklenti kataloğunu incele",
+    "support": "Kurulum ve özel geliştirme desteği",
+    "points": {
+      "p1": "Her ürünün kurulum, ayarlar, sınırlamalar ve SSS içeren Türkçe sayfası var.",
+      "p2": "ZIP'i indirip WordPress yönetiminden yükleyin; kaynak kodu GitHub'da.",
+      "p3": "Kurulum, uyarlama veya entegrasyon için hello@erusoft.com adresine yazın."
+    }
+  },
   "trust": {
     "eyebrow": "Güven",
     "title": "Sayılarla çalışmalarımız",
@@ -633,7 +645,8 @@
       "privacy": "Gizlilik",
       "terms": "Kullanım koşulları",
       "blog": "Blog",
-      "caseStudies": "Vaka çalışmaları"
+      "caseStudies": "Vaka çalışmaları",
+      "wordpress": "WordPress eklentileri"
     }
   },
   "cadraPrivacy": {
