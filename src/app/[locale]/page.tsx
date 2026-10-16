@@ -7,6 +7,7 @@ import { Services } from '@/components/sections/Services';
 import { TechStack } from '@/components/sections/TechStack';
 import { Process } from '@/components/sections/Process';
 import { CaseStudies } from '@/components/sections/CaseStudies';
+import { OpenSource } from '@/components/sections/OpenSource';
 import { Trust } from '@/components/sections/Trust';
 import { CTA } from '@/components/sections/CTA';
 
@@ -27,6 +28,7 @@ export default function HomePage({
         <TechStack />
         <Process />
         <CaseStudies />
+        <OpenSource />
         <Trust />
         <CTA />
       </main>
